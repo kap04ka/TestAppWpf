@@ -30,44 +30,44 @@
 
                 <!--Первый вопрос-->
                 <TextBlock Text="1) Пол:" Foreground="Black" FontSize="20" Margin="15,0"/>
-                <RadioButton x:Name="radioButtonGender1" GroupName="Gender" Margin="15,0" Checked="radioButtonGender_Checked"/>
-                <RadioButton x:Name="radioButtonGender2" GroupName="Gender" Margin="15,0" Checked="radioButtonGender_Checked"/>
+                <RadioButton x:Name="radioButtonGender1" GroupName="Gender" Margin="15,0" Checked="radioButtonGender_Checked" FontSize="20" VerticalContentAlignment="Center"/>
+                <RadioButton x:Name="radioButtonGender2" GroupName="Gender" Margin="15,0" Checked="radioButtonGender_Checked" FontSize="20" VerticalContentAlignment="Center"/>
 
                 <!--Второй вопрос-->
                 <TextBlock Text="2) Ваш уровень образования:" Foreground="Black" FontSize="20" Margin="15,25,15,0"/>
-                <RadioButton x:Name="radioButtonEducation1" GroupName="Education" Margin="15,0" Checked="radioButtonEducation_Checked"/>
-                <RadioButton x:Name="radioButtonEducation2" GroupName="Education" Margin="15,0" Checked="radioButtonEducation_Checked"/>
-                <RadioButton x:Name="radioButtonEducation3" GroupName="Education" Margin="15,0" Checked="radioButtonEducation_Checked"/>
-                <RadioButton x:Name="radioButtonEducation4" GroupName="Education" Margin="15,0" Checked="radioButtonEducation_Checked"/>
-                <RadioButton x:Name="radioButtonEducation5" GroupName="Education" Margin="15,0" Checked="radioButtonEducation_Checked"/>
+                <RadioButton x:Name="radioButtonEducation1" GroupName="Education" Margin="15,0" Checked="radioButtonEducation_Checked" FontSize="20" VerticalContentAlignment="Center"/>
+                <RadioButton x:Name="radioButtonEducation2" GroupName="Education" Margin="15,0" Checked="radioButtonEducation_Checked" FontSize="20" VerticalContentAlignment="Center"/>
+                <RadioButton x:Name="radioButtonEducation3" GroupName="Education" Margin="15,0" Checked="radioButtonEducation_Checked" FontSize="20" VerticalContentAlignment="Center"/>
+                <RadioButton x:Name="radioButtonEducation4" GroupName="Education" Margin="15,0" Checked="radioButtonEducation_Checked" FontSize="20" VerticalContentAlignment="Center"/>
+                <RadioButton x:Name="radioButtonEducation5" GroupName="Education" Margin="15,0" Checked="radioButtonEducation_Checked" FontSize="20" VerticalContentAlignment="Center"/>
 
                 <!--Третий вопрос-->
                 <TextBlock Text="3) Ваша профессиональная деятельность:" Foreground="Black" FontSize="20" Margin="15,25,15,0"/>
-                <CheckBox x:Name="checkBoxActivity1" IsThreeState="False" Height="20" Checked="checkBoxActivity_Checked" Unchecked="checkBoxActivity_Unchecked" Margin="15,0"/>
-                <CheckBox x:Name="checkBoxActivity2" IsThreeState="False" Height="20" Checked="checkBoxActivity_Checked" Unchecked="checkBoxActivity_Unchecked" Margin="15,0"/>
-                <CheckBox x:Name="checkBoxActivity3" IsThreeState="False" Height="20" Checked="checkBoxActivity_Checked" Unchecked="checkBoxActivity_Unchecked" Margin="15,0"/>
-                <CheckBox x:Name="checkBoxActivity4" IsThreeState="False" Height="20" Checked="checkBoxActivity_Checked" Unchecked="checkBoxActivity_Unchecked" Margin="15,0"/>
-                <CheckBox x:Name="checkBoxActivity5" IsThreeState="False" Height="20" Checked="checkBoxActivity_Checked" Unchecked="checkBoxActivity_Unchecked" Margin="15,0"/>
-                <CheckBox x:Name="checkBoxActivity6" IsThreeState="False" Height="20" Checked="checkBoxActivity_Checked" Unchecked="checkBoxActivity_Unchecked" Margin="15,0"/>
+                <CheckBox x:Name="checkBoxActivity1" IsThreeState="False" Checked="checkBoxActivity_Checked" Unchecked="checkBoxActivity_Unchecked" Margin="15,5" FontSize="20" VerticalContentAlignment="Center"/>
+                <CheckBox x:Name="checkBoxActivity2" IsThreeState="False" Checked="checkBoxActivity_Checked" Unchecked="checkBoxActivity_Unchecked" Margin="15,5" FontSize="20" VerticalContentAlignment="Center"/>
+                <CheckBox x:Name="checkBoxActivity3" IsThreeState="False" Checked="checkBoxActivity_Checked" Unchecked="checkBoxActivity_Unchecked" Margin="15,5" FontSize="20" VerticalContentAlignment="Center"/>
+                <CheckBox x:Name="checkBoxActivity4" IsThreeState="False" Checked="checkBoxActivity_Checked" Unchecked="checkBoxActivity_Unchecked" Margin="15,5" FontSize="20" VerticalContentAlignment="Center"/>
+                <CheckBox x:Name="checkBoxActivity5" IsThreeState="False" Checked="checkBoxActivity_Checked" Unchecked="checkBoxActivity_Unchecked" Margin="15,5" FontSize="20" VerticalContentAlignment="Center"/>
+                <CheckBox x:Name="checkBoxActivity6" IsThreeState="False" Checked="checkBoxActivity_Checked" Unchecked="checkBoxActivity_Unchecked" Margin="15,5" FontSize="20" VerticalContentAlignment="Center"/>
 
                 <!--Четвертый вопрос-->
                 <TextBlock Text="4) Были ли у Вас диагностированы какие-либо из следующих состояний до короновирусного заболевания?" Foreground="Black" FontSize="20" Margin="15,25,15,0"/>
-                <CheckBox x:Name="checkBoxDiseases1" IsThreeState="False" Height="20" Checked="checkBoxDiseases_Checked" Unchecked="checkBoxDiseases_Unchecked" Margin="15,0"/>
-                <CheckBox x:Name="checkBoxDiseases2" IsThreeState="False" Height="20" Checked="checkBoxDiseases_Checked" Unchecked="checkBoxDiseases_Unchecked" Margin="15,0"/>
-                <CheckBox x:Name="checkBoxDiseases3" IsThreeState="False" Height="20" Checked="checkBoxDiseases_Checked" Unchecked="checkBoxDiseases_Unchecked" Margin="15,0"/>
-                <CheckBox x:Name="checkBoxDiseases4" IsThreeState="False" Height="20" Checked="checkBoxDiseases_Checked" Unchecked="checkBoxDiseases_Unchecked" Margin="15,0"/>
-                <CheckBox x:Name="checkBoxDiseases5" IsThreeState="False" Height="20" Checked="checkBoxDiseases_Checked" Unchecked="checkBoxDiseases_Unchecked" Margin="15,0"/>
-                <CheckBox x:Name="checkBoxDiseases6" IsThreeState="False" Height="20" Checked="checkBoxDiseases_Checked" Unchecked="checkBoxDiseases_Unchecked" Margin="15,0"/>
-                <CheckBox x:Name="checkBoxDiseases7" IsThreeState="False" Height="20" Checked="checkBoxDiseases_Checked" Unchecked="checkBoxDiseases_Unchecked" Margin="15,0"/>
-                <CheckBox x:Name="checkBoxDiseases8" IsThreeState="False" Height="20" Checked="checkBoxDiseases_Checked" Unchecked="checkBoxDiseases_Unchecked" Margin="15,0"/>
-                <CheckBox x:Name="checkBoxDiseases9" IsThreeState="False" Height="20" Checked="checkBoxDiseases_Checked" Unchecked="checkBoxDiseases_Unchecked" Margin="15,0"/>
-                <CheckBox x:Name="checkBoxDiseases10" IsThreeState="False" Height="20" Checked="checkBoxDiseases_Checked" Unchecked="checkBoxDiseases_Unchecked" Margin="15,0"/>
+                <CheckBox x:Name="checkBoxDiseases1" IsThreeState="False" Checked="checkBoxDiseases_Checked" Unchecked="checkBoxDiseases_Unchecked" Margin="15,5" FontSize="20" VerticalContentAlignment="Center"/>
+                <CheckBox x:Name="checkBoxDiseases2" IsThreeState="False" Checked="checkBoxDiseases_Checked" Unchecked="checkBoxDiseases_Unchecked" Margin="15,5" FontSize="20" VerticalContentAlignment="Center"/>
+                <CheckBox x:Name="checkBoxDiseases3" IsThreeState="False" Checked="checkBoxDiseases_Checked" Unchecked="checkBoxDiseases_Unchecked" Margin="15,5" FontSize="20" VerticalContentAlignment="Center"/>
+                <CheckBox x:Name="checkBoxDiseases4" IsThreeState="False" Checked="checkBoxDiseases_Checked" Unchecked="checkBoxDiseases_Unchecked" Margin="15,5" FontSize="20" VerticalContentAlignment="Center"/>
+                <CheckBox x:Name="checkBoxDiseases5" IsThreeState="False" Checked="checkBoxDiseases_Checked" Unchecked="checkBoxDiseases_Unchecked" Margin="15,5" FontSize="20" VerticalContentAlignment="Center"/>
+                <CheckBox x:Name="checkBoxDiseases6" IsThreeState="False" Checked="checkBoxDiseases_Checked" Unchecked="checkBoxDiseases_Unchecked" Margin="15,5" FontSize="20" VerticalContentAlignment="Center"/>
+                <CheckBox x:Name="checkBoxDiseases7" IsThreeState="False" Checked="checkBoxDiseases_Checked" Unchecked="checkBoxDiseases_Unchecked" Margin="15,5" FontSize="20" VerticalContentAlignment="Center"/>
+                <CheckBox x:Name="checkBoxDiseases8" IsThreeState="False" Checked="checkBoxDiseases_Checked" Unchecked="checkBoxDiseases_Unchecked" Margin="15,5" FontSize="20" VerticalContentAlignment="Center"/>
+                <CheckBox x:Name="checkBoxDiseases9" IsThreeState="False" Checked="checkBoxDiseases_Checked" Unchecked="checkBoxDiseases_Unchecked" Margin="15,5" FontSize="20" VerticalContentAlignment="Center"/>
+                <CheckBox x:Name="checkBoxDiseases10" IsThreeState="False" Checked="checkBoxDiseases_Checked" Unchecked="checkBoxDiseases_Unchecked" Margin="15,5" FontSize="20" VerticalContentAlignment="Center"/>
 
                 <!--Пятый вопрос-->
                 <TextBlock Text="5) Изменилась ли Ваша трудоспособность после перенесенной коронавирусной инфекции?" Foreground="Black" FontSize="20" Margin="15,25,15,0"/>
-                <RadioButton x:Name="radioButtonAbilityToWork1" GroupName="AbilityToWork" Margin="15,0" Checked="radioButtonAbilityToWork_Checked"/>
-                <RadioButton x:Name="radioButtonAbilityToWork2" GroupName="AbilityToWork" Margin="15,0" Checked="radioButtonAbilityToWork_Checked"/>
-                <RadioButton x:Name="radioButtonAbilityToWork3" GroupName="AbilityToWork" Margin="15,0" Checked="radioButtonAbilityToWork_Checked"/>
+                <RadioButton x:Name="radioButtonAbilityToWork1" GroupName="AbilityToWork" Margin="15,0" Checked="radioButtonAbilityToWork_Checked" FontSize="20" VerticalContentAlignment="Center"/>
+                <RadioButton x:Name="radioButtonAbilityToWork2" GroupName="AbilityToWork" Margin="15,0" Checked="radioButtonAbilityToWork_Checked" FontSize="20" VerticalContentAlignment="Center"/>
+                <RadioButton x:Name="radioButtonAbilityToWork3" GroupName="AbilityToWork" Margin="15,0" Checked="radioButtonAbilityToWork_Checked" FontSize="20" VerticalContentAlignment="Center"/>
                 <Grid Margin="30,0">
                     <Grid.RowDefinitions>
                         <RowDefinition Height="*"/>
@@ -76,15 +76,15 @@
                         <ColumnDefinition Width="*"/>
                         <ColumnDefinition Width="2*"/>
                     </Grid.ColumnDefinitions>
-                    <Label x:Name="labelAbilityToWork" Content="На сколько ?" Foreground="Black" FontSize="20" VerticalAlignment="Center" Grid.Column="0"/>
+                    <Label x:Name="labelAbilityToWork" Content="На сколько ?" Foreground="Gray" FontSize="18" VerticalAlignment="Center" Grid.Column="0"/>
                     <Slider x:Name="sliderAbilityToWork" Maximum="10.49" Minimum="0.5" Foreground="Orange" ValueChanged="slider_ValueChanged" VerticalAlignment="Center" Grid.Column="1"/>
                 </Grid>
 
                 <!--Шестой вопрос-->
                 <TextBlock Text="6) Изменилась ли Ваша работоспособность по дому после перенесенной коронавирусной инфекции?" Foreground="Black" FontSize="20" Margin="15,25,15,0"/>
-                <RadioButton x:Name="radioButtonPerfomance1" GroupName="Perfomance" Margin="15,0" Checked="radioButtonPerfomance_Checked"/>
-                <RadioButton x:Name="radioButtonPerfomance2" GroupName="Perfomance" Margin="15,0" Checked="radioButtonPerfomance_Checked"/>
-                <RadioButton x:Name="radioButtonPerfomance3" GroupName="Perfomance" Margin="15,0" Checked="radioButtonPerfomance_Checked"/>
+                <RadioButton x:Name="radioButtonPerfomance1" GroupName="Perfomance" Margin="15,0" Checked="radioButtonPerfomance_Checked" FontSize="20" VerticalContentAlignment="Center"/>
+                <RadioButton x:Name="radioButtonPerfomance2" GroupName="Perfomance" Margin="15,0" Checked="radioButtonPerfomance_Checked" FontSize="20" VerticalContentAlignment="Center"/>
+                <RadioButton x:Name="radioButtonPerfomance3" GroupName="Perfomance" Margin="15,0" Checked="radioButtonPerfomance_Checked" FontSize="20" VerticalContentAlignment="Center"/>
                 <Grid Margin="30,0">
                     <Grid.RowDefinitions>
                         <RowDefinition Height="*"/>
@@ -93,15 +93,15 @@
                         <ColumnDefinition Width="*"/>
                         <ColumnDefinition Width="2*"/>
                     </Grid.ColumnDefinitions>
-                    <Label x:Name="labelPerformance" Content="На сколько ?" Foreground="Black" FontSize="20" VerticalAlignment="Center" Grid.Column="0"/>
+                    <Label x:Name="labelPerformance" Content="На сколько ?" Foreground="Gray" FontSize="18" VerticalAlignment="Center" Grid.Column="0"/>
                     <Slider x:Name="sliderPerformance" Maximum="10.49" Minimum="0.5" Foreground="Orange" ValueChanged="slider_ValueChanged" VerticalAlignment="Center" Grid.Column="1"/>
                 </Grid>
 
                 <!--Седьмой вопрос-->
                 <TextBlock Text="7) Изменилась ли Ваша досуговая активность после перенесенной коронавирусной инфекции?" Foreground="Black" FontSize="20" Margin="15,25,15,0"/>
-                <RadioButton x:Name="radioButtonLeisure1" GroupName="Leisure" Margin="15,0" Checked="radioButtonLeisure_Checked"/>
-                <RadioButton x:Name="radioButtonLeisure2" GroupName="Leisure" Margin="15,0" Checked="radioButtonLeisure_Checked"/>
-                <RadioButton x:Name="radioButtonLeisure3" GroupName="Leisure" Margin="15,0" Checked="radioButtonLeisure_Checked"/>
+                <RadioButton x:Name="radioButtonLeisure1" GroupName="Leisure" Margin="15,0" Checked="radioButtonLeisure_Checked" FontSize="20" VerticalContentAlignment="Center"/>
+                <RadioButton x:Name="radioButtonLeisure2" GroupName="Leisure" Margin="15,0" Checked="radioButtonLeisure_Checked" FontSize="20" VerticalContentAlignment="Center"/>
+                <RadioButton x:Name="radioButtonLeisure3" GroupName="Leisure" Margin="15,0" Checked="radioButtonLeisure_Checked" FontSize="20" VerticalContentAlignment="Center"/>
                 <Grid Margin="30,0">
                     <Grid.RowDefinitions>
                         <RowDefinition Height="*"/>
@@ -110,10 +110,24 @@
                         <ColumnDefinition Width="*"/>
                         <ColumnDefinition Width="2*"/>
                     </Grid.ColumnDefinitions>
-                    <Label x:Name="labelLeisure" Content="На сколько ?" Foreground="Black" FontSize="20" VerticalAlignment="Center" Grid.Column="0"/>
+                    <Label x:Name="labelLeisure" Content="На сколько ?" Foreground="Gray" FontSize="18" VerticalAlignment="Center" Grid.Column="0"/>
                     <Slider x:Name="sliderLeisure" Maximum="10.49" Minimum="0.5" Foreground="Orange" ValueChanged="slider_ValueChanged" VerticalAlignment="Center" Grid.Column="1"/>
                 </Grid>
 
+                <Grid Margin="15,25,20,15">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="60"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <!--Кнопка возврата в общее меню-->
+                    <Button x:Name="buttonMainMenu" Grid.Column="0" Grid.Row="0" FontWeight="Normal" Content="Вернутся в меню"  Margin="0,0,10,0" Background="Orange" Click="buttonMainMenu_Clicked"/>
+                    <!--Кнопка получения результатов теста-->
+                    <Button x:Name="buttonResultTest" Content="Получить результат" Grid.Column="1" Grid.Row="0" FontWeight="Normal"  Margin="10, 0, 0, 0" Click="button_CalculateResult" Background="Orange"/>
+                </Grid>
+                
             </StackPanel>
         </ScrollViewer>
     </Grid>
