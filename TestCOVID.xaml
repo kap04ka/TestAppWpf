@@ -114,6 +114,375 @@
                     <Slider x:Name="sliderLeisure" Maximum="10.49" Minimum="0.5" Foreground="Orange" ValueChanged="slider_ValueChanged" VerticalAlignment="Center" Grid.Column="1"/>
                 </Grid>
 
+
+                <!--Таблица жалоб-->
+                <Grid Background="White" Margin="4,80,4,35" ShowGridLines="True">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="35"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+
+                    <!--Заголовок таблицы-->
+                    <Label Content="Жалобы" Foreground="Black" FontSize="20" VerticalContentAlignment="Center" Grid.Column="0" Grid.Row="0" HorizontalContentAlignment="Center" FontWeight="Bold"/>
+                    <Label Content="При поступлении" Foreground="Black" FontSize="20" VerticalContentAlignment="Center" Grid.Column="1" Grid.Row="0" HorizontalContentAlignment="Center" FontWeight="Bold"/>
+                    <Label Content="При выписке" Foreground="Black" FontSize="20" VerticalContentAlignment="Center" Grid.Column="2" Grid.Row="0" HorizontalContentAlignment="Center" FontWeight="Bold"/>
+                    <Label Content="Через 3 месяца после выписки" Foreground="Black" FontSize="20" VerticalContentAlignment="Center" Grid.Column="3" Grid.Row="0" HorizontalContentAlignment="Center" FontWeight="Bold"/>
+
+
+                    <!--Подзаголовки таблицы таблицы-->
+                    <Label Content="Неврологические" Foreground="Black" FontSize="20" VerticalContentAlignment="Center" Grid.Column="1" Grid.ColumnSpan="4" Grid.Row="2" HorizontalContentAlignment="Center" FontWeight="Bold"/>
+                    <Label Content="Головная боль" Foreground="Black" FontSize="20" VerticalContentAlignment="Center" Grid.Column="1" Grid.ColumnSpan="4" Grid.Row="10" HorizontalContentAlignment="Center" FontWeight="Bold"/>
+                    <Label Content="Аффективные расстройства" Foreground="Black" FontSize="20" VerticalContentAlignment="Center" Grid.Column="1" Grid.ColumnSpan="4" Grid.Row="14" HorizontalContentAlignment="Center" FontWeight="Bold"/>
+                    <Label Content="Системные проявления" Foreground="Black" FontSize="20" VerticalContentAlignment="Center" Grid.Column="1" Grid.ColumnSpan="4" Grid.Row="19" HorizontalContentAlignment="Center" FontWeight="Bold"/>
+
+                    <Label Content="Сердечно-сосудистая система" Foreground="Black" FontSize="18" VerticalContentAlignment="Center" Grid.Column="1" Grid.ColumnSpan="4" Grid.Row="24" HorizontalContentAlignment="Center" FontWeight="Bold"/>
+                   
+                    <Label Content="Опорно-двигательный аппарат" Foreground="Black" FontSize="18" VerticalContentAlignment="Center" Grid.Column="1" Grid.ColumnSpan="4" Grid.Row="31" HorizontalContentAlignment="Center" FontWeight="Bold"/>
+                    <Label Content="Органы чувств" Foreground="Black" FontSize="18" VerticalContentAlignment="Center" Grid.Column="1" Grid.ColumnSpan="4" Grid.Row="34" HorizontalContentAlignment="Center" FontWeight="Bold"/>
+                    <Label Content="Дыхательная система" Foreground="Black" FontSize="18" VerticalContentAlignment="Center" Grid.Column="1" Grid.ColumnSpan="4" Grid.Row="44" HorizontalContentAlignment="Center" FontWeight="Bold"/>
+                    <Label Content="Лор" Foreground="Black" FontSize="18" VerticalContentAlignment="Center" Grid.Column="1" Grid.ColumnSpan="4" Grid.Row="51" HorizontalContentAlignment="Center" FontWeight="Bold"/>
+                    <Label Content="Желудочно-кишечный тракт" Foreground="Black" FontSize="18" VerticalContentAlignment="Center" Grid.Column="1" Grid.ColumnSpan="4" Grid.Row="57" HorizontalContentAlignment="Center" FontWeight="Bold"/>
+                    <Label Content="Дерматологические проблемы" Foreground="Black" FontSize="18" VerticalContentAlignment="Center" Grid.Column="1" Grid.ColumnSpan="4" Grid.Row="61" HorizontalContentAlignment="Center" FontWeight="Bold"/>
+
+
+                    <!--Блок неврологических жалоб-->
+                    <Label Content="Кратковременная потеря памяти" Foreground="Black" FontSize="18" VerticalContentAlignment="Center" Grid.Column="1" Grid.Row="3" Margin="3,0"/>
+                    <TextBox x:Name="editorShortTermMemoryLoss1" Foreground="Black" Grid.Column="1" Grid.Row="3" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorShortTermMemoryLoss_TextChanged"/>
+                    <TextBox x:Name="editorShortTermMemoryLoss2" Foreground="Black" Grid.Column="2" Grid.Row="3" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorShortTermMemoryLoss_TextChanged"/>
+                    <TextBox x:Name="editorShortTermMemoryLoss3" Foreground="Black" Grid.Column="3" Grid.Row="3" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorShortTermMemoryLoss_TextChanged"/>
+
+                    <Label Content="Снижение памяти" Foreground="Black" FontSize="18" VerticalContentAlignment="Center" Grid.Column="1" Grid.Row="4" Margin="3,0"/>
+                    <TextBox x:Name="editorDecreasedMemory1" Foreground="Black" Grid.Column="1" Grid.Row="4" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorDecreasedMemory_TextChanged"/>
+                    <TextBox x:Name="editorDecreasedMemory2" Foreground="Black" Grid.Column="2" Grid.Row="4" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorDecreasedMemory_TextChanged"/>
+                    <TextBox x:Name="editorDecreasedMemory3" Foreground="Black" Grid.Column="3" Grid.Row="4" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorDecreasedMemory_TextChanged"/>
+
+                    <Label Content="Снижение концентрации внимания, 'туман в мозгу'" Foreground="Black" FontSize="18" VerticalContentAlignment="Center" Grid.Column="1" Grid.Row="5" Margin="3,0"/>
+                    <TextBox x:Name="editorDecreasedConcentration1" Foreground="Black" Grid.Column="1" Grid.Row="5" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorDecreasedConcentration_TextChanged"/>
+                    <TextBox x:Name="editorDecreasedConcentration2" Foreground="Black" Grid.Column="2" Grid.Row="5" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorDecreasedConcentration_TextChanged"/>
+                    <TextBox x:Name="editorDecreasedConcentration3" Foreground="Black" Grid.Column="3" Grid.Row="5" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorDecreasedConcentration_TextChanged"/>
+
+                    <Label Content="Повышенная утомляемость" Foreground="Black" FontSize="18" VerticalContentAlignment="Center" Grid.Column="1" Grid.Row="6" Margin="3,0"/>
+                    <TextBox x:Name="editorFatigue1" Foreground="Black" Grid.Column="1" Grid.Row="6" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorFatigue_TextChanged"/>
+                    <TextBox x:Name="editorFatigue2" Foreground="Black" Grid.Column="2" Grid.Row="6" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorFatigue_TextChanged"/>
+                    <TextBox x:Name="editorFatigue3" Foreground="Black" Grid.Column="3" Grid.Row="6" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorFatigue_TextChanged"/>
+
+                    <Label Content="Спутанность сознания" Foreground="Black" FontSize="18" VerticalContentAlignment="Center" Grid.Column="1" Grid.Row="7" Margin="3,0"/>
+                    <TextBox x:Name="editorConfusion1" Foreground="Black" Grid.Column="1" Grid.Row="7" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorConfusion_TextChanged"/>
+                    <TextBox x:Name="editorConfusion2" Foreground="Black" Grid.Column="2" Grid.Row="7" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorConfusion_TextChanged"/>
+                    <TextBox x:Name="editorConfusion3" Foreground="Black" Grid.Column="3" Grid.Row="7" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorConfusion_TextChanged"/>
+
+                    <Label Content="Нарушение сна (патологическое бодрствование, бессонница)" Foreground="Black" FontSize="18" VerticalContentAlignment="Center" Grid.Column="1" Grid.Row="8" Margin="3,0"/>
+                    <TextBox x:Name="editorSleepDisturbance1" Foreground="Black" Grid.Column="1" Grid.Row="8" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorSleepDisturbance_TextChanged"/>
+                    <TextBox x:Name="editorSleepDisturbance2" Foreground="Black" Grid.Column="2" Grid.Row="8" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorSleepDisturbance_TextChanged"/>
+                    <TextBox x:Name="editorSleepDisturbance3" Foreground="Black" Grid.Column="3" Grid.Row="8" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorSleepDisturbance_TextChanged"/>
+
+                    <Label Content="Проблемы с речью (подбор слов или произношение)" Foreground="Black" FontSize="18" VerticalContentAlignment="Center" Grid.Column="1" Grid.Row="9" Margin="3,0"/>
+                    <TextBox x:Name="editorSpeechProblems1" Foreground="Black" Grid.Column="1" Grid.Row="9" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorSpeechProblems_TextChanged"/>
+                    <TextBox x:Name="editorSpeechProblems2" Foreground="Black" Grid.Column="2" Grid.Row="9" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorSpeechProblems_TextChanged"/>
+                    <TextBox x:Name="editorSpeechProblems3" Foreground="Black" Grid.Column="3" Grid.Row="9" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorSpeechProblems_TextChanged"/>
+
+                    <!--Блок жалоб - головная боль-->
+                    <Label Content="Изменение характера" Foreground="Black" FontSize="18" VerticalContentAlignment="Center" Grid.Column="1" Grid.Row="11" Margin="3,0"/>
+                    <TextBox x:Name="editorChangeOfCharacter1" Foreground="Black" Grid.Column="1" Grid.Row="11" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorChangeOfCharacter_TextChanged"/>
+                    <TextBox x:Name="editorChangeOfCharacter2" Foreground="Black" Grid.Column="2" Grid.Row="11" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorChangeOfCharacter_TextChanged"/>
+                    <TextBox x:Name="editorChangeOfCharacter3" Foreground="Black" Grid.Column="3" Grid.Row="11" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorChangeOfCharacter_TextChanged"/>
+
+                    <Label Content="Изменение частоты" Foreground="Black" FontSize="18" VerticalContentAlignment="Center" Grid.Column="1" Grid.Row="12" Margin="3,0"/>
+                    <TextBox x:Name="editorFrequencyChange1" Foreground="Black" Grid.Column="1" Grid.Row="12" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorFrequencyChange_TextChanged"/>
+                    <TextBox x:Name="editorFrequencyChange2" Foreground="Black" Grid.Column="2" Grid.Row="12" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorFrequencyChange_TextChanged"/>
+                    <TextBox x:Name="editorFrequencyChange3" Foreground="Black" Grid.Column="3" Grid.Row="12" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorFrequencyChange_TextChanged"/>
+
+                    <Label Content="Изменение интенсивности" Foreground="Black" FontSize="18" VerticalContentAlignment="Center" Grid.Column="1" Grid.Row="13" Margin="3,0"/>
+                    <TextBox x:Name="editorIntensityChange1" Foreground="Black" Grid.Column="1" Grid.Row="13" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorIntensityChange_TextChanged"/>
+                    <TextBox x:Name="editorIntensityChange2" Foreground="Black" Grid.Column="2" Grid.Row="13" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorIntensityChange_TextChanged"/>
+                    <TextBox x:Name="editorIntensityChange3" Foreground="Black" Grid.Column="3" Grid.Row="13" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorIntensityChange_TextChanged"/>
+
+                    <!--Блок жалоб - аффективные расстройства-->
+                    <Label Content="Перепады настроения" Foreground="Black" FontSize="18" VerticalContentAlignment="Center" Grid.Column="1" Grid.Row="15" Margin="3,0"/>
+                    <TextBox x:Name="editorMoodSwings1" Foreground="Black" Grid.Column="1" Grid.Row="15" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorMoodSwings_TextChanged"/>
+                    <TextBox x:Name="editorMoodSwings2" Foreground="Black" Grid.Column="2" Grid.Row="15" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorMoodSwings_TextChanged"/>
+                    <TextBox x:Name="editorMoodSwings3" Foreground="Black" Grid.Column="3" Grid.Row="15" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorMoodSwings_TextChanged"/>
+
+                    <Label Content="Тревога" Foreground="Black" FontSize="18" VerticalContentAlignment="Center" Grid.Column="1" Grid.Row="16" Margin="3,0"/>
+                    <TextBox x:Name="editorAnxiety1" Foreground="Black" Grid.Column="1" Grid.Row="16" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorAnxiety_TextChanged"/>
+                    <TextBox x:Name="editorAnxiety2" Foreground="Black" Grid.Column="2" Grid.Row="16" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorAnxiety_TextChanged"/>
+                    <TextBox x:Name="editorAnxiety3" Foreground="Black" Grid.Column="3" Grid.Row="16" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorAnxiety_TextChanged"/>
+
+                    <Label Content="Депрессия" Foreground="Black" FontSize="18" VerticalContentAlignment="Center" Grid.Column="1" Grid.Row="17" Margin="3,0"/>
+                    <TextBox x:Name="editorDepression1" Foreground="Black" Grid.Column="1" Grid.Row="17" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorDepression_TextChanged"/>
+                    <TextBox x:Name="editorDepression2" Foreground="Black" Grid.Column="2" Grid.Row="17" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorDepression_TextChanged"/>
+                    <TextBox x:Name="editorDepression3" Foreground="Black" Grid.Column="3" Grid.Row="17" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorDepression_TextChanged"/>
+
+                    <Label Content="Навязчивые состояния" Foreground="Black" FontSize="18" VerticalContentAlignment="Center" Grid.Column="1" Grid.Row="18" Margin="3,0"/>
+                    <TextBox x:Name="editorObsessiveStates1" Foreground="Black" Grid.Column="1" Grid.Row="18" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorObsessiveStates_TextChanged"/>
+                    <TextBox x:Name="editorObsessiveStates2" Foreground="Black" Grid.Column="2" Grid.Row="18" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorObsessiveStates_TextChanged"/>
+                    <TextBox x:Name="editorObsessiveStates3" Foreground="Black" Grid.Column="3" Grid.Row="18" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorObsessiveStates_TextChanged"/>
+
+                    <!--Блок жалоб - системное проявлени-->
+                    <Label Content="Лихорадка" Foreground="Black" FontSize="18" VerticalContentAlignment="Center" Grid.Column="1" Grid.Row="20" Margin="3,0"/>
+                    <TextBox x:Name="editorFever1" Foreground="Black" Grid.Column="1" Grid.Row="20" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorFever_TextChanged"/>
+                    <TextBox x:Name="editorFever2" Foreground="Black" Grid.Column="2" Grid.Row="20" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorFever_TextChanged"/>
+                    <TextBox x:Name="editorFever3" Foreground="Black" Grid.Column="3" Grid.Row="20" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorFever_TextChanged"/>
+
+                    <Label Content="Повышенное потоотделение" Foreground="Black" FontSize="18" VerticalContentAlignment="Center" Grid.Column="1" Grid.Row="21" Margin="3,0"/>
+                    <TextBox x:Name="editorIncreasedSweating1" Foreground="Black" Grid.Column="1" Grid.Row="21" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorIncreasedSweating_TextChanged"/>
+                    <TextBox x:Name="editorIncreasedSweating2" Foreground="Black" Grid.Column="2" Grid.Row="21" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorIncreasedSweating_TextChanged"/>
+                    <TextBox x:Name="editorIncreasedSweating3" Foreground="Black" Grid.Column="3" Grid.Row="21" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorIncreasedSweating_TextChanged"/>
+
+                    <Label Content="Ночная потливость" Foreground="Black" FontSize="18" VerticalContentAlignment="Center" Grid.Column="1" Grid.Row="22" Margin="3,0"/>
+                    <TextBox x:Name="editorNightSweats1" Foreground="Black" Grid.Column="1" Grid.Row="22" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorNightSweats_TextChanged"/>
+                    <TextBox x:Name="editorNightSweats2" Foreground="Black" Grid.Column="2" Grid.Row="22" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorNightSweats_TextChanged"/>
+                    <TextBox x:Name="editorNightSweats3" Foreground="Black" Grid.Column="3" Grid.Row="22" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorNightSweats_TextChanged"/>
+
+                    <Label Content="Непереносимость тепла" Foreground="Black" FontSize="18" VerticalContentAlignment="Center" Grid.Column="1" Grid.Row="23" Margin="3,0"/>
+                    <TextBox x:Name="editorHeatIntolerance1" Foreground="Black" Grid.Column="1" Grid.Row="23" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorHeatIntolerance_TextChanged"/>
+                    <TextBox x:Name="editorHeatIntolerance2" Foreground="Black" Grid.Column="2" Grid.Row="23" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorHeatIntolerance_TextChanged"/>
+                    <TextBox x:Name="editorHeatIntolerance3" Foreground="Black" Grid.Column="3" Grid.Row="23" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorHeatIntolerance_TextChanged"/>
+
+                    <!--Блок жалоб - сердечно-сосудистая система-->
+                    <Label Content="Брадикардия" Foreground="Black" FontSize="18" VerticalContentAlignment="Center" Grid.Column="1" Grid.Row="25" Margin="3,0"/>
+                    <TextBox x:Name="editorBradycardia1" Foreground="Black" Grid.Column="1" Grid.Row="25" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorBradycardia_TextChanged"/>
+                    <TextBox x:Name="editorBradycardia2" Foreground="Black" Grid.Column="2" Grid.Row="25" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorBradycardia_TextChanged"/>
+                    <TextBox x:Name="editorBradycardia3" Foreground="Black" Grid.Column="3" Grid.Row="25" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorBradycardia_TextChanged"/>
+
+                    <Label Content="Тахикардия" Foreground="Black" FontSize="18" VerticalContentAlignment="Center" Grid.Column="1" Grid.Row="26" Margin="3,0"/>
+                    <TextBox x:Name="editorTachycardia1" Foreground="Black" Grid.Column="1" Grid.Row="26" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorTachycardia_TextChanged"/>
+                    <TextBox x:Name="editorTachycardia2" Foreground="Black" Grid.Column="2" Grid.Row="26" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorTachycardia_TextChanged"/>
+                    <TextBox x:Name="editorTachycardia3" Foreground="Black" Grid.Column="3" Grid.Row="26" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorTachycardia_TextChanged"/>
+
+                    <Label Content="Сердцебиение" Foreground="Black" FontSize="18" VerticalContentAlignment="Center" Grid.Column="1" Grid.Row="27" Margin="3,0"/>
+                    <TextBox x:Name="editorHeartbeat1" Foreground="Black" Grid.Column="1" Grid.Row="27" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorHeartbeat_TextChanged"/>
+                    <TextBox x:Name="editorHeartbeat2" Foreground="Black" Grid.Column="2" Grid.Row="27" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorHeartbeat_TextChanged"/>
+                    <TextBox x:Name="editorHeartbeat3" Foreground="Black" Grid.Column="3" Grid.Row="27" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorHeartbeat_TextChanged"/>
+
+                    <Label Content="Подъемы АД" Foreground="Black" FontSize="18" VerticalContentAlignment="Center" Grid.Column="1" Grid.Row="28" Margin="3,0"/>
+                    <TextBox x:Name="editorBPRises1" Foreground="Black" Grid.Column="1" Grid.Row="28" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorBPRises_TextChanged"/>
+                    <TextBox x:Name="editorBPRises2" Foreground="Black" Grid.Column="2" Grid.Row="28" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorBPRises_TextChanged"/>
+                    <TextBox x:Name="editorBPRises3" Foreground="Black" Grid.Column="3" Grid.Row="28" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorBPRises_TextChanged"/>
+
+                    <Label Content="Понижение АД" Foreground="Black" FontSize="18" VerticalContentAlignment="Center" Grid.Column="1" Grid.Row="29" Margin="3,0"/>
+                    <TextBox x:Name="editorLoweringBloodPressure1" Foreground="Black" Grid.Column="1" Grid.Row="29" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorLoweringBloodPressure_TextChanged"/>
+                    <TextBox x:Name="editorLoweringBloodPressure2" Foreground="Black" Grid.Column="2" Grid.Row="29" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorLoweringBloodPressure_TextChanged"/>
+                    <TextBox x:Name="editorLoweringBloodPressure3" Foreground="Black" Grid.Column="3" Grid.Row="29" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorLoweringBloodPressure_TextChanged"/>
+
+                    <Label Content="Обморок" Foreground="Black" FontSize="18" VerticalContentAlignment="Center" Grid.Column="1" Grid.Row="30" Margin="3,0"/>
+                    <TextBox x:Name="editorFainting1" Foreground="Black" Grid.Column="1" Grid.Row="30" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorFainting_TextChanged"/>
+                    <TextBox x:Name="editorFainting2" Foreground="Black" Grid.Column="2" Grid.Row="30" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorFainting_TextChanged"/>
+                    <TextBox x:Name="editorFainting3" Foreground="Black" Grid.Column="3" Grid.Row="30" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorFainting_TextChanged"/>
+
+                    <!--Блок жалоб - опорно-двигательная система-->
+                    <Label Content="Боль в мышцах" Foreground="Black" FontSize="18" VerticalContentAlignment="Center" Grid.Column="1" Grid.Row="32" Margin="3,0"/>
+                    <TextBox x:Name="editorMusclePain1" Foreground="Black" Grid.Column="1" Grid.Row="32" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorMusclePain_TextChanged"/>
+                    <TextBox x:Name="editorMusclePain2" Foreground="Black" Grid.Column="2" Grid.Row="32" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorMusclePain_TextChanged"/>
+                    <TextBox x:Name="editorMusclePain3" Foreground="Black" Grid.Column="3" Grid.Row="32" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorMusclePain_TextChanged"/>
+
+                    <Label Content="Боль в суставах" Foreground="Black" FontSize="18" VerticalContentAlignment="Center" Grid.Column="1" Grid.Row="33" Margin="3,0"/>
+                    <TextBox x:Name="editorJointPain1" Foreground="Black" Grid.Column="1" Grid.Row="33" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorJointPain_TextChanged"/>
+                    <TextBox x:Name="editorJointPain2" Foreground="Black" Grid.Column="2" Grid.Row="33" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorJointPain_TextChanged"/>
+                    <TextBox x:Name="editorJointPain3" Foreground="Black" Grid.Column="3" Grid.Row="33" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorJointPain_TextChanged"/>
+
+                    <!--Блок жалоб - органы чувств-->
+                    <Label Content="Головокружение" Foreground="Black" FontSize="18" VerticalContentAlignment="Center" Grid.Column="1" Grid.Row="35" Margin="3,0"/>
+                    <TextBox x:Name="editorDizziness1" Foreground="Black" Grid.Column="1" Grid.Row="35" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorDizziness_TextChanged"/>
+                    <TextBox x:Name="editorDizziness2" Foreground="Black" Grid.Column="2" Grid.Row="35" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorDizziness_TextChanged"/>
+                    <TextBox x:Name="editorDizziness3" Foreground="Black" Grid.Column="3" Grid.Row="35" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorDizziness_TextChanged"/>
+
+                    <Label Content="Нарушение равновесия" Foreground="Black" FontSize="18" VerticalContentAlignment="Center" Grid.Column="1" Grid.Row="36" Margin="3,0"/>
+                    <TextBox x:Name="editorImbalance1" Foreground="Black" Grid.Column="1" Grid.Row="36" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorImbalance_TextChanged"/>
+                    <TextBox x:Name="editorImbalance2" Foreground="Black" Grid.Column="2" Grid.Row="36" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorImbalance_TextChanged"/>
+                    <TextBox x:Name="editorImbalance3" Foreground="Black" Grid.Column="3" Grid.Row="36" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorImbalance_TextChanged"/>
+
+                    <Label Content="Нарушение зрения" Foreground="Black" FontSize="18" VerticalContentAlignment="Center" Grid.Column="1" Grid.Row="37" Margin="3,0"/>
+                    <TextBox x:Name="editorVisualImpairment1" Foreground="Black" Grid.Column="1" Grid.Row="37" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorVisualImpairment_TextChanged"/>
+                    <TextBox x:Name="editorVisualImpairment2" Foreground="Black" Grid.Column="2" Grid.Row="37" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorVisualImpairment_TextChanged"/>
+                    <TextBox x:Name="editorVisualImpairment3" Foreground="Black" Grid.Column="3" Grid.Row="37" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorVisualImpairment_TextChanged"/>
+
+                    <Label Content="Кожная гиперестезия" Foreground="Black" FontSize="18" VerticalContentAlignment="Center" Grid.Column="1" Grid.Row="38" Margin="3,0"/>
+                    <TextBox x:Name="editorSkinHyperesthesia1" Foreground="Black" Grid.Column="1" Grid.Row="38" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorSkinHyperesthesia_TextChanged"/>
+                    <TextBox x:Name="editorSkinHyperesthesia2" Foreground="Black" Grid.Column="2" Grid.Row="38" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorSkinHyperesthesia_TextChanged"/>
+                    <TextBox x:Name="editorSkinHyperesthesia3" Foreground="Black" Grid.Column="3" Grid.Row="38" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorSkinHyperesthesia_TextChanged"/>
+
+                    <Label Content="Боль в конечностях" Foreground="Black" FontSize="18" VerticalContentAlignment="Center" Grid.Column="1" Grid.Row="39" Margin="3,0"/>
+                    <TextBox x:Name="editorPainInTheLimbs1" Foreground="Black" Grid.Column="1" Grid.Row="39" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorPainInTheLimbs_TextChanged"/>
+                    <TextBox x:Name="editorPainInTheLimbs2" Foreground="Black" Grid.Column="2" Grid.Row="39" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorPainInTheLimbs_TextChanged"/>
+                    <TextBox x:Name="editorPainInTheLimbs3" Foreground="Black" Grid.Column="3" Grid.Row="39" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorPainInTheLimbs_TextChanged"/>
+
+                    <Label Content="Онемение в конечностях" Foreground="Black" FontSize="18" VerticalContentAlignment="Center" Grid.Column="1" Grid.Row="40" Margin="3,0"/>
+                    <TextBox x:Name="editorNumbnessInTheLimbs1" Foreground="Black" Grid.Column="1" Grid.Row="40" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorNumbnessInTheLimbs_TextChanged"/>
+                    <TextBox x:Name="editorNumbnessInTheLimbs2" Foreground="Black" Grid.Column="2" Grid.Row="40" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorNumbnessInTheLimbs_TextChanged"/>
+                    <TextBox x:Name="editorNumbnessInTheLimbs3" Foreground="Black" Grid.Column="3" Grid.Row="40" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorNumbnessInTheLimbs_TextChanged"/>
+
+                    <Label Content="Парестезии" Foreground="Black" FontSize="18" VerticalContentAlignment="Center" Grid.Column="1" Grid.Row="41" Margin="3,0"/>
+                    <TextBox x:Name="editorParesthesia1" Foreground="Black" Grid.Column="1" Grid.Row="41" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorParesthesia_TextChanged"/>
+                    <TextBox x:Name="editorParesthesia2" Foreground="Black" Grid.Column="2" Grid.Row="41" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorParesthesia_TextChanged"/>
+                    <TextBox x:Name="editorParesthesia3" Foreground="Black" Grid.Column="3" Grid.Row="41" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorParesthesia_TextChanged"/>
+
+                    <Label Content="Нарушения вкуса (агевзия, снижение вкуса, искажение вкуса)" Foreground="Black" FontSize="18" VerticalContentAlignment="Center" Grid.Column="1" Grid.Row="42" Margin="3,0"/>
+                    <TextBox x:Name="editorTasteDisorders1" Foreground="Black" Grid.Column="1" Grid.Row="42" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorTasteDisorders_TextChanged"/>
+                    <TextBox x:Name="editorTasteDisorders2" Foreground="Black" Grid.Column="2" Grid.Row="42" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorTasteDisorders_TextChanged"/>
+                    <TextBox x:Name="editorTasteDisorders3" Foreground="Black" Grid.Column="3" Grid.Row="42" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorTasteDisorders_TextChanged"/>
+
+                    <Label Content="Нарушения обоняния (аносмия, фантомия, паросмия)" Foreground="Black" FontSize="18" VerticalContentAlignment="Center" Grid.Column="1" Grid.Row="43" Margin="3,0"/>
+                    <TextBox x:Name="editorOlfactoryDisorders1" Foreground="Black" Grid.Column="1" Grid.Row="43" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorOlfactoryDisorders_TextChanged"/>
+                    <TextBox x:Name="editorOlfactoryDisorders2" Foreground="Black" Grid.Column="2" Grid.Row="43" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorOlfactoryDisorders_TextChanged"/>
+                    <TextBox x:Name="editorOlfactoryDisorders3" Foreground="Black" Grid.Column="3" Grid.Row="43" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorOlfactoryDisorders_TextChanged"/>
+
+                    <!--Блок жалоб - дыхательная система-->
+                    <Label Content="Кашель" Foreground="Black" FontSize="18" VerticalContentAlignment="Center" Grid.Column="1" Grid.Row="45" Margin="3,0"/>
+                    <TextBox x:Name="editorCough1" Foreground="Black" Grid.Column="1" Grid.Row="45" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorCough_TextChanged"/>
+                    <TextBox x:Name="editorCough2" Foreground="Black" Grid.Column="2" Grid.Row="45" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorCough_TextChanged"/>
+                    <TextBox x:Name="editorCough3" Foreground="Black" Grid.Column="3" Grid.Row="45" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorCough_TextChanged"/>
+
+                    <Label Content="Одышка" Foreground="Black" FontSize="18" VerticalContentAlignment="Center" Grid.Column="1" Grid.Row="46" Margin="3,0"/>
+                    <TextBox x:Name="editorDyspnea1" Foreground="Black" Grid.Column="1" Grid.Row="46" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorDyspnea_TextChanged"/>
+                    <TextBox x:Name="editorDyspnea2" Foreground="Black" Grid.Column="2" Grid.Row="46" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorDyspnea_TextChanged"/>
+                    <TextBox x:Name="editorDyspnea3" Foreground="Black" Grid.Column="3" Grid.Row="46" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorDyspnea_TextChanged"/>
+
+                    <Label Content="Стеснение в груди, боль в груди" Foreground="Black" FontSize="18" VerticalContentAlignment="Center" Grid.Column="1" Grid.Row="47" Margin="3,0"/>
+                    <TextBox x:Name="editorChestPain1" Foreground="Black" Grid.Column="1" Grid.Row="47" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorChestPain_TextChanged"/>
+                    <TextBox x:Name="editorChestPain2" Foreground="Black" Grid.Column="2" Grid.Row="47" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorChestPain_TextChanged"/>
+                    <TextBox x:Name="editorChestPain3" Foreground="Black" Grid.Column="3" Grid.Row="47" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorChestPain_TextChanged"/>
+
+                    <Label Content="Учащенное сердцебиение" Foreground="Black" FontSize="18" VerticalContentAlignment="Center" Grid.Column="1" Grid.Row="48" Margin="3,0"/>
+                    <TextBox x:Name="editorCardiopalmus1" Foreground="Black" Grid.Column="1" Grid.Row="48" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorCardiopalmus_TextChanged"/>
+                    <TextBox x:Name="editorCardiopalmus2" Foreground="Black" Grid.Column="2" Grid.Row="48" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorCardiopalmus_TextChanged"/>
+                    <TextBox x:Name="editorCardiopalmus3" Foreground="Black" Grid.Column="3" Grid.Row="48" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorCardiopalmus_TextChanged"/>
+
+                    <Label Content="Анорексия, снижение аппетита" Foreground="Black" FontSize="18" VerticalContentAlignment="Center" Grid.Column="1" Grid.Row="49" Margin="3,0"/>
+                    <TextBox x:Name="editorAnorexia1" Foreground="Black" Grid.Column="1" Grid.Row="49" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorAnorexia_TextChanged"/>
+                    <TextBox x:Name="editorAnorexia2" Foreground="Black" Grid.Column="2" Grid.Row="49" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorAnorexia_TextChanged"/>
+                    <TextBox x:Name="editorAnorexia3" Foreground="Black" Grid.Column="3" Grid.Row="49" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorAnorexia_TextChanged"/>
+
+                    <Label Content="Судороги" Foreground="Black" FontSize="18" VerticalContentAlignment="Center" Grid.Column="1" Grid.Row="50" Margin="3,0"/>
+                    <TextBox x:Name="editorConvulsions1" Foreground="Black" Grid.Column="1" Grid.Row="50" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorConvulsions_TextChanged"/>
+                    <TextBox x:Name="editorConvulsions2" Foreground="Black" Grid.Column="2" Grid.Row="50" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorConvulsions_TextChanged"/>
+                    <TextBox x:Name="editorConvulsions3" Foreground="Black" Grid.Column="3" Grid.Row="50" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorConvulsions_TextChanged"/>
+
+                    <!--Блок жалоб - лор-->
+                    <Label Content="Боль в горле" Foreground="Black" FontSize="18" VerticalContentAlignment="Center" Grid.Column="1" Grid.Row="52" Margin="3,0"/>
+                    <TextBox x:Name="editorSoreThroat1" Foreground="Black" Grid.Column="1" Grid.Row="52" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorSoreThroat_TextChanged"/>
+                    <TextBox x:Name="editorSoreThroat2" Foreground="Black" Grid.Column="2" Grid.Row="52" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorSoreThroat_TextChanged"/>
+                    <TextBox x:Name="editorSoreThroat3" Foreground="Black" Grid.Column="3" Grid.Row="52" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorSoreThroat_TextChanged"/>
+
+                    <Label Content="Шум в ушах" Foreground="Black" FontSize="18" VerticalContentAlignment="Center" Grid.Column="1" Grid.Row="53" Margin="3,0"/>
+                    <TextBox x:Name="editorNoiseInEars1" Foreground="Black" Grid.Column="1" Grid.Row="53" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorNoiseInEars_TextChanged"/>
+                    <TextBox x:Name="editorNoiseInEars2" Foreground="Black" Grid.Column="2" Grid.Row="53" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorNoiseInEars_TextChanged"/>
+                    <TextBox x:Name="editorNoiseInEars3" Foreground="Black" Grid.Column="3" Grid.Row="53" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorNoiseInEars_TextChanged"/>
+
+                    <Label Content="Ушная боль" Foreground="Black" FontSize="18" VerticalContentAlignment="Center" Grid.Column="1" Grid.Row="54" Margin="3,0"/>
+                    <TextBox x:Name="editorEarAche1" Foreground="Black" Grid.Column="1" Grid.Row="54" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorEarAche_TextChanged"/>
+                    <TextBox x:Name="editorEarAche2" Foreground="Black" Grid.Column="2" Grid.Row="54" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorEarAche_TextChanged"/>
+                    <TextBox x:Name="editorEarAche3" Foreground="Black" Grid.Column="3" Grid.Row="54" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorEarAche_TextChanged"/>
+
+                    <Label Content="Заложенность носа" Foreground="Black" FontSize="18" VerticalContentAlignment="Center" Grid.Column="1" Grid.Row="55" Margin="3,0"/>
+                    <TextBox x:Name="editorNasalCongestion1" Foreground="Black" Grid.Column="1" Grid.Row="55" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorNasalCongestion_TextChanged"/>
+                    <TextBox x:Name="editorNasalCongestion2" Foreground="Black" Grid.Column="2" Grid.Row="55" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorNasalCongestion_TextChanged"/>
+                    <TextBox x:Name="editorNasalCongestion3" Foreground="Black" Grid.Column="3" Grid.Row="55" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorNasalCongestion_TextChanged"/>
+
+                    <Label Content="Боль и сухость носа (Синдром сухого носа)" Foreground="Black" FontSize="18" VerticalContentAlignment="Center" Grid.Column="1" Grid.Row="56" Margin="3,0"/>
+                    <TextBox x:Name="editorPainAndDrynessOfTheNose1" Foreground="Black" Grid.Column="1" Grid.Row="56" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorPainAndDrynessOfTheNose_TextChanged"/>
+                    <TextBox x:Name="editorPainAndDrynessOfTheNose2" Foreground="Black" Grid.Column="2" Grid.Row="56" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorPainAndDrynessOfTheNose_TextChanged"/>
+                    <TextBox x:Name="editorPainAndDrynessOfTheNose3" Foreground="Black" Grid.Column="3" Grid.Row="56" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorPainAndDrynessOfTheNose_TextChanged"/>
+
+                    <!--Блок жалоб - Желудочно-кишечный тракт-->
+                    <Label Content="Боль в животе" Foreground="Black" FontSize="18" VerticalContentAlignment="Center" Grid.Column="1" Grid.Row="58" Margin="3,0"/>
+                    <TextBox x:Name="editorAbdominalPain1" Foreground="Black" Grid.Column="1" Grid.Row="58" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorAbdominalPain_TextChanged"/>
+                    <TextBox x:Name="editorAbdominalPain2" Foreground="Black" Grid.Column="2" Grid.Row="58" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorAbdominalPain_TextChanged"/>
+                    <TextBox x:Name="editorAbdominalPain3" Foreground="Black" Grid.Column="3" Grid.Row="58" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorAbdominalPain_TextChanged"/>
+
+                    <Label Content="Диарея" Foreground="Black" FontSize="18" VerticalContentAlignment="Center" Grid.Column="1" Grid.Row="59" Margin="3,0"/>
+                    <TextBox x:Name="editorDiarrhea1" Foreground="Black" Grid.Column="1" Grid.Row="59" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorDiarrhea_TextChanged"/>
+                    <TextBox x:Name="editorDiarrhea2" Foreground="Black" Grid.Column="2" Grid.Row="59" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorDiarrhea_TextChanged"/>
+                    <TextBox x:Name="editorDiarrhea3" Foreground="Black" Grid.Column="3" Grid.Row="59" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorDiarrhea_TextChanged"/>
+
+                    <Label Content="Тошнота и рвота" Foreground="Black" FontSize="18" VerticalContentAlignment="Center" Grid.Column="1" Grid.Row="60" Margin="3,0"/>
+                    <TextBox x:Name="editorNauseaAndVomiting1" Foreground="Black" Grid.Column="1" Grid.Row="60" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorNauseaAndVomiting_TextChanged"/>
+                    <TextBox x:Name="editorNauseaAndVomiting2" Foreground="Black" Grid.Column="2" Grid.Row="60" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorNauseaAndVomiting_TextChanged"/>
+                    <TextBox x:Name="editorNauseaAndVomiting3" Foreground="Black" Grid.Column="3" Grid.Row="60" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorNauseaAndVomiting_TextChanged"/>
+
+                    <!--Блок жалоб - Дерматологические проблемы-->
+                    <Label Content="Выпадение волос" Foreground="Black" FontSize="18" VerticalContentAlignment="Center" Grid.Column="1" Grid.Row="62" Margin="3,0"/>
+                    <TextBox x:Name="editorHairLoss1" Foreground="Black" Grid.Column="1" Grid.Row="62" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorHairLoss_TextChanged"/>
+                    <TextBox x:Name="editorHairLoss2" Foreground="Black" Grid.Column="2" Grid.Row="62" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorHairLoss_TextChanged"/>
+                    <TextBox x:Name="editorHairLoss3" Foreground="Black" Grid.Column="3" Grid.Row="62" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorHairLoss_TextChanged"/>
+
+                    <Label Content="Кожные высыпания" Foreground="Black" FontSize="18" VerticalContentAlignment="Center" Grid.Column="1" Grid.Row="63" Margin="3,0"/>
+                    <TextBox x:Name="editorSkinRashes1" Foreground="Black" Grid.Column="1" Grid.Row="63" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorSkinRashes_TextChanged"/>
+                    <TextBox x:Name="editorSkinRashes2" Foreground="Black" Grid.Column="2" Grid.Row="63" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorSkinRashes_TextChanged"/>
+                    <TextBox x:Name="editorSkinRashes3" Foreground="Black" Grid.Column="3" Grid.Row="63" SpellCheck.IsEnabled="True" Language="ru-ru" TextChanged="editorSkinRashes_TextChanged"/>
+
+                </Grid>
+
+
                 <Grid Margin="15,25,20,15">
                     <Grid.RowDefinitions>
                         <RowDefinition Height="60"/>
