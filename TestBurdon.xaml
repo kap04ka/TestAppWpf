@@ -5,7 +5,7 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:TestAppWpf"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
+      d:DesignHeight="720" d:DesignWidth="1280"
       Title="TestBurdon">
 
     <Grid Background="White">
@@ -24,9 +24,54 @@
                 </Grid>
 
                 <!--Название теста в рамке-->
-                <TextBlock FontSize="30" FontWeight="Bold" Background="Orange" TextAlignment="Center ">
+                <TextBlock FontSize="30" FontWeight="Bold" Background="Orange" TextAlignment="Center">
                         Тест Бурдона
                 </TextBlock>
+
+                <!--Первый раздел-->
+                <TextBlock FontSize="24" FontWeight="Bold" Background="Orange" TextAlignment="Center" Margin="0,25,0,25">
+                        Концентрация внимания
+                </TextBlock>
+
+                <Label  FontWeight="Normal" Margin="20,0" Content="Число строк, просмотренных пациентом за 5 минут:"/>
+                <TextBox Name="entryNumberOfLines" Text="0" HorizontalAlignment="Left" Margin="20, 0" Width="200" PreviewTextInput="textbox_onlyNumbers"/>
+
+                <Label  FontWeight="Normal" Margin="20,0" Content="Количество ошибок (пропусков или ошибочных зачеркиваний) за 5 минут:"/>
+                <TextBox Name="entryNumberOfMistakes" Text="0" HorizontalAlignment="Left" Margin="20, 0" Width="200" PreviewTextInput="textbox_onlyNumbers"/>
+
+                <!--Второй раздел-->
+                <TextBlock FontSize="24" FontWeight="Bold" Background="Orange" TextAlignment="Center" Margin="0,25,0,25">
+                        Устойчивость внимания
+                </TextBlock>
+
+                <Label  FontWeight="Normal" Margin="20,0" Content="Количество просомтренных букв пациентом за 1 минуту:"/>
+                <TextBox Name="entryNumberOfLetters1" Text="0" HorizontalAlignment="Left" Margin="20,0,20,10" Width="200" PreviewTextInput="textbox_onlyNumbers"/>
+
+                <Label  FontWeight="Normal" Margin="20,0" Content="Количество просомтренных букв пациентом за 2 минуты:"/>
+                <TextBox Name="entryNumberOfLetters2" Text="0" HorizontalAlignment="Left" Margin="20,0,20,10" Width="200" PreviewTextInput="textbox_onlyNumbers"/>
+
+                <Label  FontWeight="Normal" Margin="20,0" Content="Количество просомтренных букв пациентом за 3 минуты:"/>
+                <TextBox Name="entryNumberOfLetters3" Text="0" HorizontalAlignment="Left" Margin="20,0,20,10" Width="200" PreviewTextInput="textbox_onlyNumbers"/>
+
+                <Label  FontWeight="Normal" Margin="20,0" Content="Количество просомтренных букв пациентом за 4 минуты:"/>
+                <TextBox Name="entryNumberOfLetters4" Text="0" HorizontalAlignment="Left" Margin="20,0,20,10" Width="200" PreviewTextInput="textbox_onlyNumbers"/>
+
+                <Label  FontWeight="Normal" Margin="20,0" Content="Количество просомтренных букв пациентом за 5 минут:"/>
+                <TextBox Name="entryNumberOfLetters5" Text="0" HorizontalAlignment="Left" Margin="20,0,20,0" Width="200" PreviewTextInput="textbox_onlyNumbers"/>
+
+                <Grid Margin="10,20,10,15">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="60"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <!--Кнопка возврата в общее меню-->
+                    <Button x:Name="buttonMainMenu" Grid.Column="0" Grid.Row="0" FontWeight="Normal" Content="Вернутся в меню"  Margin="0,0,10,0" Background="Orange" Click="buttonMainMenu_Clicked"/>
+                    <!--Кнопка получения результатов теста-->
+                    <Button x:Name="buttonResultTest" Content="Получить результат" Grid.Column="1" Grid.Row="0" FontWeight="Normal"  Margin="10, 0, 0, 0" Click="button_CalculateResult" Background="Orange"/>
+                </Grid>
                 
             </StackPanel>
         </ScrollViewer>

@@ -293,6 +293,8 @@ namespace TestAppWpf
         /// </summary>
         public int AttentionSpan { get; set; }
 
+        public string PaceString { get; set; }
+
         public TestCorrectionBourdon()
         {
             PaceArray = new int[5];
