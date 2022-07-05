@@ -165,8 +165,18 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="Images\" />
+    <Resource Include="Images\Watch.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\PictureWithItems.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\jesti1.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\jesti2.JPG" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
