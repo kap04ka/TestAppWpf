@@ -178,12 +178,243 @@ namespace TestAppWpf
 
         private void checkBoxDiseases_Checked(object sender, RoutedEventArgs e)
         {
+            if (sender == checkBoxDiseases1)
+            {
+                answerDiseases[0] = (bool)checkBoxDiseases1.IsChecked;
 
+                if (answerDiseases[0] == true)
+                {
+                    answerDiseases[9] = false;
+                    checkBoxDiseases10.IsChecked = false;
+                }
+            }
+            if (sender == checkBoxDiseases2)
+            {
+                answerDiseases[1] = (bool)checkBoxDiseases2.IsChecked;
+
+                if (answerDiseases[1] == true)
+                {
+                    answerDiseases[9] = false;
+                    checkBoxDiseases10.IsChecked = false;
+                }
+            }
+            if (sender == checkBoxDiseases3)
+            {
+                answerDiseases[2] = (bool)checkBoxDiseases3.IsChecked;
+
+                if (answerDiseases[2] == true)
+                {
+                    answerDiseases[9] = false;
+                    checkBoxDiseases10.IsChecked = false;
+                }
+            }
+            if (sender == checkBoxDiseases4)
+            {
+                answerDiseases[3] = (bool)checkBoxDiseases4.IsChecked;
+
+                if (answerDiseases[3] == true)
+                {
+                    answerDiseases[9] = false;
+                    checkBoxDiseases10.IsChecked = false;
+                }
+            }
+            if (sender == checkBoxDiseases5)
+            {
+                answerDiseases[4] = (bool)checkBoxDiseases5.IsChecked;
+
+                if (answerDiseases[4] == true)
+                {
+                    answerDiseases[9] = false;
+                    checkBoxDiseases10.IsChecked = false;
+                }
+            }
+            if (sender == checkBoxDiseases6)
+            {
+                answerDiseases[5] = (bool)checkBoxDiseases6.IsChecked;
+
+                if (answerDiseases[5] == true)
+                {
+                    answerDiseases[9] = false;
+                    checkBoxDiseases10.IsChecked = false;
+                }
+            }
+            if (sender == checkBoxDiseases7)
+            {
+                answerDiseases[6] = (bool)checkBoxDiseases7.IsChecked;
+
+                if (answerDiseases[6] == true)
+                {
+                    answerDiseases[9] = false;
+                    checkBoxDiseases10.IsChecked = false;
+                }
+            }
+            if (sender == checkBoxDiseases8)
+            {
+                answerDiseases[7] = (bool)checkBoxDiseases8.IsChecked;
+
+                if (answerDiseases[7] == true)
+                {
+                    answerDiseases[9] = false;
+                    checkBoxDiseases10.IsChecked = false;
+                }
+            }
+            if (sender == checkBoxDiseases9)
+            {
+                answerDiseases[8] = (bool)checkBoxDiseases9.IsChecked;
+
+                if (answerDiseases[8] == true)
+                {
+                    answerDiseases[9] = false;
+                    checkBoxDiseases10.IsChecked = false;
+                }
+            }
+            if (sender == checkBoxDiseases10)
+            {
+                answerDiseases[9] = (bool)checkBoxDiseases10.IsChecked;
+
+                if (answerDiseases[9] == true)
+                {
+                    ResetOthersCheckBoxAnswers(answerDiseases, 9);
+                    checkBoxDiseases1.IsChecked = false;
+                    checkBoxDiseases2.IsChecked = false;
+                    checkBoxDiseases3.IsChecked = false;
+                    checkBoxDiseases4.IsChecked = false;
+                    checkBoxDiseases5.IsChecked = false;
+                    checkBoxDiseases6.IsChecked = false;
+                    checkBoxDiseases7.IsChecked = false;
+                    checkBoxDiseases8.IsChecked = false;
+                    checkBoxDiseases9.IsChecked = false;
+                }
+            }
+        }
+
+        /// <summary>
+        /// Сброс check box в исходное состояние
+        /// </summary>
+        /// <param name="arrayCheckBoxAnswers">Массив ответов на вопрос</param>
+        /// <param name="index">Индекс ответа, который необходимо пропустить</param>
+        private void ResetOthersCheckBoxAnswers(bool[] arrayCheckBoxAnswers, int index)
+        {
+            for (int i = 0; i < arrayCheckBoxAnswers.Length; i++)
+            {
+                if (i == index)
+                {
+                    continue;
+                }
+                arrayCheckBoxAnswers[i] = false;
+            }
         }
 
         private void checkBoxDiseases_Unchecked(object sender, RoutedEventArgs e)
         {
+            if (sender == checkBoxDiseases1)
+            {
+                answerDiseases[0] = (bool)checkBoxDiseases1.IsChecked;
 
+                if (answerDiseases[0] == true)
+                {
+                    answerDiseases[9] = false;
+                    checkBoxDiseases10.IsChecked = false;
+                }
+            }
+            if (sender == checkBoxDiseases2)
+            {
+                answerDiseases[1] = (bool)checkBoxDiseases2.IsChecked;
+
+                if (answerDiseases[1] == true)
+                {
+                    answerDiseases[9] = false;
+                    checkBoxDiseases10.IsChecked = false;
+                }
+            }
+            if (sender == checkBoxDiseases3)
+            {
+                answerDiseases[2] = (bool)checkBoxDiseases3.IsChecked;
+
+                if (answerDiseases[2] == true)
+                {
+                    answerDiseases[9] = false;
+                    checkBoxDiseases10.IsChecked = false;
+                }
+            }
+            if (sender == checkBoxDiseases4)
+            {
+                answerDiseases[3] = (bool)checkBoxDiseases4.IsChecked;
+
+                if (answerDiseases[3] == true)
+                {
+                    answerDiseases[9] = false;
+                    checkBoxDiseases10.IsChecked = false;
+                }
+            }
+            if (sender == checkBoxDiseases5)
+            {
+                answerDiseases[4] = (bool)checkBoxDiseases5.IsChecked;
+
+                if (answerDiseases[4] == true)
+                {
+                    answerDiseases[9] = false;
+                    checkBoxDiseases10.IsChecked = false;
+                }
+            }
+            if (sender == checkBoxDiseases6)
+            {
+                answerDiseases[5] = (bool)checkBoxDiseases6.IsChecked;
+
+                if (answerDiseases[5] == true)
+                {
+                    answerDiseases[9] = false;
+                    checkBoxDiseases10.IsChecked = false;
+                }
+            }
+            if (sender == checkBoxDiseases7)
+            {
+                answerDiseases[6] = (bool)checkBoxDiseases7.IsChecked;
+
+                if (answerDiseases[6] == true)
+                {
+                    answerDiseases[9] = false;
+                    checkBoxDiseases10.IsChecked = false;
+                }
+            }
+            if (sender == checkBoxDiseases8)
+            {
+                answerDiseases[7] = (bool)checkBoxDiseases8.IsChecked;
+
+                if (answerDiseases[7] == true)
+                {
+                    answerDiseases[9] = false;
+                    checkBoxDiseases10.IsChecked = false;
+                }
+            }
+            if (sender == checkBoxDiseases9)
+            {
+                answerDiseases[8] = (bool)checkBoxDiseases9.IsChecked;
+
+                if (answerDiseases[8] == true)
+                {
+                    answerDiseases[9] = false;
+                    checkBoxDiseases10.IsChecked = false;
+                }
+            }
+            if (sender == checkBoxDiseases10)
+            {
+                answerDiseases[9] = (bool)checkBoxDiseases10.IsChecked;
+
+                if (answerDiseases[9] == true)
+                {
+                    ResetOthersCheckBoxAnswers(answerDiseases, 9);
+                    checkBoxDiseases1.IsChecked = false;
+                    checkBoxDiseases2.IsChecked = false;
+                    checkBoxDiseases3.IsChecked = false;
+                    checkBoxDiseases4.IsChecked = false;
+                    checkBoxDiseases5.IsChecked = false;
+                    checkBoxDiseases6.IsChecked = false;
+                    checkBoxDiseases7.IsChecked = false;
+                    checkBoxDiseases8.IsChecked = false;
+                    checkBoxDiseases9.IsChecked = false;
+                }
+            }
         }
 
         private void checkBoxActivity_Checked(object sender, RoutedEventArgs e)
