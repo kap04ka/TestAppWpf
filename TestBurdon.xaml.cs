@@ -75,7 +75,6 @@ namespace TestAppWpf
 
             else
             {
-                //if (EmptyData()) Console.WriteLine("some");
                 ReadData();
                 CalculateResult();
                 MessageBox.Show(FormatOutputString(), "Результат", MessageBoxButton.OK);
@@ -94,7 +93,6 @@ namespace TestAppWpf
             }
             else
             {
-                //Console.WriteLine(entryNumberOfLetters5.Text);
                 return false;
             }
         }
@@ -106,7 +104,6 @@ namespace TestAppWpf
         /// </summary>
         private void ReadData()
         {
-            Console.WriteLine(entryNumberOfLetters5.Text);
             amountLines = Int32.Parse(entryNumberOfLines.Text);
             amountMistakes = Int32.Parse(entryNumberOfMistakes.Text);
             amountLettersInOneMinute = Int32.Parse(entryNumberOfLetters1.Text);
