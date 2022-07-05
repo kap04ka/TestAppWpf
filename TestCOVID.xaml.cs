@@ -28,5 +28,55 @@ namespace TestAppWpf
         {
             NavigationService.Navigate(new Menu());
         }
+
+        private void checkBoxDiseases_Checked(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void checkBoxDiseases_Unchecked(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void checkBoxActivity_Checked(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void checkBoxActivity_Unchecked(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void radioButtonEducation_Checked(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void radioButtonAbilityToWork_Checked(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void radioButtonPerfomance_Checked(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void radioButtonLeisure_Checked(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void slider_ValueChanged(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void radioButtonGender_Checked(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
