@@ -1,0 +1,191 @@
+﻿<Page x:Class="TestAppWpf.TestAnxietyAndDepression"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:TestAppWpf"
+      mc:Ignorable="d" 
+      d:DesignHeight="720" d:DesignWidth="1280"
+      Title="TestAnxietyAndDepression">
+
+    <Grid Background="White">
+        <ScrollViewer>
+            <StackPanel>
+                
+                <Grid Margin="10,20,10,15">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="60"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <!--Кнопка возврата в общее меню-->
+                    <Button x:Name="buttonMainMenuFirst" Grid.Column="0" Grid.Row="0" Content="Вернуться назад" Margin="10, 0, 10, 10" Background="Orange" Click="buttonMainMenu_Clicked"/>
+                </Grid>
+
+                <!--Тест на тревогу-->
+                <TextBlock FontSize="30" FontWeight="Bold" Background="Orange" TextAlignment="Center ">
+                        Тест на тревогу
+                </TextBlock>
+                <!--Первый вопрос-->
+                <Label Content="Я испытываю напряжение, мне не по себе" FontWeight="Medium" Padding="10,10" FontSize="24"/>
+
+                <ComboBox Name="firstQuestionAnxiety" Margin="10,0,10,10" Width="500" HorizontalAlignment="Left">
+                    <TextBlock>Совсем не испытываю.</TextBlock>
+                    <TextBlock>Время от времени, иногда.</TextBlock>
+                    <TextBlock>Часто.</TextBlock>
+                    <TextBlock>Все время.</TextBlock>
+                </ComboBox>
+
+                <!--Второй вопрос-->
+                <Label Content="Я испытываю страх, кажется, что что-то ужасное может вот-вот случиться" FontWeight="Medium" Padding="10,10" FontSize="24"/>
+
+                <ComboBox Name="secondQuestionAnxiety" Margin="10,0,10,10" Width="500" HorizontalAlignment="Left">
+                    <TextBlock>Совсем не испытываю.</TextBlock>
+                    <TextBlock>Иногда, но это меня не беспокоит.</TextBlock>
+                    <TextBlock>Да, это так, но страх не очень велик.</TextBlock>
+                    <TextBlock>Определенно это так, и страх очень велик.</TextBlock>
+                </ComboBox>
+
+                <!--Третий вопрос-->
+                <Label Content="Беспокойные мысли крутятся у меня в голове." FontWeight="Medium" Padding="10,10" FontSize="24"/>
+
+                <ComboBox Name="thirdQuestionAnxiety" Margin="10,0,10,10" Width="500" HorizontalAlignment="Left">
+                    <TextBlock>Только иногда.</TextBlock>
+                    <TextBlock>Время от времени и не так часто.</TextBlock>
+                    <TextBlock>Большую часть времени.</TextBlock>
+                    <TextBlock>Постоянно.</TextBlock>
+                </ComboBox>
+
+                <!--Четвертый вопрос-->
+                <Label Content="Я легко могу присесть и расслабиться." FontWeight="Medium" Padding="10,10" FontSize="24"/>
+
+                <ComboBox Name="fourthQuestionAnxiety" Margin="10,0,10,10" Width="500" HorizontalAlignment="Left">
+                    <TextBlock>Определенно, это так.</TextBlock>
+                    <TextBlock>Наверно, это так.</TextBlock>
+                    <TextBlock>Лишь изредка, это так.</TextBlock>
+                    <TextBlock>Совсем не могу.</TextBlock>
+                </ComboBox>
+
+                <!--Пятый вопрос-->
+                <Label Content="Я испытываю внутреннее напряжение или дрожь." FontWeight="Medium" Padding="10,10" FontSize="24"/>
+
+                <ComboBox Name="fifthQuestionAnxiety" Margin="10,0,10,10" Width="500" HorizontalAlignment="Left">
+                    <TextBlock>Совсем не испытываю.</TextBlock>
+                    <TextBlock>Иногда.</TextBlock>
+                    <TextBlock>Часто.</TextBlock>
+                    <TextBlock>Очень часто.</TextBlock>
+                </ComboBox>
+
+                <!--Шестой вопрос-->
+                <Label Content="Я испытываю неусидчивость, мне постоянно нужно двигаться." FontWeight="Medium" Padding="10,10" FontSize="24"/>
+
+                <ComboBox Name="sixthQuestionAnxiety" Margin="10,0,10,10" Width="500" HorizontalAlignment="Left">
+                    <TextBlock>Совсем не испытываю.</TextBlock>
+                    <TextBlock>Лишь в некоторой степени, это так.</TextBlock>
+                    <TextBlock>Наверно, это так.</TextBlock>
+                    <TextBlock>Определенно, это так.</TextBlock>
+                </ComboBox>
+
+                <!--Седьмой вопрос-->
+                <Label Content="У меня бывает внезапное чувство паники." FontWeight="Medium" Padding="10,10" FontSize="24"/>
+
+                <ComboBox Name="seventhQuestionAnxiety" Margin="10,0,10,10" Width="500" HorizontalAlignment="Left">
+                    <TextBlock>Совсем не бывает.</TextBlock>
+                    <TextBlock>Не так уж часто.</TextBlock>
+                    <TextBlock>Довольно часто.</TextBlock>
+                    <TextBlock>Очень часто.</TextBlock>
+                </ComboBox>
+
+                <!--Тест на депрессию-->
+                <TextBlock FontSize="30" FontWeight="Bold" Background="Orange" TextAlignment="Center ">
+                        Тест на депрессию
+                </TextBlock>
+                <!--Первый вопрос-->
+                <Label Content="То, что приносило мне большое удовольствие, и сейчас вызывает у меня такое же чувство." FontWeight="Medium" Padding="10,10" FontSize="24"/>
+
+                <ComboBox Name="firstQuestionDepression" Margin="10,0,10,10" Width="500" HorizontalAlignment="Left">
+                    <TextBlock>Определенно, это так.</TextBlock>
+                    <TextBlock>Наверное, это так.</TextBlock>
+                    <TextBlock>Лишь в очень малой степени это так.</TextBlock>
+                    <TextBlock>Это совсем не так.</TextBlock>
+                </ComboBox>
+
+                <!--Второй вопрос-->
+                <Label Content="Я способен рассмеяться и увидеть в том или ином событии смешное." FontWeight="Medium" Padding="10,10" FontSize="24"/>
+
+                <ComboBox Name="secondQuestionDepression" Margin="10,0,10,10" Width="500" HorizontalAlignment="Left">
+                    <TextBlock>Определенно, это так.</TextBlock>
+                    <TextBlock>Наверное, это так.</TextBlock>
+                    <TextBlock>Лишь в очень малой степени это так.</TextBlock>
+                    <TextBlock>Совсем не способен.</TextBlock>
+                </ComboBox>
+
+                <!--Третий вопрос-->
+                <Label Content="Я испытываю бодрость." FontWeight="Medium" Padding="10,10" FontSize="24"/>
+
+                <ComboBox Name="thirdQuestionDepression" Margin="10,0,10,10" Width="500" HorizontalAlignment="Left">
+                    <TextBlock>Практически все время.</TextBlock>
+                    <TextBlock>Иногда.</TextBlock>
+                    <TextBlock>Очень редко.</TextBlock>
+                    <TextBlock>Совсем не испытываю.</TextBlock>
+                </ComboBox>
+
+                <!--Четвертый вопрос-->
+                <Label Content="Мне кажется, что я стал все делать очень медленно." FontWeight="Medium" Padding="10,10" FontSize="24"/>
+
+                <ComboBox Name="fourthQuestionDepression" Margin="10,0,10,10" Width="500" HorizontalAlignment="Left">
+                    <TextBlock>Совсем нет.</TextBlock>
+                    <TextBlock>Иногда.</TextBlock>
+                    <TextBlock>Часто.</TextBlock>
+                    <TextBlock>Практически все время.</TextBlock>
+                </ComboBox>
+
+                <!--Пятый вопрос-->
+                <Label Content="Я не слежу за своей внешностью." FontWeight="Medium" Padding="10,10" FontSize="24"/>
+
+                <ComboBox Name="fifthQuestionDepression" Margin="10,0,10,10" Width="500" HorizontalAlignment="Left">
+                    <TextBlock>Я слежу за собой так же, как и раньше.</TextBlock>
+                    <TextBlock>Может быть, я стал меньше уделять этому времени.</TextBlock>
+                    <TextBlock>Я не уделяю этому времени столько, сколько нужно.</TextBlock>
+                    <TextBlock>Определенно, это так.</TextBlock>
+                </ComboBox>
+
+                <!--Шестой вопрос-->
+                <Label Content="Я считаю, что мои дела (занятия, увлечения) могут принести мне чувство удовлетворения." FontWeight="Medium" Padding="10,10" FontSize="24"/>
+
+                <ComboBox Name="sixthQuestionDepression" Margin="10,0,10,10" Width="500" HorizontalAlignment="Left">
+                    <TextBlock>Точно так же, как и обычно.</TextBlock>
+                    <TextBlock>Да, но не в той степени как раньше.</TextBlock>
+                    <TextBlock>Значительно меньше, чем обычно.</TextBlock>
+                    <TextBlock>Совсем так не считаю.</TextBlock>
+                </ComboBox>
+
+                <!--Седьмой вопрос-->
+                <Label Content="Я могу получить удовольствие от хорошей книги, радио- или телепрограммы" FontWeight="Medium" Padding="10,10" FontSize="24"/>
+
+                <ComboBox Name="seventhQuestionDepression" Margin="10,0,10,10" Width="500" HorizontalAlignment="Left">
+                    <TextBlock>Часто.</TextBlock>
+                    <TextBlock>Иногда.</TextBlock>
+                    <TextBlock>Редко.</TextBlock>
+                    <TextBlock>Очень редко.</TextBlock>
+                </ComboBox>
+
+                <Grid Margin="10,20,10,15">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="60"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <!--Кнопка возврата в общее меню-->
+                    <Button x:Name="buttonMainMenu" Grid.Column="0" Grid.Row="0" FontWeight="Normal" Content="Вернутся в меню"  Margin="0,0,10,0" Background="Orange" Click="buttonMainMenu_Clicked"/>
+                    <!--Кнопка получения результатов теста-->
+                    <Button x:Name="buttonResultTest" Content="Получить результат" Grid.Column="1" Grid.Row="0" FontWeight="Normal"  Margin="10, 0, 0, 0" Click="button_CalculateResult" Background="Orange"/>
+                </Grid>
+                
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</Page>

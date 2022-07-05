@@ -1,0 +1,262 @@
+﻿<Page x:Class="TestAppWpf.TestVasserman"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:TestAppWpf"
+      mc:Ignorable="d" 
+      d:DesignHeight="720" d:DesignWidth="1280"
+      Title="TestVasserman">
+
+    <Grid Background="White">
+        <ScrollViewer>
+            <StackPanel>
+                
+                <Grid Margin="10,20,10,15">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="60"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <!--Кнопка возврата в общее меню-->
+                    <Button x:Name="buttonMainMenuFirst" Grid.Column="0" Grid.Row="0" Content="Вернуться назад" Margin="10, 0, 10, 10" Background="Orange" Click="buttonMainMenu_Clicked"/>
+                </Grid>
+
+                <!--Название теста в рамке-->
+                <TextBlock FontSize="30" FontWeight="Bold" Background="Orange" TextAlignment="Center ">
+                        Тест Вассермана
+                </TextBlock>
+                
+                <!--Первый вопрос-->
+                <Label Content="Спонтанная идиалогическая речь" FontWeight="Medium" Padding="10,10" FontSize="24"/>
+
+                <ComboBox Name="firstQuestion" Margin="10,0,10,10" Width="500" HorizontalAlignment="Left">
+                    <TextBlock>0б - Нарушения отсутствуют.</TextBlock>
+                    <TextBlock>1б - Некоторое обеднение речи.Редкие парафазии, элементы аграматизма.</TextBlock>
+                    <TextBlock>2б - а) Диалогическая речь возможна, но обеднена, односложна, аграмматична. Склонность к шаблонной, стереотипной структуре предложения. Персеверации, эхолалии.</TextBlock>
+                    <TextBlock>2б - б) Паузы из-запоиска слов. Ответы не всегда адекватны вопросу. Частью литеральные и вербальные парафазии.</TextBlock>
+                    <TextBlock>3б - а) Спонтанная речь практически отсутствует, речевые остатки в виде эмболов.</TextBlock>
+                    <TextBlock>3б - б) Словесная «окрошка». Полная невозможность диалога.</TextBlock>
+                </ComboBox>
+
+                <!--Второй вопрос-->
+                <Label Content="Повествовательная (монологическая) речь" FontWeight="Medium" Padding="10,10" FontSize="24"/>
+
+                <ComboBox Name="secondQuestion" Margin="10,0,10,10" Width="500" HorizontalAlignment="Left">
+                    <TextBlock>0б - Нарушения отсутствуют.</TextBlock>
+                    <TextBlock>1б - Признаки нарушения как и в следующем варианте, но выражены незначительно.</TextBlock>
+                    <TextBlock>2б - Повествовательная речь нарушена и возможна только при наличии наводящих вопросов. Отмечаются трудности в подборе слов, аграмматизм,бедность речи, парафазии. Фразы короткие, элементарные.Недостаточное осмысление речевого материала.</TextBlock>
+                    <TextBlock>3б - Полная невозможность пересказа,прочитанного или услышанного текста, рассказа по сюжетной картинке, сериям рисунков, монолога на заданную тему.</TextBlock>
+                </ComboBox>
+
+                <!--Третий вопрос-->
+                <Label Content="Составление рассказа по сюжетной картинке" FontWeight="Medium" Padding="10,10" FontSize="24"/>
+
+                <ComboBox Name="thirdQuestion" Margin="10,0,10,10" Width="500" HorizontalAlignment="Left">
+                    <TextBlock>0б - Нарушения отсутствуют.</TextBlock>
+                    <TextBlock>1б - Признаки нарушения как и в следующем варианте, но выражены незначительно.</TextBlock>
+                    <TextBlock>2б - При попытке составить рассказ выявляются грубые искажения грамматической структуры слова, пропуски объектов и субъектов действия, самого действия, предметов, неправильные согласования слов в предложениях, трудности в подборе слов, литеральные и вербальныепарафазии, паузы.</TextBlock>
+                    <TextBlock>3б - Полная невозможность составления рассказа.</TextBlock>
+                </ComboBox>
+
+                <!--Четвертый вопрос-->
+                <Label Content="Аграмматизм" FontWeight="Medium" Padding="10,10" FontSize="24"/>
+
+                <ComboBox Name="fourthQuestion" Margin="10,0,10,10" Width="500" HorizontalAlignment="Left">
+                    <TextBlock>0б - Нарушения отсутствуют.</TextBlock>
+                    <TextBlock>1б - Теже признаки, что и в следующих пунтках а), б), но слабовыраженные.</TextBlock>
+                    <TextBlock>2б - а) Преобладание в речи существительных, отчетливая глагольная слабость речи (глагол чаще всего стоит в конце предложения или совсемотсутствует), пропуски прилагательных и связующих слов(предлогов, союзов).</TextBlock>
+                    <TextBlock>2б - б) В речи отмечается преобладание глаголов, вводных и замещающих слов, существительные заменяются литеральными и вербальными парафазиями.</TextBlock>
+                    <TextBlock>3б - а) Грубый аграмматизм типа «телеграфного стиля». Практически отсутствие в речи глаголов. Дефекты согласования в глагольных и падежных окончаниях, неправильное употребление предлогов.</TextBlock>
+                    <TextBlock>3б - б)Выраженная предикативность речи — преобладание глаголов, вводных слов, наречий, почти полное отсутствие существительных. Речь малопонятна.</TextBlock>
+                </ComboBox>
+
+                <!--Пятый вопрос-->
+                <Label Content="Отраженная речь (повторение)" FontWeight="Medium" Padding="10,10" FontSize="24"/>
+
+                <ComboBox Name="fifthQuestion" Margin="10,0,10,10" Width="500" HorizontalAlignment="Left">
+                    <TextBlock>0б - Повторение полностью сохранено.</TextBlock>
+                    <TextBlock>1б - Сохранено почти полностью, но встречаются отдельные ошибки (замены, персеверации) при повторении сложных и редко встречающихся слов.</TextBlock>
+                    <TextBlock>2б - Возможно повторение не более 50% предъявляемых экспериментатором речевых звуков, преимущественно простых и часто встречающихся слов.</TextBlock>
+                    <TextBlock>3б - Повторение изолированных гласных звуков, слогов и слов, повторение полностью отсутствует или грубо искажено. Возможно повторение 1—2 элементов сопряженно или после долгих поиск.</TextBlock>
+                </ComboBox>
+
+                <!--Шестой вопрос-->
+                <Label Content="Повторение речевых рядов (серии слогов, слов, простых и сложных предложений)" FontWeight="Medium" Padding="10,10" FontSize="24"/>
+
+                <ComboBox Name="sixthQuestion" Margin="10,0,10,10" Width="500" HorizontalAlignment="Left">
+                    <TextBlock>0б - Нарушения отсутствуют.</TextBlock>
+                    <TextBlock>1б - Удерживают и повторяют элементы всей цепи, но не воспроизводят заданный порядок ихследования, отмечаются негрубые искажения отдельных элементов речевого ряда.</TextBlock>
+                    <TextBlock>2б - Возможно повторение 1—2 элементов речевой цепи. Заданный порядок следования элементов речевого ряда не удерживается, при этом отдельные элементы ряда искажаются парафазиями.</TextBlock>
+                    <TextBlock>3б - Повторение серии речевых рядов невозможно. При попытках повторения возникают грубые вербальные и литеральные парафазии.</TextBlock>
+                </ComboBox>
+
+                <!--Седьмой вопрос-->
+                <Label Content="Называние" FontWeight="Medium" Padding="10,10" FontSize="24"/>
+
+                <ComboBox Name="seventhQuestion" Margin="10,0,10,10" Width="500" HorizontalAlignment="Left">
+                    <TextBlock>0б - Называние практически сохранено.</TextBlock>
+                    <TextBlock>1б - Называние предметов и действий возможно, отмечается поиск первыхбукв слова, подсказка помогает, увеличение времени припоминания слов. Затруднения при назывании более редко употребляемых объектов и действий.</TextBlock>
+                    <TextBlock>2б - Возможно называние ограниченного числа реальных объектов, их изображений и действий. Подсказка помогает не всегда, длительные поиски слова, искажения, литеральные парафазии.</TextBlock>
+                    <TextBlock>3б - Называние практически отсутствует, подсказка и контекст почти не помогают.</TextBlock>
+                </ComboBox>
+
+                <!--Восьмой вопрос-->
+                <Label Content="Произношение речевых звуков" FontWeight="Medium" Padding="10,10" FontSize="24"/>
+
+                <ComboBox Name="eighthQuestion" Margin="10,0,10,10" Width="500" HorizontalAlignment="Left">
+                    <TextBlock>0б - Нарушения отсутствуют.</TextBlock>
+                    <TextBlock>1б - Деформация отдельных артикулем, нередко придающая речи «иностранный» акцент.</TextBlock>
+                    <TextBlock>2б - Грубые артикуляторные искажения в процессе речи, затрудняющие ее понимание. Деформация в произношении изолированных артикулем.</TextBlock>
+                    <TextBlock>3б - Отсутствие звуковой продукции. Невозможность произношения изолированных артикулем, даже сопряженно.</TextBlock>
+                </ComboBox>
+
+                <!--Девятый вопрос-->
+                <Label Content="Усилия ,напряжение в речи, запинания, дезавтоматизация речи" FontWeight="Medium" Padding="10,10" FontSize="24"/>
+
+                <ComboBox Name="ninthQuestion" Margin="10,0,10,10" Width="500" HorizontalAlignment="Left">
+                    <TextBlock>0б - Нарушения отсутствуют.</TextBlock>
+                    <TextBlock>1б - Признаки нарушения как и в следующем варианте, но выражены незначительно.</TextBlock>
+                    <TextBlock>2б - Умеренное напряжение мышц. В речи отмечаются усилия, запинания.</TextBlock>
+                    <TextBlock>3б - Грубое напряжение всего речевого аппарата. Слова произносятся замедленно, с усилием. Повышается в момент речи тонус лицевой ,шейной мускулатуры, языка и губ.</TextBlock>
+                </ComboBox>
+
+                <!--Десятый вопрос-->
+                <Label Content="Темп речи" FontWeight="Medium" Padding="10,10" FontSize="24"/>
+
+                <ComboBox Name="tenthQuestion" Margin="10,0,10,10" Width="500" HorizontalAlignment="Left">
+                    <TextBlock>0б - Нарушения отсутствуют.</TextBlock>
+                    <TextBlock>1б - Склонность к логорее-ускоренности (замедленности) выявляется только в процессе развернутой беседы.</TextBlock>
+                    <TextBlock>2б - Склонность к многоречивости в речевом общении, речь больного трудно ограничить рамками высказывания. Речь замедленная.</TextBlock>
+                    <TextBlock>3б - Чрезмерное убыстрение речи, безостановочный, трудно тормозимый поток речи; речь медленная, частые и длительные паузы.</TextBlock>
+                </ComboBox>
+
+                <!--Одиннадцатый вопрос-->
+                <Label Content="Просодии (интонация, ритм высказывания, ударение, мелодика речи)" FontWeight="Medium" Padding="10,10" FontSize="24"/>
+
+                <ComboBox Name="eleventhQuestion" Margin="10,0,10,10" Width="500" HorizontalAlignment="Left">
+                    <TextBlock>0б - Нарушения отсутствуют.</TextBlock>
+                    <TextBlock>1б - Признаки нарушения как и в следующем варианте, но выражены незначительно.</TextBlock>
+                    <TextBlock>2б - Интонация в речи имеется, но несоответствует смыслу высказывания, отмечается неправильная расстановка акцента в предложениях.</TextBlock>
+                    <TextBlock>3б - Речь монотонна, нарушены ритм высказывания и мелодика русской речи. Невозможно выделение отдельных ее эмоциональных категории (удивление, радость, грусть, обида, требование и пр.).</TextBlock>
+                </ComboBox>
+
+                <!--Двенадцатый вопрос-->
+                <Label Content="Вербальные парафазии" FontWeight="Medium" Padding="10,10" FontSize="24"/>
+
+                <ComboBox Name="twelfthQuestion" Margin="10,0,10,10" Width="500" HorizontalAlignment="Left">
+                    <TextBlock>0б - Отсутствуют.</TextBlock>
+                    <TextBlock>1б - Вербальные парафазии редки.</TextBlock>
+                    <TextBlock>2б - Вербальные парафазии отражают существенным признак данной ситуации; часто вербальные замены относятся к одной понятийной группе.</TextBlock>
+                    <TextBlock>3б - Преобладание в речи вербальных парафазии, относящихся к разным понятийным группам, к разным категориям.</TextBlock>
+                </ComboBox>
+
+                <!--Тринадцатый вопрос-->
+                <Label Content="Литеральные парафазии" FontWeight="Medium" Padding="10,10" FontSize="24"/>
+
+                <ComboBox Name="thirteenthQuestion" Margin="10,0,10,10" Width="500" HorizontalAlignment="Left">
+                    <TextBlock>0б - Отсутствуют.</TextBlock>
+                    <TextBlock>1б - Признаки нарушения как и в следующем варианте, но выражены незначительно.</TextBlock>
+                    <TextBlock>2б - Литеральные парафазии (стандартные и нестандартные), для которых характерны замены одних звуков другими, перестановки звуков внутри слова, пропуски звуков, добавление лишних звуков. Встречаются при назывании, повторении и в спонтанной речи.</TextBlock>
+                    <TextBlock>3б - Преобладание грубых нестандартных литеральных парафазии.</TextBlock>
+                </ComboBox>
+
+                <!--Четырнадцатый вопрос-->
+                <Label Content="Понимание ситуативной речи и словесных значении" FontWeight="Medium" Padding="10,10" FontSize="24"/>
+
+                <ComboBox Name="fourteenthQuestion" Margin="10,0,10,10" Width="500" HorizontalAlignment="Left">
+                    <TextBlock>0б - Нарушения отсутствуют.</TextBlock>
+                    <TextBlock>1б - Затруднение понимания ситуативной речи и простых команд выступает только в особых условиях: прибыстрой речи, отвлечении внимания больного.</TextBlock>
+                    <TextBlock>2б - Нарушение понимания ситуативной речи, главным образом, по отношению к малозначимым для больного темам и нарушение понимания части простых команд, в особенности при переходе на новое задание.</TextBlock>
+                    <TextBlock>3б - Полная или почти полная невозможность понимания ситуативной речи, простых команд и жестов.</TextBlock>
+                </ComboBox>
+
+                <!--Пятнадцатый вопрос-->
+                <Label Content="Отношение к дефекту речи" FontWeight="Medium" Padding="10,10" FontSize="24"/>
+
+                <ComboBox Name="fifteenthQuestion" Margin="10,0,10,10" Width="500" HorizontalAlignment="Left">
+                    <TextBlock>0б - Полностью осознанное отношение кдефекту речи, его отдельным проявлениям.</TextBlock>
+                    <TextBlock>1б - Изредка не замечаются отдельные литеральные или, в меньшей мере, вербальные парафазии в собственной речи.</TextBlock>
+                    <TextBlock>2б - Недооценка расстройств речи - незамечаются парафазии, даже вербальные, но сохраняется общее понимание того, что речь нарушена.</TextBlock>
+                    <TextBlock>3б - Неосознание нарушений речи - полностью не замечаются ошибки в речи и выражается удивление, раздражение, если речь не понимается окружающими.</TextBlock>
+                </ComboBox>
+
+                <!--Шестнадцатый вопрос-->
+                <Label Content="Чтение (вслух)" FontWeight="Medium" Padding="10,10" FontSize="24"/>
+
+                <ComboBox Name="sixteenthQuestion" Margin="10,0,10,10" Width="500" HorizontalAlignment="Left">
+                    <TextBlock>0б - Нарушения практически отсутствуют.</TextBlock>
+                    <TextBlock>1б - Сохраняется ограниченная возможность чтения простых текстов, но при этом встречаются отдельные литеральные и вербальные парафазии. Темп чтения медленный.</TextBlock>
+                    <TextBlock>2б - Сохраняется возможность чтения простых слов, отдельных слов из предложения. Текст практически не читается. Возможны частые литеральные или вербальные паралексии.</TextBlock>
+                    <TextBlock>3б - Чтение слов и текста вслух невозможно. Иногда сохраняется прочтение отдельных идеограмм или нескольких простых слов.</TextBlock>
+                </ComboBox>
+
+                <!--Семнадцатый вопрос-->
+                <Label Content="Чтение (про себя)" FontWeight="Medium" Padding="10,10" FontSize="24"/>
+
+                <ComboBox Name="seventeenthQuestion" Margin="10,0,10,10" Width="500" HorizontalAlignment="Left">
+                    <TextBlock>0б - Нарушения отсутствуют.</TextBlock>
+                    <TextBlock>1б - Выполняются письменные задания, хотя встречаются неточности в понимании более сложных команд и конструкций. Возможно также частичное понимание прочитанных про себя текстов.</TextBlock>
+                    <TextBlock>2б - Возможно подкладывание подписей - наименований к предметным картинкам и кратких предложений к сюжетным картинкам примерно в 50% случаев. Письменные задания практически не выполняются.</TextBlock>
+                    <TextBlock>3б - Подкладывание подписей - наименований к предметным картинкам невозможно или к одной-двум из 6-10 предъявленных.</TextBlock>
+                </ComboBox>
+
+                <!--Восемнадцатый вопрос-->
+                <Label Content="Чтение букв" FontWeight="Medium" Padding="10,10" FontSize="24"/>
+
+                <ComboBox Name="eighteenthQuestion" Margin="10,0,10,10" Width="500" HorizontalAlignment="Left">
+                    <TextBlock>0б -Нарушения отсутствуют.</TextBlock>
+                    <TextBlock>1б -Ошибки встречаются изредка, главным образом, при чтении букв, изображенных непривычным шрифтом или в затрудненных для чтения условиях (наложенные друг на друга, на фоне однородног ошума и т.д.).</TextBlock>
+                    <TextBlock>2б -Возможно чтение 50% предъявляемых букв. Ошибки (замены) нестойкие. Практически не читаются стилизованно написанные буквы и буквы на фоне маскирующего шума.</TextBlock>
+                    <TextBlock>3б -Чтение букв невозможно или читаются одна - две буквы, написанные простыми шрифтами.</TextBlock>
+                </ComboBox>
+
+                <!--Девятнадцатый вопрос-->
+                <Label Content="Списывание" FontWeight="Medium" Padding="10,10" FontSize="24"/>
+
+                <ComboBox Name="nineteenthQuestion" Margin="10,0,10,10" Width="500" HorizontalAlignment="Left">
+                    <TextBlock>0б -Нарушения отсутствуют.</TextBlock>
+                    <TextBlock>1б -Отдельные ошибки, главным образом, при списывании, редко встречающихся и многосложных слов.</TextBlock>
+                    <TextBlock>2б -Списывается короткая фраза (или «рабски» копируется), но с пропусками, сгрубыми ошибками, которые нередко искажают слова до неузнаваемости.</TextBlock>
+                    <TextBlock>3б -Списывание даже простой фразы не удается, сохраняется копирование только отдельных букв или слогов, при этом буквы могут быть грубо искажены.</TextBlock>
+                </ComboBox>
+
+                <!--Двадцатый вопрос-->
+                <Label Content="Письмо букв под диктовку" FontWeight="Medium" Padding="10,10" FontSize="24"/>
+
+                <ComboBox Name="twentiethQuestion" Margin="10,0,10,10" Width="500" HorizontalAlignment="Left">
+                    <TextBlock>0б -Нарушения отсутствуют.</TextBlock>
+                    <TextBlock>1б -Редкие ошибки.</TextBlock>
+                    <TextBlock>2б -Возможно написание (копирование) примерно 50—60% продиктованных букв.</TextBlock>
+                    <TextBlock>3б -Письмо букв под диктовку невозможно или 1—2 буквы из 6—10 предъявляемых.</TextBlock>
+                </ComboBox>
+
+                <!--Двадцать первый вопрос-->
+                <Label Content="Письмо (самостоятельное и под диктовку)" FontWeight="Medium" Padding="10,10" FontSize="24"/>
+
+                <ComboBox Name="twentyFirstQuestion" Margin="10,0,10,10" Width="500" HorizontalAlignment="Left">
+                    <TextBlock>0б -Нарушения отсутствуют.</TextBlock>
+                    <TextBlock>1б -Самостоятельное письмо возможно, но отражает особенности экспрессивной речи больного. Письмо под диктовку сохранено, но существляется с параграфиями (пропусками, заменами, перестановками букв и т.д.).</TextBlock>
+                    <TextBlock>2б -Самостоятельное письмо грубо затруднено. Возможно письмо под диктовку слов и простых фраз, но при этом встречаются частые искажения в видел итеральных парафазий.</TextBlock>
+                    <TextBlock>3б -Самостоятельное письмо отсутствует. Возможно иногда письмо под диктовку отдельных идеограмм и нескольких простых слов.</TextBlock>
+                </ComboBox>
+
+                <Grid Margin="10,20,10,15">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="60"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <!--Кнопка возврата в общее меню-->
+                    <Button x:Name="buttonMainMenu" Grid.Column="0" Grid.Row="0" FontWeight="Normal" Content="Вернутся в меню"  Margin="0,0,10,0" Background="Orange" Click="buttonMainMenu_Clicked"/>
+                    <!--Кнопка получения результатов теста-->
+                    <Button x:Name="buttonResultTest" Content="Получить результат" Grid.Column="1" Grid.Row="0" FontWeight="Normal"  Margin="10, 0, 0, 0" Click="button_CalculateResult" Background="Orange"/>
+                </Grid>
+                
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</Page>

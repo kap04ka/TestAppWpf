@@ -1,0 +1,147 @@
+﻿<Page x:Class="TestAppWpf.TestLocusControl"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:TestAppWpf"
+      mc:Ignorable="d" 
+      d:DesignHeight="720" d:DesignWidth="1280"
+      Title="TestLocusControl">
+
+    <Grid Background="White">
+        <ScrollViewer>
+            <StackPanel>
+                
+                <Grid Margin="10,20,10,15">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="60"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <!--Кнопка возврата в общее меню-->
+                    <Button x:Name="buttonMainMenuFirst" Grid.Column="0" Grid.Row="0" Content="Вернуться назад" Margin="10, 0, 10, 10" Background="Orange" Click="buttonMainMenu_Clicked"/>
+                </Grid>
+                
+                <!--Название теста в рамке-->
+                <TextBlock FontSize="30" FontWeight="Bold" Background="Orange" TextAlignment="Center ">
+                        Тест по шкале локуса-контроля
+                </TextBlock>
+
+                <!--Первый вопрос-->
+                <Label Content="1) То, что со мною будет в будущем, зависит от меня самого, а не от того, что для меня сделают другие люди." FontWeight="Medium" Padding="10,10" FontSize="24"/>
+
+                <ComboBox Name="pickerFirstQuestion" Margin="10,0,10,10" Width="500" HorizontalAlignment="Left">
+                    <TextBlock>Совершенно согласен</TextBlock>
+                    <TextBlock>Согласен</TextBlock>
+                    <TextBlock>Не знаю</TextBlock>
+                    <TextBlock>Не согласен</TextBlock>
+                    <TextBlock>Абсолютно не согласен</TextBlock>
+                </ComboBox>
+
+                <!--Второй вопрос-->
+                <Label Content="2) Реальные изменения зависят от того, что я сам делаю, чтобы помочь себе." FontWeight="Medium" Padding="10,10" FontSize="24"/>
+
+                <ComboBox Name="pickerSecondQuestion" Margin="10,0,10,10" Width="500" HorizontalAlignment="Left">
+                    <TextBlock>Совершенно согласен</TextBlock>
+                    <TextBlock>Согласен</TextBlock>
+                    <TextBlock>Не знаю</TextBlock>
+                    <TextBlock>Не согласен</TextBlock>
+                    <TextBlock>Абсолютно не согласен</TextBlock>
+                </ComboBox>
+
+                <!--Третий вопрос-->
+                <Label Content="3) Я уверен, что, невзирая на обстоятельства, сделаю все возможное для достижения наиболее полного восстановления." FontWeight="Medium" Padding="10,10" FontSize="24"/>
+
+                <ComboBox Name="pickerThirdQuestion" Margin="10,0,10,10" Width="500" HorizontalAlignment="Left">
+                    <TextBlock>Совершенно согласен</TextBlock>
+                    <TextBlock>Согласен</TextBlock>
+                    <TextBlock>Не знаю</TextBlock>
+                    <TextBlock>Не согласен</TextBlock>
+                    <TextBlock>Абсолютно не согласен</TextBlock>
+                </ComboBox>
+
+                <!--Четвертый вопрос-->
+                <Label Content="4) Достижение улучшения — это теперь вопрос моей собственной решимости, а не чьей-то чужой воли." FontWeight="Medium" Padding="10,10" FontSize="24"/>
+
+                <ComboBox Name="pickerFourthQuestion" Margin="10,0,10,10" Width="500" HorizontalAlignment="Left">
+                    <TextBlock>Совершенно согласен</TextBlock>
+                    <TextBlock>Согласен</TextBlock>
+                    <TextBlock>Не знаю</TextBlock>
+                    <TextBlock>Не согласен</TextBlock>
+                    <TextBlock>Абсолютно не согласен</TextBlock>
+                </ComboBox>
+
+                <!--Пятый вопрос-->
+                <Label Content="5) Неважно, сколько помощи ты получаешь, в конечном счете важны собственные усилия." FontWeight="Medium" Padding="10,10" FontSize="24"/>
+
+                <ComboBox Name="pickerFifthQuestion" Margin="10,0,10,10" Width="500" HorizontalAlignment="Left">
+                    <TextBlock>Совершенно согласен</TextBlock>
+                    <TextBlock>Согласен</TextBlock>
+                    <TextBlock>Не знаю</TextBlock>
+                    <TextBlock>Не согласен</TextBlock>
+                    <TextBlock>Абсолютно не согласен</TextBlock>
+                </ComboBox>
+
+                <!--Шестой вопрос-->
+                <Label Content="6) Часто лучше всего подождать и посмотреть, что произойдет." FontWeight="Medium" Padding="10,10" FontSize="24"/>
+
+                <ComboBox Name="pickerSixthQuestion" Margin="10,0,10,10" Width="500" HorizontalAlignment="Left">
+                    <TextBlock>Совершенно согласен</TextBlock>
+                    <TextBlock>Согласен</TextBlock>
+                    <TextBlock>Не знаю</TextBlock>
+                    <TextBlock>Не согласен</TextBlock>
+                    <TextBlock>Абсолютно не согласен</TextBlock>
+                </ComboBox>
+
+                <!--Седьмой вопрос-->
+                <Label Content="7) Мои собственные усилия не очень важны, в действительности восстановление зависит от окружающих." FontWeight="Medium" Padding="10,10" FontSize="24"/>
+
+                <ComboBox Name="pickerSeventhQuestion" Margin="10,0,10,10" Width="500" HorizontalAlignment="Left">
+                    <TextBlock>Совершенно согласен</TextBlock>
+                    <TextBlock>Согласен</TextBlock>
+                    <TextBlock>Не знаю</TextBlock>
+                    <TextBlock>Не согласен</TextBlock>
+                    <TextBlock>Абсолютно не согласен</TextBlock>
+                </ComboBox>
+
+                <!--Восьмой вопрос-->
+                <Label Content="8) Мой собственный вклад в восстановление не должен быть очень большим." FontWeight="Medium" Padding="10,10" FontSize="24"/>
+
+                <ComboBox Name="pickerEighthQuestion" Margin="10,0,10,10" Width="500" HorizontalAlignment="Left">
+                    <TextBlock>Совершенно согласен</TextBlock>
+                    <TextBlock>Согласен</TextBlock>
+                    <TextBlock>Не знаю</TextBlock>
+                    <TextBlock>Не согласен</TextBlock>
+                    <TextBlock>Абсолютно не согласен</TextBlock>
+                </ComboBox>
+
+                <!--Девятый вопрос-->
+                <Label Content="9) Я почти не контролирую или совсем не контролирую процесс улучшения." FontWeight="Medium" Padding="10,10" FontSize="24"/>
+
+                <ComboBox Name="pickerNinthQuestion" Margin="10,0,10,10" Width="500" HorizontalAlignment="Left">
+                    <TextBlock>Совершенно согласен</TextBlock>
+                    <TextBlock>Согласен</TextBlock>
+                    <TextBlock>Не знаю</TextBlock>
+                    <TextBlock>Не согласен</TextBlock>
+                    <TextBlock>Абсолютно не согласен</TextBlock>
+                </ComboBox>
+
+                <Grid Margin="10,20,10,15">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="60"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <!--Кнопка возврата в общее меню-->
+                    <Button x:Name="buttonMainMenu" Grid.Column="0" Grid.Row="0" FontWeight="Normal" Content="Вернутся в меню"  Margin="0,0,10,0" Background="Orange" Click="buttonMainMenu_Clicked"/>
+                    <!--Кнопка получения результатов теста-->
+                    <Button x:Name="buttonResultTest" Content="Получить результат" Grid.Column="1" Grid.Row="0" FontWeight="Normal"  Margin="10, 0, 0, 0" Click="button_CalculateResult" Background="Orange"/>
+                </Grid>
+                
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</Page>

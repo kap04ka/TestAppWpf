@@ -1,0 +1,106 @@
+﻿<Page x:Class="TestAppWpf.TestLifeQuality"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:TestAppWpf"
+      mc:Ignorable="d" 
+      d:DesignHeight="720" d:DesignWidth="1280"
+      Title="TestLifeQuality">
+
+    <Grid Background="White">
+        <ScrollViewer>
+            <StackPanel>
+                
+                <Grid Margin="10,20,10,15">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="60"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <!--Кнопка возврата в общее меню-->
+                    <Button x:Name="buttonMainMenuFirst" Grid.Column="0" Grid.Row="0" Content="Вернуться назад" Margin="10, 0, 10, 10" Background="Orange" Click="buttonMainMenu_Clicked"/>
+                </Grid>
+
+                <TextBlock FontSize="30" FontWeight="Bold" Background="Orange" TextAlignment="Center ">
+                        Тест оценки качества жизни
+                </TextBlock>
+
+                <TextBlock FontSize="20" FontWeight="Normal" TextAlignment="Center ">
+                        Пожалуйста, укажите такие ответы, которые наилучшим образом отражают состояние Вашего здоровья на сегодняшний день.
+                </TextBlock>
+
+                <!--Первый вопрос-->
+                <Label Content="Подвижность" FontWeight="Medium" Padding="10,10" FontSize="24"/>
+
+                <ComboBox Name="firstQuestion" Margin="10,0,10,10" Width="500" HorizontalAlignment="Left">
+                    <TextBlock>У меня не возникает никаких проблем с передвижением.</TextBlock>
+                    <TextBlock>У меня есть некоторые затруднения при передвижении.</TextBlock>
+                    <TextBlock>Я полностью прикован к постели.</TextBlock>
+                </ComboBox>
+
+                <!--Второй вопрос-->
+                <Label Content="Самообслуживание" FontWeight="Medium" Padding="10,10" FontSize="24"/>
+
+                <ComboBox Name="secondQuestion" Margin="10,0,10,10" Width="500" HorizontalAlignment="Left">
+                    <TextBlock>У меня не возникает никаких проблем с самообслуживанием.</TextBlock>
+                    <TextBlock>У меня есть некоторые проблемы с умыванием или одеванием.</TextBlock>
+                    <TextBlock>Я совершенно не способен самостоятельно умываться или одеваться.</TextBlock>
+                </ComboBox>
+
+                <!--Третий вопрос-->
+                <Label Content="Бытовая активность" FontWeight="Medium" Padding="10,10" FontSize="24"/>
+
+                <ComboBox Name="thirdQuestion" Margin="10,0,10,10" Width="500" HorizontalAlignment="Left">
+                    <TextBlock>У меня не возникает проблем с выполнением повседневных привычных обязанностей (работа, учеба, ведение домашнего хозяйства, досуг).</TextBlock>
+                    <TextBlock>У меня есть некоторые проблемы с выполнением повседневных привычных обязанностей.</TextBlock>
+                    <TextBlock>Я совершенно не способен выполнять повседневные привычные	обязанности.</TextBlock>
+                </ComboBox>
+
+
+                <!--Четвертый вопрос-->
+                <Label Content="Боль/Дискомфорт" FontWeight="Medium" Padding="10,10" FontSize="24"/>
+
+                <ComboBox Name="fourthQuestion" Margin="10,0,10,10" Width="500" HorizontalAlignment="Left">
+                    <TextBlock>Я не испытываю болей или дискомфорта.</TextBlock>
+                    <TextBlock>Я испытываю умеренные боли или дискомфорт.</TextBlock>
+                    <TextBlock>Я испытываю очень сильные боли или дискомфорт.</TextBlock>
+                </ComboBox>
+
+                <!--Пятый вопрос-->
+                <Label Content="Тревога/Депрессия" FontWeight="Medium" Padding="10,10" FontSize="24"/>
+
+                <ComboBox Name="fifthQuestion" Margin="10,0,10,10" Width="500" HorizontalAlignment="Left">
+                    <TextBlock>Я не испытываю тревоги или депрессии.</TextBlock>
+                    <TextBlock>Я испытываю умеренную тревогу или депрессию.</TextBlock>
+                    <TextBlock>Я испытываю очень сильную тревогу или депрессию.</TextBlock>
+                </ComboBox>
+
+                <!--Шестой вопрос-->
+                <Label Content="По сравнению с общим уровнем моего здоровья за последние 12 месяцев мое нынешнее состояние здоровья" FontWeight="Medium" Padding="10,10" FontSize="24"/>
+
+                <ComboBox Name="sixthQuestion" Margin="10,0,10,10" Width="500" HorizontalAlignment="Left">
+                    <TextBlock>Лучше.</TextBlock>
+                    <TextBlock>Примерно такое же.</TextBlock>
+                    <TextBlock>Хуже.</TextBlock>
+                </ComboBox>
+
+                <Grid Margin="10,20,10,15">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="60"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <!--Кнопка возврата в общее меню-->
+                    <Button x:Name="buttonMainMenu" Grid.Column="0" Grid.Row="0" FontWeight="Normal" Content="Вернутся в меню"  Margin="0,0,10,0" Background="Orange" Click="buttonMainMenu_Clicked"/>
+                    <!--Кнопка получения результатов теста-->
+                    <Button x:Name="buttonResultTest" Content="Получить результат" Grid.Column="1" Grid.Row="0" FontWeight="Normal"  Margin="10, 0, 0, 0" Click="button_CalculateResult" Background="Orange"/>
+                </Grid>
+                
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</Page>

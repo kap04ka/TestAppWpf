@@ -1,0 +1,27 @@
+﻿<Page x:Class="TestAppWpf.Menu"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:TestAppWpf"
+      mc:Ignorable="d" 
+      d:DesignHeight="720" d:DesignWidth="1280"
+      Title="Menu">
+
+    <Grid Background="White">
+        <ScrollViewer>
+            <StackPanel>
+                <Button MinHeight="50" Content="Тест COVID-19" Background="Orange" Click="Button_Click_COVID"/>
+                <Button MinHeight="50" Content="Оценка когнитивной сферы" Background="Orange" Click="Button_Click_Cognitive"/>
+                <Button MinHeight="50" Content="Шкала Вассермана" Background="Orange" Click="Button_Click_Vasserman"/>
+                <Button MinHeight="50" Content="Корректурная проба Бурдона" Background="Orange" Click="Button_Click_Burdon"/>
+                <Button MinHeight="50" Content="Тесты на оценку конструктивного, моторного и динамического праксиса, предметного гнозиса" Background="Orange" Click="Button_Click_PraxisAndGnosis"/>
+                <Button MinHeight="50" Content="Шкала тревоги и депрессии" Background="Orange" Click="Button_Click_AnxietyAndDepression"/>
+                <Button MinHeight="50" Content="Субъективная шкала оценки астении" Background="Orange" Click="Button_Click_Asthenia"/>
+                <Button MinHeight="50" Content="Европейский опросник качества жизни" Background="Orange" Click="Button_Click_LifeQuality"/>
+                <Button MinHeight="50" Content="Шкала локуса-контроля" Background="Orange" Click="Button_Click_LocusControl"/>
+                <Button MinHeight="50" Content="Результаты" Background="Gray"/>
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</Page>
