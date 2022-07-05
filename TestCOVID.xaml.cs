@@ -188,12 +188,58 @@ namespace TestAppWpf
 
         private void checkBoxActivity_Checked(object sender, RoutedEventArgs e)
         {
-
+            if (sender == checkBoxActivity1)
+            {
+                answerActivity[0] = (bool)checkBoxActivity1.IsChecked;
+            }
+            if (sender == checkBoxActivity2)
+            {
+                answerActivity[1] = (bool)checkBoxActivity2.IsChecked;
+            }
+            if (sender == checkBoxActivity3)
+            {
+                answerActivity[2] = (bool)checkBoxActivity3.IsChecked;
+            }
+            if (sender == checkBoxActivity4)
+            {
+                answerActivity[3] = (bool)checkBoxActivity4.IsChecked;
+            }
+            if (sender == checkBoxActivity5)
+            {
+                answerActivity[4] = (bool)checkBoxActivity5.IsChecked;
+            }
+            if (sender == checkBoxActivity6)
+            {
+                answerActivity[5] = (bool)checkBoxActivity6.IsChecked;
+            }
         }
 
         private void checkBoxActivity_Unchecked(object sender, RoutedEventArgs e)
         {
-
+            if (sender == checkBoxActivity1)
+            {
+                answerActivity[0] = (bool)checkBoxActivity1.IsChecked;
+            }
+            if (sender == checkBoxActivity2)
+            {
+                answerActivity[1] = (bool)checkBoxActivity2.IsChecked;
+            }
+            if (sender == checkBoxActivity3)
+            {
+                answerActivity[2] = (bool)checkBoxActivity3.IsChecked;
+            }
+            if (sender == checkBoxActivity4)
+            {
+                answerActivity[3] = (bool)checkBoxActivity4.IsChecked;
+            }
+            if (sender == checkBoxActivity5)
+            {
+                answerActivity[4] = (bool)checkBoxActivity5.IsChecked;
+            }
+            if (sender == checkBoxActivity6)
+            {
+                answerActivity[5] = (bool)checkBoxActivity6.IsChecked;
+            }
         }
 
         private void radioButtonEducation_Checked(object sender, RoutedEventArgs e)
