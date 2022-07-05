@@ -5,7 +5,7 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:TestAppWpf"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
+      d:DesignHeight="720" d:DesignWidth="1280"
       Title="TestAsthenia">
 
     <Grid Background="White">
@@ -27,6 +27,324 @@
                 <TextBlock FontSize="30" FontWeight="Bold" Background="Orange" TextAlignment="Center ">
                         Тест Астении
                 </TextBlock>
+
+                <Label Content="Оцените ваше самочувствие. Для каждого утверждения оцените степень его применимости к своему состоянию по пятибалльной шкале:" FontWeight="Normal" Margin="10,0"/>
+                <Label Content="   1 - Да, это правда"  FontWeight="Normal" Margin="10,0"/>
+                <Label Content="   5 - Нет, это неправда"  FontWeight="Normal" Margin="10,0"/>
+
+                <!--Первый вопрос-->
+                <Label Content="1. Я чувствую себя здоровым" FontWeight="Normal" Margin="10,0"/>
+                <Grid Margin="20,4,20,10">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Label x:Name="labelFirstAnswer" Content="Значение = 1" FontWeight="Normal" Grid.Column="0" Grid.Row="0"/>
+                    <Slider x:Name="sliderFirstAnswer" Maximum="5.49" Minimum="0.5" Value="0.5"  Grid.Column="1" Grid.Row="0" ValueChanged="Slider_ValueChanged"/>
+                </Grid>
+
+                <!--Второй вопрос-->
+                <Label Content="2. Физически я мало на что способен" FontWeight="Normal" Margin="10,0"/>
+                <Grid Margin="20,4,20,10">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Label x:Name="labelSecondAnswer" Content="Значение = 1" FontWeight="Normal" Grid.Column="0" Grid.Row="0"/>
+                    <Slider x:Name="sliderSecondAnswer" Maximum="5.49" Minimum="0.5" Value="0.5"  Grid.Column="1" Grid.Row="0" ValueChanged="Slider_ValueChanged"/>
+                </Grid>
+
+                <!--Третий вопрос-->
+                <Label Content="3. Я чувствую себя активным" FontWeight="Normal" Margin="10,0"/>
+                <Grid Margin="20,4,20,10">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Label x:Name="labelThirdAnswer" Content="Значение = 1" FontWeight="Normal" Grid.Column="0" Grid.Row="0"/>
+                    <Slider x:Name="sliderThirdAnswer" Maximum="5.49" Minimum="0.5" Value="0.5"  Grid.Column="1" Grid.Row="0" ValueChanged="Slider_ValueChanged"/>
+                </Grid>
+
+                <!--Четвертый вопрос-->
+                <Label Content="4. Все, что я делаю, доставляет мне удовольствие" FontWeight="Normal" Margin="10,0"/>
+                <Grid Margin="20,4,20,10">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Label x:Name="labelFourthAnswer" Content="Значение = 1" FontWeight="Normal" Grid.Column="0" Grid.Row="0"/>
+                    <Slider x:Name="sliderFourthAnswer" Maximum="5.49" Minimum="0.5" Value="0.5"  Grid.Column="1" Grid.Row="0" ValueChanged="Slider_ValueChanged"/>
+                </Grid>
+
+                <!--Пятый вопрос-->
+                <Label Content="5. Я чувствую себя усталым" FontWeight="Normal" Margin="10,0"/>
+                <Grid Margin="20,4,20,10">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Label x:Name="labelFifthAnswer" Content="Значение = 1" FontWeight="Normal" Grid.Column="0" Grid.Row="0"/>
+                    <Slider x:Name="sliderFifthAnswer" Maximum="5.49" Minimum="0.5" Value="0.5"  Grid.Column="1" Grid.Row="0" ValueChanged="Slider_ValueChanged"/>
+                </Grid>
+
+                <!--Шестой вопрос-->
+                <Label Content="6. Мне кажется, я многое успеваю за день" FontWeight="Normal" Margin="10,0"/>
+                <Grid Margin="20,4,20,10">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Label x:Name="labelSixthAnswer" Content="Значение = 1" FontWeight="Normal" Grid.Column="0" Grid.Row="0"/>
+                    <Slider x:Name="sliderSixthAnswer" Maximum="5.49" Minimum="0.5" Value="0.5"  Grid.Column="1" Grid.Row="0" ValueChanged="Slider_ValueChanged"/>
+                </Grid>
+
+                <!--Седьмой вопрос-->
+                <Label Content="7.Когда я занимаюсь чем-либо, я могу сконцентрироваться на этом" FontWeight="Normal" Margin="10,0"/>
+                <Grid Margin="20,4,20,10">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Label x:Name="labelSeventhAnswer" Content="Значение = 1" FontWeight="Normal" Grid.Column="0" Grid.Row="0"/>
+                    <Slider x:Name="sliderSeventhAnswer" Maximum="5.49" Minimum="0.5" Value="0.5"  Grid.Column="1" Grid.Row="0" ValueChanged="Slider_ValueChanged"/>
+                </Grid>
+
+                <!--Восьмой вопрос-->
+                <Label Content="8. Физически я способен на многое" FontWeight="Normal" Margin="10,0"/>
+                <Grid Margin="20,4,20,10">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Label x:Name="labelEighthAnswer" Content="Значение = 1" FontWeight="Normal" Grid.Column="0" Grid.Row="0"/>
+                    <Slider x:Name="sliderEighthAnswer" Maximum="5.49" Minimum="0.5" Value="0.5"  Grid.Column="1" Grid.Row="0" ValueChanged="Slider_ValueChanged"/>
+                </Grid>
+
+                <!--Девятый вопрос-->
+                <Label Content="9. Я боюсь дел, которые мне необходимо сделать" FontWeight="Normal" Margin="10,0"/>
+                <Grid Margin="20,4,20,10">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Label x:Name="labelNinthAnswer" Content="Значение = 1" FontWeight="Normal" Grid.Column="0" Grid.Row="0"/>
+                    <Slider x:Name="sliderNinthAnswer" Maximum="5.49" Minimum="0.5" Value="0.5"  Grid.Column="1" Grid.Row="0" ValueChanged="Slider_ValueChanged"/>
+                </Grid>
+
+                <!--Десятый вопрос-->
+                <Label Content="10. Я думаю, что за день выполняю очень мало дел" FontWeight="Normal" Margin="10,0"/>
+                <Grid Margin="20,4,20,10">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Label x:Name="labelTenthAnswer" Content="Значение = 1" FontWeight="Normal" Grid.Column="0" Grid.Row="0"/>
+                    <Slider x:Name="sliderTenthAnswer" Maximum="5.49" Minimum="0.5" Value="0.5"  Grid.Column="1" Grid.Row="0" ValueChanged="Slider_ValueChanged"/>
+                </Grid>
+
+                <!--Одинадцатый вопрос-->
+                <Label Content="11. Я могу хорошо концентрировать внимание" FontWeight="Normal" Margin="10,0"/>
+                <Grid Margin="20,4,20,10">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Label x:Name="labelEleventhAnswer" Content="Значение = 1" FontWeight="Normal" Grid.Column="0" Grid.Row="0"/>
+                    <Slider x:Name="sliderEleventhAnswer" Maximum="5.49" Minimum="0.5" Value="0.5"  Grid.Column="1" Grid.Row="0" ValueChanged="Slider_ValueChanged"/>
+                </Grid>
+
+                <!--Двенадцатый вопрос-->
+                <Label Content="12. Я чувствую себя отдохнувшим" FontWeight="Normal" Margin="10,0"/>
+                <Grid Margin="20,4,20,10">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Label x:Name="labelTwelfthAnswer" Content="Значение = 1" FontWeight="Normal" Grid.Column="0" Grid.Row="0"/>
+                    <Slider x:Name="sliderTwelfthAnswer" Maximum="5.49" Minimum="0.5" Value="0.5"  Grid.Column="1" Grid.Row="0" ValueChanged="Slider_ValueChanged"/>
+                </Grid>
+
+                <!--Тринадцатый вопрос-->
+                <Label Content="13. Мне требуется много усилий для концентрации внимания" FontWeight="Normal" Margin="10,0"/>
+                <Grid Margin="20,4,20,10">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Label x:Name="labelThirteenAnswer" Content="Значение = 1" FontWeight="Normal" Grid.Column="0" Grid.Row="0"/>
+                    <Slider x:Name="sliderThirteenAnswer" Maximum="5.49" Minimum="0.5" Value="0.5"  Grid.Column="1" Grid.Row="0" ValueChanged="Slider_ValueChanged"/>
+                </Grid>
+
+                <!--Четырнадцатый вопрос-->
+                <Label Content="14. Физически я чувствую себя в плохом состоянии" FontWeight="Normal" Margin="10,0"/>
+                <Grid Margin="20,4,20,10">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Label x:Name="labelFourteenthAnswer" Content="Значение = 1" FontWeight="Normal" Grid.Column="0" Grid.Row="0"/>
+                    <Slider x:Name="sliderFourteenthAnswer" Maximum="5.49" Minimum="0.5" Value="0.5"  Grid.Column="1" Grid.Row="0" ValueChanged="Slider_ValueChanged"/>
+                </Grid>
+
+                <!--Пятнадцатый вопрос-->
+                <Label Content="15. У меня много планов" FontWeight="Normal" Margin="10,0"/>
+                <Grid Margin="20,4,20,10">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Label x:Name="labelFifteenthAnswer" Content="Значение = 1" FontWeight="Normal" Grid.Column="0" Grid.Row="0"/>
+                    <Slider x:Name="sliderFifteenthAnswer" Maximum="5.49" Minimum="0.5" Value="0.5"  Grid.Column="1" Grid.Row="0" ValueChanged="Slider_ValueChanged"/>
+                </Grid>
+
+                <!--Шестнадцатый вопрос-->
+                <Label Content="16. Я быстро устаю" FontWeight="Normal" Margin="10,0"/>
+                <Grid Margin="20,4,20,10">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Label x:Name="labelSixteenthAnswer" Content="Значение = 1" FontWeight="Normal" Grid.Column="0" Grid.Row="0"/>
+                    <Slider x:Name="sliderSixteenthAnswer" Maximum="5.49" Minimum="0.5" Value="0.5"  Grid.Column="1" Grid.Row="0" ValueChanged="Slider_ValueChanged"/>
+                </Grid>
+
+                <!--Семнадцатый вопрос-->
+                <Label Content="17. Я очень мало успеваю сделать" FontWeight="Normal" Margin="10,0"/>
+                <Grid Margin="20,4,20,10">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Label x:Name="labelSeventeenthAnswer" Content="Значение = 1" FontWeight="Normal" Grid.Column="0" Grid.Row="0"/>
+                    <Slider x:Name="sliderSeventeenthAnswer" Maximum="5.49" Minimum="0.5" Value="0.5"  Grid.Column="1" Grid.Row="0" ValueChanged="Slider_ValueChanged"/>
+                </Grid>
+
+                <!--Восемнадцатый вопрос-->
+                <Label Content="18. Мне кажется, что я ничего не делаю" FontWeight="Normal" Margin="10,0"/>
+                <Grid Margin="20,4,20,10">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Label x:Name="labelEighteenthAnswer" Content="Значение = 1" FontWeight="Normal" Grid.Column="0" Grid.Row="0"/>
+                    <Slider x:Name="sliderEighteenthAnswer" Maximum="5.49" Minimum="0.5" Value="0.5"  Grid.Column="1" Grid.Row="0" ValueChanged="Slider_ValueChanged"/>
+                </Grid>
+
+                <!--Девятнадцатый вопрос-->
+                <Label Content="19. Мои мысли легко рассеиваются" FontWeight="Normal" Margin="10,0"/>
+                <Grid Margin="20,4,20,10">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Label x:Name="labelNineteenthAnswer" Content="Значение = 1" FontWeight="Normal" Grid.Column="0" Grid.Row="0"/>
+                    <Slider x:Name="sliderNineteenthAnswer" Maximum="5.49" Minimum="0.5" Value="0.5"  Grid.Column="1" Grid.Row="0" ValueChanged="Slider_ValueChanged"/>
+                </Grid>
+
+                <!--Двадцатый вопрос-->
+                <Label Content="20. Физически я чувствую себя в прекрасном состоянии" FontWeight="Normal" Margin="10,0"/>
+                <Grid Margin="20,4,20,10">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Label x:Name="labelTwentiethAnswer" Content="Значение = 1" FontWeight="Normal" Grid.Column="0" Grid.Row="0"/>
+                    <Slider x:Name="sliderTwentiethAnswer" Maximum="5.49" Minimum="0.5" Value="0.5"  Grid.Column="1" Grid.Row="0" ValueChanged="Slider_ValueChanged"/>
+                </Grid>
+
+                <Grid Margin="10,20,10,15">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="60"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <!--Кнопка возврата в общее меню-->
+                    <Button x:Name="buttonMainMenu" Grid.Column="0" Grid.Row="0" FontWeight="Normal" Content="Вернутся в меню"  Margin="0,0,10,0" Background="Orange" Click="buttonMainMenu_Clicked"/>
+                    <!--Кнопка получения результатов теста-->
+                    <Button x:Name="buttonResultTest" Content="Получить результат" Grid.Column="1" Grid.Row="0" FontWeight="Normal"  Margin="10, 0, 0, 0" Click="button_CalculateResult" Background="Orange"/>
+                </Grid>
                 
             </StackPanel>
         </ScrollViewer>
