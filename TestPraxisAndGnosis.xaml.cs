@@ -38,14 +38,14 @@ namespace TestAppWpf
         private void button_CalculateResult(object sender, System.EventArgs e)
         {
 
-            resultTest += Int32.Parse(entryPoints.Text);
+            resultTest += Int32.Parse(textBoxPointsWatch.Text);
             SetResults();
             MessageBox.Show($"Общий результат = {resultTest}\n" +
                                       $"Моторный праксис = {resultMotor}\n" +
                                       $"Динамический праксис = {resultDynamic}\n" +
                                       $"Конструктивный праксис = {resultConstructive}\n" +
                                       $"Объектный гнозис = {resultSubject}\n" +
-                                      $"Повторение часов = {Int32.Parse(entryPoints.Text)}\n", "Результат",
+                                      $"Повторение часов = {Int32.Parse(textBoxPointsWatch.Text)}\n", "Результат",
                                       MessageBoxButton.OK);
 
 
@@ -75,7 +75,7 @@ namespace TestAppWpf
             resultDynamic = 0;
             resultConstructive = 0;
             resultSubject = 0;
-            entryPoints.Text = "0";
+            textBoxPointsWatch.Text = "0";
 
 
             NavigationService.Navigate(new Menu());
@@ -87,7 +87,7 @@ namespace TestAppWpf
             App.patient.resultPraxisAndGnosis.resultDynamicPraxis = resultDynamic;
             App.patient.resultPraxisAndGnosis.resultConstructivePraxis = resultConstructive;
             App.patient.resultPraxisAndGnosis.resultSubjectGnosis = resultSubject;
-            App.patient.resultPraxisAndGnosis.resultClock = Int32.Parse(entryPoints.Text);
+            App.patient.resultPraxisAndGnosis.resultClock = Int32.Parse(textBoxPointsWatch.Text);
             App.patient.resultPraxisAndGnosis.TotalResultPraxisAndGnosis = resultTest;
         }
 
@@ -114,70 +114,85 @@ namespace TestAppWpf
             }
 
 
-        }
+        } 
+      
 
-        private void OnCheckBoxCheckedChangedMotorPraxis(object sender, RoutedEventArgs e)
+        private void subjectGnosis_Checked(object sender, RoutedEventArgs e)
         {
-            CheckBox chBox = (CheckBox)sender;
-            if ((bool)chBox.IsChecked)
+            if (sender == subjectGnosisFirst) 
             {
-                resultTest += 1;
-                resultMotor += 1;
-            }
 
-            else
-            {
-                resultTest -= 1;
-                resultMotor -= 1;
             }
-        }
-
-        private void OnCheckBoxCheckedChangedDynamicPraxis(object sender, RoutedEventArgs e)
-        {
-            CheckBox chBox = (CheckBox)sender;
-            if ((bool)chBox.IsChecked)
+            if (sender == subjectGnosisSecond)
             {
-                resultTest += 1;
-                resultDynamic += 1;
+
             }
-
-            else
+            if (sender == subjectGnosisThird)
             {
-                resultTest -= 1;
-                resultDynamic -= 1;
+
             }
         }
 
-        private void OnCheckBoxCheckedChangedConstructivePraxis(object sender, RoutedEventArgs e)
+        private void subjectGnosis_Unchecked(object sender, RoutedEventArgs e)
         {
-            CheckBox chBox = (CheckBox)sender;
-            if ((bool)chBox.IsChecked) 
-            {
-                resultTest += 1;
-                resultConstructive += 1;
-            }
 
-            else
+        }
+
+
+        private void motorPraxis_Checked(object sender, RoutedEventArgs e)
+        {
+            if (sender == motorPraxisFirst)
             {
-                resultTest -= 1;
-                resultConstructive -= 1;
+
+            }
+            if (sender == motorPraxisSecond)
+            {
+
+            }
+            if (sender == motorPraxisThird)
+            {
+
+            }
+            if (sender == motorPraxisFourth)
+            {
+
+            }
+            if (sender == motorPraxisFifth)
+            {
+
             }
         }
 
-        private void OnCheckBoxCheckedChangedSubjectGnosis(object sender, RoutedEventArgs e)
+        private void motorPraxis_Unchecked(object sender, RoutedEventArgs e)
         {
-            CheckBox chBox = (CheckBox)sender;
-            if ((bool)chBox.IsChecked)
-            {
-                resultTest += 1;
-                resultSubject += 1;
-            }
 
-            else
-            {
-                resultTest -= 1;
-                resultSubject -= 1;
-            }
+        }
+
+
+        private void dynamicPraxis_Checked(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void dynamicPraxis_Unchecked(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void constructivePraxis_Checked(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void constructivePraxis_Unchecked(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+
+        private void textBoxPointsWatch_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
         }
     }
 }

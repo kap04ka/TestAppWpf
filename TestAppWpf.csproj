@@ -165,7 +165,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="Images\gesture1.jpg" />
+    <Resource Include="Images\gesture2.jpg" />
+    <Resource Include="Images\gesture3.jpg" />
+  </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\Watch.JPG" />
   </ItemGroup>
