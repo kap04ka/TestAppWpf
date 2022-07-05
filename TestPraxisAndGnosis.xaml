@@ -28,6 +28,77 @@
                         Тест праксиса и гнозиса
                 </TextBlock>
 
+                <TextBlock Text="Отметьте галочками пункты, если пациент выполнил их успешно." HorizontalAlignment="Center" FontSize="20" FontWeight="Bold" Foreground="Black" Margin="20,5"/>
+
+                <!--Задание 1-->
+
+                <TextBlock Text="1.	Моторный праксис" FontSize="20" FontWeight="Bold" Padding="10, 10, 0, 0" Foreground="Black"/>
+                <TextBlock Text="Совершите серию движений по заданному плану" FontSize="20" Padding="10, 0" Foreground="Black"/>
+
+                <TextBlock Text="1 - Покажите жестом, что вы здороваетесь" FontSize="20" Padding="10, 0" Foreground="Black"/>
+                <CheckBox x:Name="motorPraxisFirst" Checked="OnCheckBoxCheckedMotorPraxis"/>
+
+                <TextBlock Text="2 - Покажите жестом, что у вас болит голова" FontSize="20" Padding="10, 0" Foreground="Black"/>
+                <CheckBox x:Name="motorPraxisSecond" Checked="OnCheckBoxCheckedMotorPraxis"/>
+
+                <TextBlock Text="3 - Покажите жестом отказ" FontSize="20" Padding="10, 0" Foreground="Black"/>
+                <CheckBox x:Name="motorPraxisThird" Checked="OnCheckBoxCheckedMotorPraxis"/>
+
+                <TextBlock Text="4 - Покажите жестом согласие" FontSize="20" Padding="10, 0" Foreground="Black"/>
+                <CheckBox x:Name="motorPraxisFourth" Checked="OnCheckBoxCheckedMotorPraxis"/>
+
+                <TextBlock Text="5 - Покажите жестом число времен года" FontSize="20" Padding="10, 0" Foreground="Black"/>
+                <CheckBox x:Name="motorPraxisFifth" Checked="OnCheckBoxCheckedMotorPraxis"/>
+
+                <!--Задание 2-->
+                <TextBlock Text="2.	Динамический праксис" FontSize="20" FontWeight="Bold" Padding="10, 10, 0, 0" Foreground="Black"/>
+                <TextBlock Text="Воспроизведите движения по заданной схеме" FontSize="20" Padding="10, 0" Foreground="Black"/>
+
+                <Image Source="Images.jesti1.JPG" Height="200" Width="200"/>
+                <CheckBox x:Name="dynamicPraxisFirst" Checked="OnCheckBoxCheckedDynamicPraxis"/>
+                <CheckBox x:Name="dynamicPraxisSecond" Checked="OnCheckBoxCheckedDynamicPraxis"/>
+                <CheckBox x:Name="dynamicPraxisThird" Checked="OnCheckBoxCheckedDynamicPraxis"/>
+
+                <Image Source="Images.jesti2.JPG" Height="200" Width="200" />
+                <CheckBox x:Name="dynamicPraxisFourth" Checked="OnCheckBoxCheckedDynamicPraxis"/>
+                <CheckBox x:Name="dynamicPraxisFifth" Checked="OnCheckBoxCheckedDynamicPraxis"/>
+                <CheckBox x:Name="dynamicPraxisSixth" Checked="OnCheckBoxCheckedDynamicPraxis"/>
+
+                <!--Задание 3-->
+                <TextBlock Text="3.	Конструктивный  праксис" FontSize="20" FontWeight="Bold" Padding="10, 10, 0, 0" Foreground="Black"/>
+                <TextBlock Text="Сложите из счетных палочек/спичек фгуры:" FontSize="20" Padding="10, 0" Foreground="Black"/>
+                <CheckBox x:Name="constructivePraxisFirst" Checked="OnCheckBoxCheckedConstructivePraxis" Content="Треугольник"/>
+                <CheckBox x:Name="constructivePraxisSecond" Checked="OnCheckBoxCheckedConstructivePraxis" Content="Квадрат"/>
+                <CheckBox x:Name="constructivePraxisThird" Checked="OnCheckBoxCheckedConstructivePraxis" Content="Прямоугольник"/>
+
+                <!--Задание 4-->
+                <TextBlock Text="4. Предметный гнозис" FontSize="20" FontWeight="Bold" Padding="10, 10, 0, 0" Foreground="Black"/>
+                <TextBlock Text="Узнайте и назовите предметы, контуры которых наложены друг на друга" FontSize="20" Padding="10, 0" Foreground="Black"/>
+                <Image Source="Images.PictureWithItems.JPG" Height="200" Width="200" />
+
+                <FlexLayout Direction="Row">
+                    <TextBlock Text="Ключ" Width="200" FontSize="20" Padding="10, 10, 0, 0" Foreground="Black"/>
+                    <CheckBox x:Name="subjectGnosisFirst" Checked="OnCheckBoxCheckedSubjectGnosis"/>
+                </FlexLayout>
+
+                <FlexLayout Direction="Row">
+                    <TextBlock Text="Кувшин" Width="200" FontSize="20" Padding="10, 0" Foreground="Black"/>
+                    <CheckBox x:Name="subjectGnosisSecond" Checked="OnCheckBoxCheckedSubjectGnosis"/>
+                </FlexLayout>
+
+                <FlexLayout Direction="Row">
+                    <TextBlock Text="Настольная лампа" Width="200" FontSize="20" Padding="10, 0" Foreground="Black"/>
+                    <CheckBox x:Name="subjectGnosisThird" Checked="OnCheckBoxCheckedSubjectGnosis"/>
+                </FlexLayout>
+
+                <!--Задание 5-->
+
+                <TextBlock Text="5. Скопируйте часы" FontSize="20" FontWeight="Bold" Padding="10, 10, 0, 0" Foreground="Black"/>
+
+                <TextBlock Text="Введите количество баллов, на которое пациент скопировал часы (максимум 8)" Foreground="Black" Margin="10, 0" FontSize="20"/>
+                <Image Source="Images.Watch.JPG" Height="200" Width="200" />
+                <TextBox x:Name="entryPoints" Foreground="Black" TextDecorations="Введите количество баллов" Margin="10,0" ="Gray" FontSize="Default" Keyboard="Telephone" Text="0" TextChanged="OnTextChanged"/>
+
             </StackPanel>
         </ScrollViewer>
     </Grid>
