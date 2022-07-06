@@ -20,7 +20,7 @@
                 <Button MinHeight="50" Content="Субъективная шкала оценки астении" Background="Orange" Click="Button_Click_Asthenia"/>
                 <Button MinHeight="50" Content="Европейский опросник качества жизни" Background="Orange" Click="Button_Click_LifeQuality"/>
                 <Button MinHeight="50" Content="Шкала локуса-контроля" Background="Orange" Click="Button_Click_LocusControl"/>
-                <Button MinHeight="50" Content="Результаты" Background="Gray"/>
+                <Button MinHeight="50" Content="Результаты" Background="Gray" Click="Button_Click_Results"/>
             </StackPanel>
         </ScrollViewer>
     </Grid>

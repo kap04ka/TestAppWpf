@@ -70,5 +70,9 @@ namespace TestAppWpf
             NavigationService.Navigate(new TestLocusControl());
         }
 
+        private void Button_Click_Results(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Results());
+        }
     }
 }
