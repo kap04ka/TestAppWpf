@@ -24,9 +24,80 @@
                 </Grid>
 
                 <!--Название теста в рамке-->
-                <TextBlock FontSize="30" FontWeight="Bold" Background="Orange" TextAlignment="Center ">
+                <TextBlock FontSize="30" FontWeight="Bold" Background="Orange" TextAlignment="Center">
                         Результаты
                 </TextBlock>
+                
+                <!--Пациент-->
+                <TextBlock FontSize="20" FontWeight="Bold" Background="Orange" TextAlignment="Center" Margin="10, 10, 0, 0 ">
+                        Пациент
+                </TextBlock>
+
+                <TextBox x:Name="Patient" Margin="10, 10, 10, 10" FontSize="15" IsReadOnly="True"></TextBox>
+                
+                <!--Результаты covid-->
+                <TextBlock FontSize="20" FontWeight="Bold" Background="Orange" TextAlignment="Center" Margin="10, 10, 0, 0 ">
+                        Результаты covid
+                </TextBlock>
+
+                <TextBox x:Name="CovidResult" Margin="10, 10, 10, 10" FontSize="15" IsReadOnly="True"></TextBox>
+
+                <!--Результаты оценки когнитивной сферы-->
+                <TextBlock FontSize="20" FontWeight="Bold" Background="Orange" TextAlignment="Center" Margin="10, 10, 0, 0 ">
+                        Результаты оценки когнитивной сферы
+                </TextBlock>
+
+                <TextBox x:Name="ResultCognitive" Margin="10, 10, 10, 10" FontSize="15" IsReadOnly="True"></TextBox>
+
+                <!--Результаты Шкалы Вассермана-->
+                <TextBlock FontSize="20" FontWeight="Bold" Background="Orange" TextAlignment="Center" Margin="10, 10, 0, 0 ">
+                        Результаты Шкалы Вассермана
+                </TextBlock>
+
+                <TextBox x:Name="ResultVasserman" Margin="10, 10, 10, 10" FontSize="15" IsReadOnly="True"></TextBox>
+
+                <!--Результаты Бурдона-->
+                <TextBlock FontSize="20" FontWeight="Bold" Background="Orange" TextAlignment="Center" Margin="10, 10, 0, 0 ">
+                        Результаты Бурдона
+                </TextBlock>
+
+                <TextBox x:Name="ResultBurdon" Margin="10, 10, 10, 10" FontSize="15" IsReadOnly="True"></TextBox>
+
+                <!--Результаты Праксиса и Гнозиса-->
+                <TextBlock FontSize="20" FontWeight="Bold" Background="Orange" TextAlignment="Center" Margin="10, 10, 0, 0 ">
+                        Результаты праксиса и гнозиса
+                </TextBlock>
+
+                <TextBox x:Name="ResultPraxisAndGnosis" Margin="10, 10, 10, 10" FontSize="15" IsReadOnly="True"></TextBox>
+
+                <!--Результаты Тревоги и Депрессии-->
+                <TextBlock FontSize="20" FontWeight="Bold" Background="Orange" TextAlignment="Center" Margin="10, 10, 0, 0 ">
+                        Результаты тревоги и депрессии
+                </TextBlock>
+
+                <TextBox x:Name="ResultAnxietyAndDepression" Margin="10, 10, 10, 10" FontSize="15" IsReadOnly="True"></TextBox>
+
+                <!--Результаты Астении-->
+                <TextBlock FontSize="20" FontWeight="Bold" Background="Orange" TextAlignment="Center" Margin="10, 10, 0, 0 ">
+                        Результаты оценки астении
+                </TextBlock>
+
+                <TextBox x:Name="ResultAsthenia" Margin="10, 10, 10, 10" FontSize="15" IsReadOnly="True"></TextBox>
+
+                <!--Результаты Качества жизни-->
+                <TextBlock FontSize="20" FontWeight="Bold" Background="Orange" TextAlignment="Center" Margin="10, 10, 0, 0 ">
+                        Результаты качества жизни
+                </TextBlock>
+
+                <TextBox x:Name="ResultLifeQuality" Margin="10, 10, 10, 10" FontSize="15" IsReadOnly="True"></TextBox>
+
+                <!--Результаты Локус контроля-->
+                <TextBlock FontSize="20" FontWeight="Bold" Background="Orange" TextAlignment="Center" Margin="10, 10, 0, 0 ">
+                        Результаты локус-контроля
+                </TextBlock>
+
+                <TextBox x:Name="ResultLocus" Margin="10, 10, 10, 10" FontSize="15" IsReadOnly="True"></TextBox>
+                
 
                 <Grid Margin="10,20,10,15">
                     <Grid.RowDefinitions>
@@ -34,14 +105,11 @@
                     </Grid.RowDefinitions>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="*"/>
                     </Grid.ColumnDefinitions>
                     <!--Кнопка возврата в общее меню-->
-                    <Button x:Name="buttonMainMenu" Grid.Column="0" Grid.Row="0" FontWeight="Normal" Content="Вернутся в меню"  Margin="0,0,10,0" Background="Orange" Click="buttonMainMenu_Clicked"/>
-                    <!--Кнопка получения результатов теста-->
-                    <Button x:Name="buttonResultTest" Content="Получить результат" Grid.Column="1" Grid.Row="0" FontWeight="Normal"  Margin="10, 0, 0, 0" Click="button_CalculateResult" Background="Orange"/>
+                    <Button x:Name="buttonMainMenu" Grid.Column="0" Grid.Row="0" Content="Вернуться назад" Margin="10, 0, 10, 10" Background="Orange" Click="buttonMainMenu_Clicked"/>
                 </Grid>
-
+                
             </StackPanel>
         </ScrollViewer>
     </Grid>
