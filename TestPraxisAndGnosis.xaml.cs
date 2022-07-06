@@ -30,6 +30,7 @@ namespace TestAppWpf
         {
             InitializeComponent();
         }
+
         public void buttonMainMenu_Clicked(object sender, RoutedEventArgs e)
         {
             NavigationService.Navigate(new Menu());
@@ -90,8 +91,60 @@ namespace TestAppWpf
             App.patient.resultPraxisAndGnosis.resultClock = Int32.Parse(textBoxPointsWatch.Text);
             App.patient.resultPraxisAndGnosis.TotalResultPraxisAndGnosis = resultTest;
         }
+      
 
-        private void OnTextChanged(object sender, EventArgs e)
+        private void subjectGnosis_Checked(object sender, RoutedEventArgs e)
+        {
+            resultSubject++;
+            resultTest++;
+        }
+
+        private void subjectGnosis_Unchecked(object sender, RoutedEventArgs e)
+        {
+            resultSubject--;
+            resultTest--;
+        }
+
+
+        private void motorPraxis_Checked(object sender, RoutedEventArgs e)
+        {
+            resultMotor++;
+            resultTest++;
+        }
+
+        private void motorPraxis_Unchecked(object sender, RoutedEventArgs e)
+        {
+            resultMotor--;
+            resultTest--;
+        }
+
+
+        private void dynamicPraxis_Checked(object sender, RoutedEventArgs e)
+        {
+            resultDynamic++;
+            resultTest++;
+        }
+
+        private void dynamicPraxis_Unchecked(object sender, RoutedEventArgs e)
+        {
+            resultDynamic--;
+            resultTest--;
+        }
+
+        private void constructivePraxis_Checked(object sender, RoutedEventArgs e)
+        {
+            resultConstructive++;
+            resultTest++;
+        }
+
+        private void constructivePraxis_Unchecked(object sender, RoutedEventArgs e)
+        {
+            resultConstructive--;
+            resultTest--;
+        }
+
+
+        private void textBoxPointsWatch_TextChanged(object sender, TextChangedEventArgs e)
         {
             TextBox entry = sender as TextBox;
 
@@ -112,87 +165,6 @@ namespace TestAppWpf
                 if (points < 0) points = 0;
                 entry.Text = points.ToString();
             }
-
-
-        } 
-      
-
-        private void subjectGnosis_Checked(object sender, RoutedEventArgs e)
-        {
-            if (sender == subjectGnosisFirst) 
-            {
-
-            }
-            if (sender == subjectGnosisSecond)
-            {
-
-            }
-            if (sender == subjectGnosisThird)
-            {
-
-            }
-        }
-
-        private void subjectGnosis_Unchecked(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-
-        private void motorPraxis_Checked(object sender, RoutedEventArgs e)
-        {
-            if (sender == motorPraxisFirst)
-            {
-
-            }
-            if (sender == motorPraxisSecond)
-            {
-
-            }
-            if (sender == motorPraxisThird)
-            {
-
-            }
-            if (sender == motorPraxisFourth)
-            {
-
-            }
-            if (sender == motorPraxisFifth)
-            {
-
-            }
-        }
-
-        private void motorPraxis_Unchecked(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-
-        private void dynamicPraxis_Checked(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void dynamicPraxis_Unchecked(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void constructivePraxis_Checked(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void constructivePraxis_Unchecked(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-
-        private void textBoxPointsWatch_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
         }
     }
 }

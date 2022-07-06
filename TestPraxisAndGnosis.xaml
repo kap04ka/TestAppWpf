@@ -43,13 +43,7 @@
                 <!--Задание 2-->
                 <TextBlock Text="2.	Динамический праксис" FontSize="22" FontWeight="Bold" Margin="30,30,30,8" Foreground="Black"/>
                 <TextBlock Text="Воспроизведите движения по заданной схеме" FontSize="20" Margin="30,0,30,10" Foreground="Black"/>
-                <Image Source="Images/jesti1.JPG" Height="200" Width="200"/>
-                
-                <Image Source="Images/jesti2.JPG" Height="200" Width="200" />
-                <CheckBox FontSize="20" IsThreeState="False" x:Name="dynamicPraxisFourth" Checked="dynamicPraxis_Checked" Unchecked="dynamicPraxis_Unchecked"/>
-                <CheckBox FontSize="20" IsThreeState="False" x:Name="dynamicPraxisFifth" Checked="dynamicPraxis_Checked" Unchecked="dynamicPraxis_Unchecked"/>
-                <CheckBox FontSize="20" IsThreeState="False" x:Name="dynamicPraxisSixth" Checked="dynamicPraxis_Checked" Unchecked="dynamicPraxis_Unchecked"/>
-                <Grid Margin="50,30" ShowGridLines="True">
+                <Grid Margin="50,30">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="*"/>
                         <ColumnDefinition Width="*"/>
@@ -65,10 +59,15 @@
                     <Image Source="Images/gesture1.jpg" Grid.Row="0" Grid.Column="0"/>
                     <Image Source="Images/gesture2.jpg" Grid.Row="0" Grid.Column="1"/>
                     <Image Source="Images/gesture3.jpg" Grid.Row="0" Grid.Column="2"/>
-                    <CheckBox FontSize="20" Grid.Row="1" Grid.Column="0" IsThreeState="False" x:Name="dynamicPraxisFirst" Checked="dynamicPraxis_Checked" Unchecked="dynamicPraxis_Unchecked"/>
-                    <CheckBox FontSize="20" Grid.Row="1" Grid.Column="1" IsThreeState="False" x:Name="dynamicPraxisSecond" Checked="dynamicPraxis_Checked" Unchecked="dynamicPraxis_Unchecked"/>
-                    <CheckBox FontSize="20" Grid.Row="1" Grid.Column="2" IsThreeState="False" x:Name="dynamicPraxisThird" Checked="dynamicPraxis_Checked" Unchecked="dynamicPraxis_Unchecked"/>
-
+                    <Image Source="Images/gesture4.jpg" Grid.Row="2" Grid.Column="0"/>
+                    <Image Source="Images/gesture5.jpg" Grid.Row="2" Grid.Column="1"/>
+                    <Image Source="Images/gesture6.jpg" Grid.Row="2" Grid.Column="2"/>
+                    <CheckBox FontSize="20" Grid.Row="1" Grid.Column="0" IsThreeState="False" x:Name="dynamicPraxisFirst" Checked="dynamicPraxis_Checked" Unchecked="dynamicPraxis_Unchecked" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                    <CheckBox FontSize="20" Grid.Row="1" Grid.Column="1" IsThreeState="False" x:Name="dynamicPraxisSecond" Checked="dynamicPraxis_Checked" Unchecked="dynamicPraxis_Unchecked" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                    <CheckBox FontSize="20" Grid.Row="1" Grid.Column="2" IsThreeState="False" x:Name="dynamicPraxisThird" Checked="dynamicPraxis_Checked" Unchecked="dynamicPraxis_Unchecked" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                    <CheckBox FontSize="20" Grid.Row="3" Grid.Column="0" IsThreeState="False" x:Name="dynamicPraxisFourth" Checked="dynamicPraxis_Checked" Unchecked="dynamicPraxis_Unchecked" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                    <CheckBox FontSize="20" Grid.Row="3" Grid.Column="1" IsThreeState="False" x:Name="dynamicPraxisFifth" Checked="dynamicPraxis_Checked" Unchecked="dynamicPraxis_Unchecked" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                    <CheckBox FontSize="20" Grid.Row="3" Grid.Column="2" IsThreeState="False" x:Name="dynamicPraxisSixth" Checked="dynamicPraxis_Checked" Unchecked="dynamicPraxis_Unchecked" VerticalAlignment="Center" HorizontalAlignment="Center"/>
                 </Grid>
 
                 <!--Задание 3-->
