@@ -146,24 +146,21 @@ namespace TestAppWpf
 
         private void textBoxPointsWatch_TextChanged(object sender, TextChangedEventArgs e)
         {
-            TextBox entry = sender as TextBox;
-
             int points = 0;
 
             try
             {
-                points = Int32.Parse(entry.Text);
+                points = Int32.Parse(textBoxPointsWatch.Text);
             }
             catch
             {
                 points = 0;
             }
-
             finally
             {
                 if (points > 8) points = 8;
                 if (points < 0) points = 0;
-                entry.Text = points.ToString();
+                textBoxPointsWatch.Text = points.ToString();
             }
         }
     }
