@@ -5,7 +5,7 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:TestAppWpf"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
+      d:DesignHeight="720" d:DesignWidth="1280"
       Title="TestCognitive">
 
     <Grid Background="White">
@@ -27,7 +27,628 @@
                 <TextBlock FontSize="30" FontWeight="Bold" Background="Orange" TextAlignment="Center ">
                         Оценка когнитивной сферы
                 </TextBlock>
+
+                <!--Зрительно-конструктивные/исполнительные навыки-->
+                <TextBlock FontSize="20" FontWeight="Bold" Background="Orange" TextAlignment="Center ">
+                        Зрительно-конструктивные/исполнительные навыки
+                </TextBlock>
                 
+                <!--Задание 1-->
+                <Label Content="1) Черчение ломаной линии" FontWeight="Bold" Padding="10, 10, 10, 10" />
+                <Label Content="Попросите исследуемого нарисовать линию от цифры к букве в порядке увеличения. Отметьте задание выполненным, если обследуемый правильно соединяет знаки в следующем порядке: 1-А-2-Б-3-В-4-Г-5-Д так, чтобы линии не пересекались. Любая ошибка, не исправленная немедленно самостоятельно, рассматривается как невыполнение задания." FontWeight="Medium" Padding="10, 0"/>
+                <Image Source="Images/Putb.JPG" Width="200" Margin="0, 20, 0, 0"/>
+
+                <Grid Margin="10,20,10,15">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="20"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="200"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Content="Результат" FontWeight="Medium" Padding="10, 0" Grid.Column="0"/>
+                    <CheckBox x:Name="visualConstructiveSkillsFirst" Checked="OnCheckBoxCheckedVisualConstructiveSkills" Grid.Column="1" VerticalAlignment="Center"/>
+                </Grid>
+
+                <!--Задание 2-->
+                <Label Content="2) Оптико-пространственная деятельность (куб)" FontWeight="Bold" Padding="10, 10, 10, 10"/>
+                <Label Content="Попросите пациента аккуратно перерисовать куб." FontWeight="Medium" Padding="10, 0"/>
+                <Label Content="Условия выполнения задания:" FontWeight="Medium" Padding="10, 0"/>
+                <Label Content="•	фигура должна быть трехмерной" FontWeight="Medium" Padding="10, 0"/>
+                <Label Content="•	должны быть нарисованы все линии;" FontWeight="Medium" Padding="10, 0"/>
+                <Label Content="•	не должно быть лишних линий;" FontWeight="Medium" Padding="10, 0"/>
+                <Label Content="•	линии должны быть относительно параллельны и незначительно отличаться по длине (принимается рисунок прямоугольной призмы)." FontWeight="Medium" Padding="10, 0"/>
+                <Label Content="Задание не засчитывается, если не выполнено какое-либо из вышеуказанных условий." FontWeight="Medium" Padding="10, 0"/>
+                <Label Content="Если задание выполнено верно, отметьте поле результат." FontWeight="Medium" Padding="10, 0"/>
+                <Image Source="Images/Cube.JPG" Width="200"/>
+
+                <Grid Margin="10,20,10,15">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="20"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="200"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Content="Результат" FontWeight="Medium" Padding="10, 0" Grid.Column="0"/>
+                    <CheckBox x:Name="visualConstructiveSkillsSecond" Checked="OnCheckBoxCheckedVisualConstructiveSkills" Grid.Column="1" VerticalAlignment="Center"/>
+                </Grid>
+
+                <!--Задание 3-->
+                <Label Content="3) Оптико-пространственная деятельность (часы)" FontWeight="Bold" Padding="10, 10, 0, 0"/>
+                <Label Content="Попросите пациента нарисовать часы. Скажите, что бы он расставил все цифры и нарисовал стрелки так, чтобы часы показывали десять минут двенадцатого." FontWeight="Medium" Padding="10, 0"/>
+                <Label Content="Отметьте выполненные пациентом условия:" FontWeight="Medium" Padding="10, 0"/>
+                <Label Content="•	контур: циферблат должен быть круглым, возможно с погрешностями формы (например, слегка незамкнутым)" FontWeight="Medium" Padding="10, 0"/>
+                <Label Content="•	цифры: должны быть все цифры циферблата и не должно быть лишних; цифры должны располагаться в правильном порядке и приблизительно в соответствии с квадрантами циферблата; допускаются римские цифры; цифры могут располагаться снаружи циферблата;" FontWeight="Medium" Padding="10, 0"/>
+                <Label Content="•	стрелки: должно быть две стрелки, показывающие правильное время; часовая стрелка должна быть отчетливо короче минутной; стрелки должны сходиться внутри контура циферблата и пересекаться близко к его центру." FontWeight="Medium" Padding="10, 0"/>
+
+                <Grid Margin="10,20,10,15">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="20"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="200"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Content="Контур" FontWeight="Medium" Padding="10, 0" Grid.Column="0"/>
+                    <CheckBox x:Name="visualConstructiveSkillsThird" Checked="OnCheckBoxCheckedVisualConstructiveSkills" Grid.Column="1" VerticalAlignment="Center"/>
+                </Grid>
+
+                <Grid Margin="10,20,10,15">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="20"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="200"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Content="Цифры" FontWeight="Medium" Padding="10, 0" Grid.Column="0"/>
+                    <CheckBox x:Name="visualConstructiveSkillsFourth" Checked="OnCheckBoxCheckedVisualConstructiveSkills" Grid.Column="1" VerticalAlignment="Center"/>
+                </Grid>
+
+                <Grid Margin="10,20,10,15">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="20"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="200"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Content="Стрелки" FontWeight="Medium" Padding="10, 0" Grid.Column="0"/>
+                    <CheckBox x:Name="visualConstructiveSkillsFifth" Checked="OnCheckBoxCheckedVisualConstructiveSkills" Grid.Column="1" VerticalAlignment="Center"/>
+                </Grid>
+
+                <!--Называние-->
+                <TextBlock FontSize="20" FontWeight="Bold" Background="Orange" TextAlignment="Center ">
+                        Называние
+                </TextBlock>
+                
+                <!--Задание 4-->
+                <Label Content="4) Называние" FontWeight="Bold" Padding="10, 10, 0, 0" />
+                <Label Content="Попросите пациента назвать животных на картинке." FontWeight="Medium" Padding="10, 0" />
+                <Image Source="Images/jivotnie.JPG" Width="400"/>
+
+                <Grid Margin="10,20,10,15">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="20"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="200"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Content="Лев" FontWeight="Medium" Padding="10, 0" Grid.Column="0"/>
+                    <CheckBox x:Name="namingFirst" Checked="OnCheckBoxCheckedNaming" Grid.Column="1" VerticalAlignment="Center"/>
+                </Grid>
+
+                <Grid Margin="10,20,10,15">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="20"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="200"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Content="Носорог" FontWeight="Medium" Padding="10, 0" Grid.Column="0"/>
+                    <CheckBox x:Name="namingSecond" Checked="OnCheckBoxCheckedNaming" Grid.Column="1" VerticalAlignment="Center"/>
+                </Grid>
+
+                <Grid Margin="10,20,10,15">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="20"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="200"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Content="Верблюд" FontWeight="Medium" Padding="10, 0" Grid.Column="0"/>
+                    <CheckBox x:Name="namingThird" Checked="OnCheckBoxCheckedNaming" Grid.Column="1" VerticalAlignment="Center"/>
+                </Grid>
+
+                <!--Память-->
+                <TextBlock FontSize="20" FontWeight="Bold" Background="Orange" TextAlignment="Center ">
+                        Память
+                </TextBlock>
+                
+                <!--Задание 5-->
+                <Label Content="5) Память" FontWeight="Bold" Padding="10, 10, 0, 0" />
+                <Label Content="Назовите пациенту 5 слов со скоростью 1 слово в секунду:" FontWeight="Medium" Padding="10, 0" />
+                <Label Content="Лицо    Бархат    Церковь    Фиалка    Красный" FontWeight="Medium" Padding="10, 0" />
+                <Label Content="Попросите пациента повторить и отметьте в первой колонке слова, которые он смог воспроизвести." FontWeight="Medium" Padding="10, 0" />
+                <Label Content="Прочитайте слова второй раз, попросите пациента опять воспроизвести все слова, которые он запомнил и отметьте их во второй колонке." FontWeight="Medium" Padding="10, 0" />
+                <Label Content="В конце второй попытки сообщите пациенту, что попросите его воспроизвести эти слова в конце теста." FontWeight="Medium" Padding="10, 0" />
+
+                <Grid Margin="10,20,10,15">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="20"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="400"/>
+                        <ColumnDefinition Width="50"/>
+                        <ColumnDefinition Width="50"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Content="Лицо" FontWeight="Medium" Padding="10, 0" Grid.Column="0"/>
+                    <CheckBox x:Name="firstWord1" Grid.Column="1" VerticalAlignment="Center"/>
+                    <CheckBox x:Name="firstWord2" Grid.Column="2" VerticalAlignment="Center"/>
+                </Grid>
+
+                <Grid Margin="10,20,10,15">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="20"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="400"/>
+                        <ColumnDefinition Width="50"/>
+                        <ColumnDefinition Width="50"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Content="Бархат" FontWeight="Medium" Padding="10, 0" Grid.Column="0"/>
+                    <CheckBox x:Name="secondWord1" Grid.Column="1" VerticalAlignment="Center"/>
+                    <CheckBox x:Name="secondWord2" Grid.Column="2" VerticalAlignment="Center"/>
+                </Grid>
+
+                <Grid Margin="10,20,10,15">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="20"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="400"/>
+                        <ColumnDefinition Width="50"/>
+                        <ColumnDefinition Width="50"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Content="Церковь" FontWeight="Medium" Padding="10, 0" Grid.Column="0"/>
+                    <CheckBox x:Name="thirdWord1" Grid.Column="1" VerticalAlignment="Center"/>
+                    <CheckBox x:Name="thirdWord2" Grid.Column="2" VerticalAlignment="Center"/>
+                </Grid>
+
+                <Grid Margin="10,20,10,15">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="20"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="400"/>
+                        <ColumnDefinition Width="50"/>
+                        <ColumnDefinition Width="50"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Content="Маргаритка" FontWeight="Medium" Padding="10, 0" Grid.Column="0"/>
+                    <CheckBox x:Name="fourthWord1" Grid.Column="1" VerticalAlignment="Center"/>
+                    <CheckBox x:Name="fourthWord2" Grid.Column="2" VerticalAlignment="Center"/>
+                </Grid>
+
+                <Grid Margin="10,20,10,15">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="20"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="400"/>
+                        <ColumnDefinition Width="50"/>
+                        <ColumnDefinition Width="50"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Content="Красный" FontWeight="Medium" Padding="10, 0" Grid.Column="0"/>
+                    <CheckBox x:Name="fifthWord1" Grid.Column="1" VerticalAlignment="Center"/>
+                    <CheckBox x:Name="fifthWord2" Grid.Column="2" VerticalAlignment="Center"/>
+                </Grid>
+
+                <!--Внимание-->
+                <TextBlock FontSize="20" FontWeight="Bold" Background="Orange" TextAlignment="Center ">
+                        Внимание
+                </TextBlock>
+
+                <!--Задание 6-->
+                <Label Content="6) Называние чисел в прямом порядке" FontWeight="Bold" Padding="10, 10, 0, 0" />
+                <Label Content="Назовите пациенту несколько числа и попросите его повторить их:" FontWeight="Medium" Padding="10, 0" />
+                <Label Content="2    1    8    5    4" FontWeight="Medium" Padding="10, 0" />
+                <Label Content="Назовите следующие числа и попросите повторить их в обратном порядке:" FontWeight="Medium" Padding="10, 0" />
+                <Label Content="7    4    2" FontWeight="Medium" Padding="10, 0" />
+                <Label Content="Отметьте варианты, которые пациент воспроизвел правильно" FontWeight="Medium" Padding="10, 0" />
+
+                <Grid Margin="10,20,10,15">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="20"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="400"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Content="2 1 8 5 4" FontWeight="Medium" Padding="10, 0" Grid.Column="0"/>
+                    <CheckBox x:Name="attentionFirst" Checked="OnCheckBoxCheckedAttention" Grid.Column="1" VerticalAlignment="Center"/>
+                </Grid>
+
+                <Grid Margin="10,20,10,15">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="20"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="400"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Content="2 4 7" FontWeight="Medium" Padding="10, 0" Grid.Column="0"/>
+                    <CheckBox x:Name="attentionSecond" Checked="OnCheckBoxCheckedAttention" Grid.Column="1" VerticalAlignment="Center"/>
+                </Grid>
+
+                <!--Задание 7-->
+                <Label Content="7) Реакция" FontWeight="Bold" Padding="10, 10, 0, 0" />
+                <Label Content="Прочитайте последовательность букв со скоростью одна буква в секунду, попросите пациента хлопать в ладоши на каждую букву 'А':" FontWeight="Medium" Padding="10, 0" />
+                <Label Content="Ф Б А В М Н А А Ж Л К Б А Ф А К Д Е А А А Ж А М О Ф А А Б" FontWeight="Medium" Padding="10, 0" />
+                <Label Content="Отметьте поле результат, если задание выполнено без ошибок." FontWeight="Medium" Padding="10, 0" />
+                <Label Content="Ошибка – хлопок не на ту букву или отсутствие хлопка на букву А." FontWeight="Medium" Padding="10, 0" />
+
+                <Grid Margin="10,20,10,15">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="20"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="200"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Content="Результат" FontWeight="Medium" Padding="10, 0" Grid.Column="0"/>
+                    <CheckBox x:Name="attentionThird" Checked="OnCheckBoxCheckedAttention" Grid.Column="1" VerticalAlignment="Center"/>
+                </Grid>
+
+                <!--Задание 8-->
+                <Label Content="8) Последовательное вычитание по 7" FontWeight="Bold" Padding="10, 10, 0, 0" />
+                <Label Content="Дайте пациенту указания: «Сейчас отнимите от ста семь, а затем продолжайте вычитать из полученного числа по 7, пока я вас не остановлю»." FontWeight="Medium" Padding="10, 0" />
+                <Label Content="Каждое вычитание оценивают независимо, то есть, если обследуемый делает ошибку, но продолжает правильно вычитать из результата 7, дают балл за каждое правильное действие." FontWeight="Medium" Padding="10, 0" />
+
+                <Grid Margin="10,20,10,15">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="20"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="500"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Content="Ответ 1: 93" FontWeight="Medium" Padding="10, 0" Grid.Column="0"/>
+                    <CheckBox x:Name="serialSubtractionFirst" Checked="OnCheckBoxCheckedSerialSubtraction" Grid.Column="1" VerticalAlignment="Center"/>
+                </Grid>
+
+                <Grid Margin="10,20,10,15">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="20"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="500"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Content="Ответ 2: 86 или предыдущее число - 7" FontWeight="Medium" Padding="10, 0" Grid.Column="0"/>
+                    <CheckBox x:Name="serialSubtractionSecond" Checked="OnCheckBoxCheckedSerialSubtraction" Grid.Column="1" VerticalAlignment="Center"/>
+                </Grid>
+
+                <Grid Margin="10,20,10,15">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="20"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="500"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Content="Ответ 3: 79 или предыдущее число - 7" FontWeight="Medium" Padding="10, 0" Grid.Column="0"/>
+                    <CheckBox x:Name="serialSubtractionThird" Checked="OnCheckBoxCheckedSerialSubtraction" Grid.Column="1" VerticalAlignment="Center"/>
+                </Grid>
+
+                <Grid Margin="10,20,10,15">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="20"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="500"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Content="Ответ 4: 72 или предыдущее число - 7" FontWeight="Medium" Padding="10, 0" Grid.Column="0"/>
+                    <CheckBox x:Name="serialSubtractionFourth" Checked="OnCheckBoxCheckedSerialSubtraction" Grid.Column="1" VerticalAlignment="Center"/>
+                </Grid>
+
+                <Grid Margin="10,20,10,15">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="20"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="500"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Content="Ответ 5: 65 или предыдущее число - 7" FontWeight="Medium" Padding="10, 0" Grid.Column="0"/>
+                    <CheckBox x:Name="serialSubtractionFifth" Checked="OnCheckBoxCheckedSerialSubtraction" Grid.Column="1" VerticalAlignment="Center"/>
+                </Grid>
+
+                <!--Речь-->
+                <TextBlock FontSize="20" FontWeight="Bold" Background="Orange" TextAlignment="Center ">
+                        Речь
+                </TextBlock>
+
+                <!--Задание 9-->
+                <Label Content="9) Повторение предложений" FontWeight="Bold" Padding="10, 10, 0, 0" />
+                <Label Content="Скажите пациенту, что прочитаете предложение и попросите повторить его слово в слово:" FontWeight="Medium" Padding="10, 0" />
+                <Label Content="'Я не знаю ничего, кроме того что Ваня сегодня дежурит.'" FontWeight="Medium" Padding="10, 0" />
+                <Label Content="Попросите так же повторить слово в слово второе предложение:" FontWeight="Medium" Padding="10, 0" />
+                <Label Content="'Кошка всегда пряталась под диван, когда собака была в комнате.'" FontWeight="Medium" Padding="10, 0" />
+                <Label Content="Отметьте те предложения, которые были повторены слово в слово." FontWeight="Medium" Padding="10, 0" />
+
+                <Grid Margin="10,20,10,15">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="20"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="500"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Content="Я не знаю ничего, кроме того что Ваня сегодня дежурит" FontWeight="Medium" Padding="10, 0" Grid.Column="0"/>
+                    <CheckBox x:Name="speechFirst" Checked="OnCheckBoxCheckedSpeech" Grid.Column="1" VerticalAlignment="Center"/>
+                </Grid>
+
+                <Grid Margin="10,20,10,15">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="20"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="500"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Content="Кошка всегда пряталась под диван, когда собака была в комнате" FontWeight="Medium" Padding="10, 0" Grid.Column="0"/>
+                    <CheckBox x:Name="speechSecond" Checked="OnCheckBoxCheckedSpeech" Grid.Column="1" VerticalAlignment="Center"/>
+                </Grid>
+
+                <!--Задание 10-->
+                <Label Content="10) Скорость" FontWeight="Bold"  Padding="10, 10, 0, 0" />
+                <Label Content="Попросите пациента назвать как можно больше слов начинающихся на определенную букву и засеките минуту." FontWeight="Medium" Padding="10, 0" />
+                <Label Content="Если за минуту пациент назвал 11 слов или более на названную букву, отметьте поле результат." FontWeight="Medium" Padding="10, 0" />
+
+                <Grid Margin="10,20,10,15">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="20"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="200"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Content="Результат" FontWeight="Medium" Padding="10, 0" Grid.Column="0"/>
+                    <CheckBox x:Name="speechThird" Checked="OnCheckBoxCheckedSpeech" Grid.Column="1" VerticalAlignment="Center"/>
+                </Grid>
+
+                <!--Абстракция-->
+                <TextBlock FontSize="20" FontWeight="Bold" Background="Orange" TextAlignment="Center ">
+                        Абстракция
+                </TextBlock>
+                <!--Задание 11-->
+                <Label Content="11) Абстрактное мышление" FontWeight="Bold" Padding="10, 10, 0, 0" />
+                <Label Content="Попросите пациента объяснить чем схожи предметы в каждой паре." FontWeight="Medium" Padding="10, 0" />
+                <Label Content="Начинают с примера: «Скажите, чем похожи апельсин и банан». Если обследуемый дает определенный ответ, ему задают следующий вопрос: «А еще чем они похожи?». Если обследуемый не дает ответа «фрукты», говорят: «Да, а еще все это фрукты». Ничего больше не объясняют." FontWeight="Medium" Padding="10, 0" />
+                <Label Content="После пробы говорят: «А сейчас скажите, чем похожи поезд и велосипед?»." FontWeight="Medium" Padding="10, 0" />
+                <Label Content="После ответа дайте следующее задание: «А чем похожи часы и линейка?». Не давайте дополнительных указаний и подсказок." FontWeight="Medium" Padding="10, 0" />
+                <Label Content="Принимаются следующие ответы:" FontWeight="Medium" Padding="10, 0" />
+                <Label Content="Принимаются следующие ответы:" FontWeight="Medium" Padding="10, 0" />
+                <Label Content="•	Поезд – велосипед = средства передвижения, транспорт, на них можно ездить" FontWeight="Medium" Padding="10, 0" />
+                <Label Content="•	Линейка – часы = измерительные приборы, используются для измерения" FontWeight="Medium" Padding="10, 0" />
+                <Label Content="Не принимаются ответы: поезд – велосипед = у них есть колеса; линейка – часы = на них есть цифры." FontWeight="Medium" Padding="10, 0" />
+                <Label Content="Отметьте верно сделанные задания." FontWeight="Medium" Padding="10, 0" />
+
+                <Grid Margin="10,20,10,15">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="20"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="400"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Content="поезд - велосипед" FontWeight="Medium" Padding="10, 0" Grid.Column="0"/>
+                    <CheckBox x:Name="abstractionFirst" Checked="OnCheckBoxCheckedAbstraction" Grid.Column="1" VerticalAlignment="Center"/>
+                </Grid>
+
+                <Grid Margin="10,20,10,15">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="20"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="400"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Content="часы - линейка" FontWeight="Medium" Padding="10, 0" Grid.Column="0"/>
+                    <CheckBox x:Name="abstractionSecond" Checked="OnCheckBoxCheckedAbstraction" Grid.Column="1" VerticalAlignment="Center"/>
+                </Grid>
+
+                <!--Отсроченное воспроизведение-->
+                <TextBlock FontSize="20" FontWeight="Bold" Background="Orange" TextAlignment="Center ">
+                        Отсроченное воспроизведение
+                </TextBlock>
+
+                <!--Задание 12-->
+                <Label Content="12) Отсроченное воспроизведение" FontWeight="Bold" Padding="10, 10, 0, 0" />
+                <Label Content="Дают следующие указания: «Я называл вам слова и просил вас их запомнить. Назовите из этих слов те, которые вы помните». Поставьте галочку в графах, соответствующих словам, которые были названы самостоятельно без подсказки." FontWeight="Medium" Padding="10, 0" />
+                <Label Content="Если пациент не справляется, вы можете нажать на подсказку и помочь ему с вспоминанием слов." FontWeight="Medium" Padding="10, 0" />
+                <Label Content="Слова, названные с подсказкой, не оцениваются баллами. Подсказки используют только для клинической оценки. Они позволяют получить дополнительную информацию о виде расстройства памяти. При нарушениях вспоминания можно улучшить результат подсказкой. При нарушениях запоминания (кодирования) результат не улучшается с подсказкой." FontWeight="Medium" Padding="10, 0" />
+
+                <Grid Margin="10,20,10,15">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="20"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="400"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Content="Лицо" FontWeight="Medium" Padding="10, 0" Grid.Column="0"/>
+                    <CheckBox x:Name="delayedPlaybackFirst" Checked="OnCheckBoxCheckedDelayedPlayback" Grid.Column="1" VerticalAlignment="Center"/>
+                </Grid>
+
+                <Grid Margin="10,20,10,15">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="20"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="400"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Content="Бархат" FontWeight="Medium" Padding="10, 0" Grid.Column="0"/>
+                    <CheckBox x:Name="delayedPlaybackSecond" Checked="OnCheckBoxCheckedDelayedPlayback" Grid.Column="1" VerticalAlignment="Center"/>
+                </Grid>
+
+                <Grid Margin="10,20,10,15">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="20"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="400"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Content="Церковь" FontWeight="Medium" Padding="10, 0" Grid.Column="0"/>
+                    <CheckBox x:Name="delayedPlaybackThird" Checked="OnCheckBoxCheckedDelayedPlayback" Grid.Column="1" VerticalAlignment="Center"/>
+                </Grid>
+
+                <Grid Margin="10,20,10,15">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="20"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="400"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Content="Маргаритка" FontWeight="Medium" Padding="10, 0" Grid.Column="0"/>
+                    <CheckBox x:Name="delayedPlaybackFourth" Checked="OnCheckBoxCheckedDelayedPlayback" Grid.Column="1" VerticalAlignment="Center"/>
+                </Grid>
+
+                <Grid Margin="10,20,10,15">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="20"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="400"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Content="Красный" FontWeight="Medium" Padding="10, 0" Grid.Column="0"/>
+                    <CheckBox x:Name="delayedPlaybackFifth" Checked="OnCheckBoxCheckedDelayedPlayback" Grid.Column="1" VerticalAlignment="Center"/>
+                </Grid>
+
+                <Grid Margin="10,20,10,15">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="20"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="200"/>
+                        <ColumnDefinition Width="200"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Button x:Name="promptFirst" Content="Подсказка 1" Click="button_PromptFirst" Margin="10, 0, 10, 0" Grid.Column="0"/>
+                    <Button x:Name="promptSecond" Content="Подсказка 2" IsEnabled="False" Click="button_PromptSecond" Grid.Column="1" Margin="10, 0, 10, 0"/>
+                </Grid>
+
+                <!--Ориентация-->
+                <TextBlock FontSize="20" FontWeight="Bold" Background="Orange" TextAlignment="Center ">
+                        Ориентация
+                </TextBlock>
+
+                <!--Задание 13-->
+                <Label Content="13) Ориентировка" FontWeight="Bold" Padding="10, 10, 0, 0"/>
+                <Label Content="Дают следующие указания: «Назовите сегодняшнюю дату». Если обследуемый не дает полный ответ, ему помогают: «Скажите год/месяц/число/день недели». Затем просят: «Назовите название места, где мы находимся, и этого города»." FontWeight="Medium" Padding="10, 0"/>
+                <Label Content="Отметьте все ответы, которые были даны правильно." FontWeight="Medium" Padding="10, 0"/>
+                <Label Content="Не засчитывается ответ с ошибкой в дате или дне недели на один день." FontWeight="Medium" Padding="10, 0"/>
+
+                <Grid Margin="10,20,10,15">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="20"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="400"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Content="Число" FontWeight="Medium" Padding="10, 0" Grid.Column="0"/>
+                    <CheckBox x:Name="orientationFirst" Checked="OnCheckBoxCheckedOrientation" Grid.Column="1" VerticalAlignment="Center"/>
+                </Grid>
+
+                <Grid Margin="10,20,10,15">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="20"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="400"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Content="Месяц" FontWeight="Medium" Padding="10, 0" Grid.Column="0"/>
+                    <CheckBox x:Name="orientationSecond" Checked="OnCheckBoxCheckedOrientation" Grid.Column="1" VerticalAlignment="Center"/>
+                </Grid>
+
+                <Grid Margin="10,20,10,15">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="20"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="400"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Content="Год" FontWeight="Medium" Padding="10, 0" Grid.Column="0"/>
+                    <CheckBox x:Name="orientationThird" Checked="OnCheckBoxCheckedOrientation" Grid.Column="1" VerticalAlignment="Center"/>
+                </Grid>
+
+                <Grid Margin="10,20,10,15">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="20"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="400"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Content="День недели" FontWeight="Medium" Padding="10, 0" Grid.Column="0"/>
+                    <CheckBox x:Name="orientationFourth" Checked="OnCheckBoxCheckedOrientation" Grid.Column="1" VerticalAlignment="Center"/>
+                </Grid>
+
+                <Grid Margin="10,20,10,15">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="20"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="400"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Content="Место" FontWeight="Medium" Padding="10, 0" Grid.Column="0"/>
+                    <CheckBox x:Name="orientationFifth" Checked="OnCheckBoxCheckedOrientation" Grid.Column="1" VerticalAlignment="Center"/>
+                </Grid>
+
+                <Grid Margin="10,20,10,15">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="20"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="400"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Content="Город" FontWeight="Medium" Padding="10, 0" Grid.Column="0"/>
+                    <CheckBox x:Name="orientationSixth" Checked="OnCheckBoxCheckedOrientation" Grid.Column="1" VerticalAlignment="Center"/>
+                </Grid>
+                
+                <Grid Margin="10,20,10,15">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="60"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <!--Кнопка возврата в общее меню-->
+                    <Button x:Name="buttonMainMenu" Grid.Column="0" Grid.Row="0" FontWeight="Normal" Content="Вернутся в меню"  Margin="0,0,10,0" Background="Orange" Click="buttonMainMenu_Clicked"/>
+                    <!--Кнопка получения результатов теста-->
+                    <Button x:Name="buttonResultTest" Content="Получить результат" Grid.Column="1" Grid.Row="0" FontWeight="Normal"  Margin="10, 0, 0, 0" Click="button_CalculateResult" Background="Orange"/>
+                </Grid>
+
             </StackPanel>
         </ScrollViewer>
     </Grid>
