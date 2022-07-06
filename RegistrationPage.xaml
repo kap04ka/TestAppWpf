@@ -16,6 +16,38 @@
                         Регистрация пациента
                 </TextBlock>
 
+                <!--Фамилия-->
+                <TextBlock Text="Фамилия:" Foreground="Black" Margin="20,5,20,0" FontSize="20"/>
+                <TextBox x:Name="entrySurname" Foreground="Black" Margin="20,0" FontSize="20"/>
+
+                <!--Имя-->
+                <TextBlock Text="Имя:" Foreground="Black" Margin="20,5,20,0" FontSize="20"/>
+                <TextBox x:Name="entryForename" Foreground="Black" Margin="20,0" FontSize="20"/>
+
+                <!--Отчество-->
+                <TextBlock Text="Отчество:" Foreground="Black" Margin="20,5,20,0" FontSize="20"/>
+                <TextBox x:Name="entryPatronymic" Foreground="Black" Margin="20,0" FontSize="20"/>
+
+                <!--Работа-->
+                <TextBlock Text="Место работы (кампания):" Foreground="Black" Margin="20,5,20,0" FontSize="20"/>
+                <TextBox x:Name="entryWork" Foreground="Black" Margin="20,0" FontSize="20"/>
+
+                <!--Дата рождения-->
+                <TextBlock Text="Дата рождения:" Foreground="Black" Margin="20,5,20,0" FontSize="20"/>
+                <DatePicker x:Name="dataPickerDateOfBirth" SelectedDateFormat="Short" Foreground="Black" FontSize="20" Margin="20,0" DisplayDateStart="06.07.1922" DisplayDateEnd="06.07.2042"/>
+
+                <!--Почта-->
+                <TextBlock Text="Электронная почта:" Foreground="Black" Margin="20,5,20,0" FontSize="20"/>
+                <TextBox x:Name="entryEmail" Foreground="Black" Margin="20,0" FontSize="20"/>
+
+                <!--Телефон-->
+                <TextBlock Text="Номер телефона:" Foreground="Black" Margin="20,5,20,0" FontSize="20"/>
+                <TextBox x:Name="entryTelephone" Foreground="Black" Margin="20,0" FontSize="20"/>
+
+                <!--Врач-->
+                <TextBlock Text="ФИО лечащего врача:" Foreground="Black" Margin="20,5,20,0" FontSize="20"/>
+                <TextBox x:Name="entryAttendingDoctor" Foreground="Black" Margin="20,0" FontSize="20"/>
+
 
                 <Grid Margin="15,25,20,15">
                     <Grid.RowDefinitions>
