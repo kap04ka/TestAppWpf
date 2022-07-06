@@ -38,7 +38,7 @@ namespace TestAppWpf
             if (AnswersAllQuestions())
             {
                 CalculateResult();
-                MessageBox.Show($"Ваше количетво баллов = {testResult}", "Результат", MessageBoxButton.OK);
+                MessageBox.Show($"Ваше количество баллов = {testResult}", "Результат", MessageBoxButton.OK);
                 testResult = 0;
                 ResetAnswersInTest();
                 NavigationService.Navigate(new Menu());
