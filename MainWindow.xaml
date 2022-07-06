@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TestAppWpf"
         mc:Ignorable="d"
-        Title="Диагностические тесты" ResizeMode="NoResize" WindowState="Maximized">
+        Title="Диагностические тесты" ResizeMode="NoResize" WindowState="Maximized"
+        Icon="Images/ispu.ico">
 
     <Frame Name="MainFrame" Background="White" NavigationUIVisibility="Hidden"/>
     
