@@ -16,14 +16,23 @@ using System.Windows.Shapes;
 namespace TestAppWpf
 {
     /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
+    /// Логика взаимодействия для RegistrationPage.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class RegistrationPage : Page
     {
-        public MainWindow()
+        public RegistrationPage()
         {
             InitializeComponent();
-            MainFrame.Content = new RegistrationPage();
+        }
+
+        private void buttonMainMenu_Clicked(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Menu());
+        }
+
+        private void button_CalculateResult(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
