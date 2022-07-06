@@ -174,24 +174,20 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Images\jest1.JPG" />
-    <Resource Include="Images\jest2.JPG" />
-    <Resource Include="Images\jest3.JPG" />
-    <Resource Include="Images\jest4.JPG" />
-    <Resource Include="Images\jest5.JPG" />
-    <Resource Include="Images\jest6.JPG" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Images\Putb.JPG" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Images\Cube.JPG" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Images\jivotnie.JPG" />
+    <Resource Include="Images\gesture1.jpg" />
+    <Resource Include="Images\gesture2.jpg" />
+    <Resource Include="Images\gesture3.jpg" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\Watch.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\PictureWithItems.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\gesture4.jpg" />
+    <Resource Include="Images\gesture5.jpg" />
+    <Resource Include="Images\gesture6.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

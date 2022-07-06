@@ -11,7 +11,7 @@
     <Grid Background="White">
         <ScrollViewer>
             <StackPanel>
-                
+
                 <Grid Margin="10,20,10,15">
                     <Grid.RowDefinitions>
                         <RowDefinition Height="60"/>
@@ -27,6 +27,85 @@
                 <TextBlock FontSize="30" FontWeight="Bold" Background="Orange" TextAlignment="Center ">
                         Тест праксиса и гнозиса
                 </TextBlock>
+
+                <TextBlock Text="Отметьте галочками пункты, если пациент выполнил их успешно." HorizontalAlignment="Center" FontSize="20" FontWeight="Bold" Foreground="Black" Margin="20,5"/>
+
+                <!--Задание 1-->
+
+                <TextBlock Text="1.	Моторный праксис" FontSize="22" FontWeight="Bold" Margin="30,30,30,8" Foreground="Black"/>
+                <TextBlock Text="Совершите серию движений по заданному плану" FontSize="20" Margin="30,0,30,10" Foreground="Black"/>
+                <CheckBox FontSize="20" IsThreeState="False" x:Name="motorPraxisFirst" Checked="motorPraxis_Checked" Unchecked="motorPraxis_Unchecked" Content="Покажите жестом, что вы здороваетесь" VerticalContentAlignment="Center" Margin="30,0"/>
+                <CheckBox FontSize="20" IsThreeState="False" x:Name="motorPraxisSecond" Checked="motorPraxis_Checked" Unchecked="motorPraxis_Unchecked" Content="Покажите жестом, что у вас болит голова" VerticalContentAlignment="Center" Margin="30,0"/>
+                <CheckBox FontSize="20" IsThreeState="False" x:Name="motorPraxisThird" Checked="motorPraxis_Checked" Unchecked="motorPraxis_Unchecked" Content="Покажите жестом отказ" VerticalContentAlignment="Center" Margin="30,0"/>
+                <CheckBox FontSize="20" IsThreeState="False" x:Name="motorPraxisFourth" Checked="motorPraxis_Checked" Unchecked="motorPraxis_Unchecked" Content="Покажите жестом согласие" VerticalContentAlignment="Center" Margin="30,0"/>
+                <CheckBox FontSize="20" IsThreeState="False" x:Name="motorPraxisFifth" Checked="motorPraxis_Checked" Unchecked="motorPraxis_Unchecked" Content="Покажите жестом число времен года" VerticalContentAlignment="Center" Margin="30,0"/>
+
+                <!--Задание 2-->
+                <TextBlock Text="2.	Динамический праксис" FontSize="22" FontWeight="Bold" Margin="30,30,30,8" Foreground="Black"/>
+                <TextBlock Text="Воспроизведите движения по заданной схеме" FontSize="20" Margin="30,0,30,10" Foreground="Black"/>
+                <Grid Margin="50,30">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="200"/>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="200"/>
+                        <RowDefinition Height="50"/>
+                    </Grid.RowDefinitions>
+
+                    <Image Source="Images/gesture1.jpg" Grid.Row="0" Grid.Column="0"/>
+                    <Image Source="Images/gesture2.jpg" Grid.Row="0" Grid.Column="1"/>
+                    <Image Source="Images/gesture3.jpg" Grid.Row="0" Grid.Column="2"/>
+                    <Image Source="Images/gesture4.jpg" Grid.Row="2" Grid.Column="0"/>
+                    <Image Source="Images/gesture5.jpg" Grid.Row="2" Grid.Column="1"/>
+                    <Image Source="Images/gesture6.jpg" Grid.Row="2" Grid.Column="2"/>
+                    <CheckBox FontSize="20" Grid.Row="1" Grid.Column="0" IsThreeState="False" x:Name="dynamicPraxisFirst" Checked="dynamicPraxis_Checked" Unchecked="dynamicPraxis_Unchecked" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                    <CheckBox FontSize="20" Grid.Row="1" Grid.Column="1" IsThreeState="False" x:Name="dynamicPraxisSecond" Checked="dynamicPraxis_Checked" Unchecked="dynamicPraxis_Unchecked" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                    <CheckBox FontSize="20" Grid.Row="1" Grid.Column="2" IsThreeState="False" x:Name="dynamicPraxisThird" Checked="dynamicPraxis_Checked" Unchecked="dynamicPraxis_Unchecked" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                    <CheckBox FontSize="20" Grid.Row="3" Grid.Column="0" IsThreeState="False" x:Name="dynamicPraxisFourth" Checked="dynamicPraxis_Checked" Unchecked="dynamicPraxis_Unchecked" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                    <CheckBox FontSize="20" Grid.Row="3" Grid.Column="1" IsThreeState="False" x:Name="dynamicPraxisFifth" Checked="dynamicPraxis_Checked" Unchecked="dynamicPraxis_Unchecked" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                    <CheckBox FontSize="20" Grid.Row="3" Grid.Column="2" IsThreeState="False" x:Name="dynamicPraxisSixth" Checked="dynamicPraxis_Checked" Unchecked="dynamicPraxis_Unchecked" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                </Grid>
+
+                <!--Задание 3-->
+                <TextBlock Text="3.	Конструктивный  праксис" FontSize="22" FontWeight="Bold" Margin="30,30,30,8" Foreground="Black"/>
+                <TextBlock Text="Сложите из счетных палочек/спичек фгуры:" FontSize="20" Margin="30,0,30,10" Foreground="Black"/>
+                <CheckBox FontSize="20" IsThreeState="False" x:Name="constructivePraxisFirst" Checked="constructivePraxis_Checked" Unchecked="constructivePraxis_Unchecked" Content="Треугольник" VerticalContentAlignment="Center" Margin="30,0"/>
+                <CheckBox FontSize="20" IsThreeState="False" x:Name="constructivePraxisSecond" Checked="constructivePraxis_Checked" Unchecked="constructivePraxis_Unchecked" Content="Квадрат" VerticalContentAlignment="Center" Margin="30,0"/>
+                <CheckBox FontSize="20" IsThreeState="False" x:Name="constructivePraxisThird" Checked="constructivePraxis_Checked" Unchecked="constructivePraxis_Unchecked" Content="Прямоугольник" VerticalContentAlignment="Center" Margin="30,0"/>
+
+                <!--Задание 4-->
+                <TextBlock Text="4. Предметный гнозис" FontSize="22" FontWeight="Bold" Margin="30,30,30,8" Foreground="Black"/>
+                <TextBlock Text="Узнайте и назовите предметы, контуры которых наложены друг на друга" FontSize="20" Margin="30,0,30,10" Foreground="Black"/>
+                <Image Source="Images/PictureWithItems.JPG" Height="200" Width="200"/>
+                <CheckBox FontSize="20" IsThreeState="False" x:Name="subjectGnosisFirst" Checked="subjectGnosis_Checked" Unchecked="subjectGnosis_Unchecked" Content="Ключ" VerticalContentAlignment="Center" Margin="30,0"/>
+                <CheckBox FontSize="20" IsThreeState="False" x:Name="subjectGnosisSecond" Checked="subjectGnosis_Checked" Unchecked="subjectGnosis_Unchecked" Content="Кувшин" VerticalContentAlignment="Center" Margin="30,0"/>
+                <CheckBox FontSize="20" IsThreeState="False" x:Name="subjectGnosisThird" Checked="subjectGnosis_Checked" Unchecked="subjectGnosis_Unchecked" Content="Настольная лампа" VerticalContentAlignment="Center" Margin="30,0"/>
+
+                <!--Задание 5-->
+                <TextBlock Text="5. Скопируйте часы" FontSize="22" FontWeight="Bold" Margin="30,30,30,8" Foreground="Black"/>
+                <TextBlock Text="Введите количество баллов, на которое пациент скопировал часы (максимум 8)" Foreground="Black" Margin="30,0,30,10" FontSize="20"/>
+                <Image Source="Images/Watch.JPG" Height="200" Width="200" />
+                <TextBox x:Name="textBoxPointsWatch" Foreground="Black" Margin="10,0" FontSize="20" Text="0" TextChanged="textBoxPointsWatch_TextChanged"/>
+
+
+                <Grid Margin="15,25,20,15">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="60"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <!--Кнопка возврата в общее меню-->
+                    <Button x:Name="buttonMainMenu" Grid.Column="0" Grid.Row="0" FontWeight="Normal" Content="Вернутся в меню"  Margin="0,0,10,0" Background="Orange" Click="buttonMainMenu_Clicked"/>
+                    <!--Кнопка получения результатов теста-->
+                    <Button x:Name="buttonResultTest" Content="Получить результат" Grid.Column="1" Grid.Row="0" FontWeight="Normal"  Margin="10, 0, 0, 0" Click="button_CalculateResult" Background="Orange"/>
+                </Grid>
+
 
             </StackPanel>
         </ScrollViewer>
