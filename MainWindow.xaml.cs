@@ -23,7 +23,7 @@ namespace TestAppWpf
         public MainWindow()
         {
             InitializeComponent();
-            MainFrame.Content = new Menu();
+            MainFrame.Content = new RegistrationPage();
         }
     }
 }

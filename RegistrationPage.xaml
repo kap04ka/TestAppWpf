@@ -1,0 +1,68 @@
+﻿<Page x:Class="TestAppWpf.RegistrationPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:TestAppWpf"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="RegistrationPage">
+
+    <Grid Background="White" x:Name="gridRegistration">
+        <ScrollViewer>
+            <StackPanel>
+                <!--Название теста в рамке-->
+                <TextBlock FontSize="30" FontWeight="Bold" Background="Orange" TextAlignment="Center ">
+                        Регистрация пациента
+                </TextBlock>
+
+                <!--Фамилия-->
+                <TextBlock Text="Фамилия:" Foreground="Black" Margin="20,5,20,0" FontSize="20"/>
+                <TextBox x:Name="entrySurname" Foreground="Black" Margin="20,0" FontSize="20"/>
+
+                <!--Имя-->
+                <TextBlock Text="Имя:" Foreground="Black" Margin="20,5,20,0" FontSize="20"/>
+                <TextBox x:Name="entryForename" Foreground="Black" Margin="20,0" FontSize="20"/>
+
+                <!--Отчество-->
+                <TextBlock Text="Отчество:" Foreground="Black" Margin="20,5,20,0" FontSize="20"/>
+                <TextBox x:Name="entryPatronymic" Foreground="Black" Margin="20,0" FontSize="20"/>
+
+                <!--Работа-->
+                <TextBlock Text="Место работы (кампания):" Foreground="Black" Margin="20,5,20,0" FontSize="20"/>
+                <TextBox x:Name="entryWork" Foreground="Black" Margin="20,0" FontSize="20"/>
+
+                <!--Дата рождения-->
+                <TextBlock Text="Дата рождения:" Foreground="Black" Margin="20,5,20,0" FontSize="20"/>
+                <DatePicker x:Name="dataPickerDateOfBirth" SelectedDateFormat="Short" Foreground="Black" FontSize="20" Margin="20,0" DisplayDateStart="06.07.1922" DisplayDateEnd="06.07.2042"/>
+
+                <!--Почта-->
+                <TextBlock Text="Электронная почта:" Foreground="Black" Margin="20,5,20,0" FontSize="20"/>
+                <TextBox x:Name="entryEmail" Foreground="Black" Margin="20,0" FontSize="20"/>
+
+                <!--Телефон-->
+                <TextBlock Text="Номер телефона:" Foreground="Black" Margin="20,5,20,0" FontSize="20"/>
+                <TextBox x:Name="entryTelephone" Foreground="Black" Margin="20,0" FontSize="20"/>
+
+                <!--Врач-->
+                <TextBlock Text="ФИО лечащего врача:" Foreground="Black" Margin="20,5,20,0" FontSize="20"/>
+                <TextBox x:Name="entryAttendingDoctor" Foreground="Black" Margin="20,0" FontSize="20"/>
+
+
+                <Grid Margin="15,25,20,15">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="60"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <!--Кнопка возврата в общее меню-->
+                    <Button x:Name="buttonMainMenu" Grid.Column="0" Grid.Row="0" FontWeight="Normal" Content="Пропуск регистрации"  Margin="0,0,10,0" Background="Orange" Click="buttonMainMenu_Clicked"/>
+                    <!--Кнопка получения результатов теста-->
+                    <Button x:Name="buttonResultTest" Content="Зарегестрироваться" Grid.Column="1" Grid.Row="0" FontWeight="Normal"  Margin="10, 0, 0, 0" Click="button_CalculateResult" Background="Orange"/>
+                </Grid>
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</Page>
